@@ -1,0 +1,41 @@
+@import '../../../style/variable';
+
+.social {
+  justify-self: start;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  column-gap: 10px;
+  color: $px-main;
+
+  &_mr {
+    margin: 0;
+  }
+
+  &_pd {
+    padding: 0;
+  }
+
+  &__item {
+    list-style-type: none;
+  }
+
+  &__link {
+    color: $px-main;
+    text-decoration: none;
+
+
+    &-fs20 {
+      font-size: 1.25rem;
+    }
+
+    &-fs25 {
+      font-size: 1.55rem;
+      color: $px-yellow;
+    }
+
+    &:hover {
+      color: #836843;
+    }
+  }
+}
