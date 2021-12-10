@@ -1,4 +1,8 @@
+import { CardNumber } from '../../cardNumber/CardNumber';
 import { Carousels } from '../../common/carousels/Carousels';
+import { Reservation } from '../../common/reservation/Reservation';
+
+import './home.scss';
 
 export const Home = () => {
   const arrayPhoto = [
@@ -10,6 +14,10 @@ export const Home = () => {
   return (
     <div>
       <Carousels data={arrayPhoto} />
+      <Reservation />
+      <div className="main-content">
+        <CardNumber />
+      </div>
     </div>
   );
 };

@@ -1,0 +1,11 @@
+@import '../../../style/variable';
+
+.reservation {
+  width: 100%;
+  min-height: 116px;
+  background: $px-main;
+
+  &_pd25 {
+    padding: 25px;
+  }
+}

@@ -1,0 +1,60 @@
+@import '../../style/variable';
+
+.cardNumber {
+  position: relative;
+  width: 1200px;
+
+  &_pd10 {
+    padding: 0 10px;
+  }
+
+  &_mr {
+    margin: 0 auto;
+  }
+
+  &_mrB40 {
+    margin-bottom: 40px;
+  }
+
+  &__grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__image {
+    width: 590px;
+    // flex-shrink: 0;
+    text-decoration: none;
+    display: block;
+    position: relative;
+    background: #000000;
+
+    &::before {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: rgba(206, 167, 111, 0);
+      transition: all 0.3s linear;
+    }
+
+  }
+
+  &__more {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: scale(0);
+    width: 200px;
+    height: 50px;
+    transition: all 0.3s linear;
+  }
+
+}
