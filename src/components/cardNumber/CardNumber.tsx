@@ -23,7 +23,7 @@ export const CardNumber = () => {
               Single
             </a>
             <div className="delimiter delimiter_mr10"></div>
-            <div className="description">
+            <div className="description text_fs15">
               Уютный классический однокомнатный номер для одноместного
               размещения с видом на одну из центральных улиц города.
             </div>
@@ -34,7 +34,7 @@ export const CardNumber = () => {
             >
               Читать больше
             </a>
-            <a href="#" title="Забронировать" className="button button-order">
+            <a href="#" title="Забронировать" className="button button_order">
               Забронировать
             </a>
             <div className="price">
