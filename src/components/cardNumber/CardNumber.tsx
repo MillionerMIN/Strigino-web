@@ -26,7 +26,7 @@ export const CardNumber = () => {
         {/* infirmation card */}
         <div className="info-wrapper info-wrapper_pd20">
           <div className="info">
-            <NavLink className="info__title" to={'#'} title="Single">
+            <NavLink className="info__title link_color" to={'#'} title="Single">
               Single
             </NavLink>
             <div className="delimiter delimiter_mr10"></div>
@@ -37,7 +37,7 @@ export const CardNumber = () => {
             <NavLink
               to={'#'}
               title="Забронировать"
-              className="button button_order"
+              className="button button_order button_hover link_color"
             >
               Забронировать
             </NavLink>

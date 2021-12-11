@@ -42,6 +42,7 @@
       content: '';
       background: $px-yellow;
       transform: translateX(-125%) rotate(45deg);
+      transition: 1s;
     }
 
     &::after {
@@ -53,6 +54,7 @@
       content: '';
       background: $px-yellow;
       transform: translateX(170%) rotate(45deg);
+      transition: 1s;
     }
   }
 
@@ -90,9 +92,6 @@
   opacity: 1;
   z-index: 3;
 }
-
-
-
 
 .info-wrapper {
   width: 100%;

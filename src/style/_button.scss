@@ -1,16 +1,19 @@
+@import '../style/_variable';
+
 .button {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   color: #330f15;
-  border: 3px solid #cea76f;
+  border: 3px solid $px-yellow;
   padding: 14px;
   max-width: 204px;
   display: block;
   text-decoration: none;
   line-height: 1.15;
   cursor: pointer;
+  transition: 1s;
 
   &_center {
     margin: 0 auto;
@@ -26,5 +29,12 @@
 
   &_order {
     margin: 40px auto 0 auto;
+  }
+
+  &_hover {
+    &:hover {
+      background-color: $px-yellow;
+      transition: 0.7s;
+    }
   }
 }

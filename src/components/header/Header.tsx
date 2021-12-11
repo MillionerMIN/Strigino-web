@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './header.scss';
 import { Social, SocialType } from '../common/social/Social';
+import { NavLink } from 'react-router-dom';
 
 type HeaderPropsType = {
   socials: SocialType[];
@@ -21,9 +22,9 @@ export const Header = (props: HeaderPropsType) => {
 
   const menuLeft = menusLeft.map((item, i) => (
     <li className="block__item" key={i}>
-      <a className="block__link title_fs15" href={item.ref}>
+      <NavLink className="block__link title_fs15" to={item.ref}>
         {item.value}
-      </a>
+      </NavLink>
     </li>
   ));
   const menusRight = [
@@ -34,9 +35,9 @@ export const Header = (props: HeaderPropsType) => {
 
   const menuRight = menusRight.map((item, i) => (
     <li className="block__item" key={i}>
-      <a className="block__link title_fs15" href={item.ref}>
+      <NavLink className="block__link title_fs15" to={item.ref}>
         {item.value}
-      </a>
+      </NavLink>
     </li>
   ));
 

@@ -5,6 +5,12 @@ import { BlockTitle } from '../../common/title/BlockTitle';
 
 import './home.scss';
 
+const title = {
+  title: 'ЧТО МЫ ВАМ ПРЕДЛАГАЕМ',
+  description:
+    'Мы предлагаем широкий спектр услуг как для бизнеса,так и для индивидуального отдыха',
+};
+
 export const Home = () => {
   const arrayPhoto = [
     { url: 'http://hotelstrigino.ru/assets/gallery/3/52.jpg' },
@@ -13,13 +19,12 @@ export const Home = () => {
   ];
 
   return (
-    <div className="main">
+    <main className="main">
       <Carousels data={arrayPhoto} />
       <Reservation />
-      <BlockTitle />
       <div className="main__content">
-        <CardNumber />
+        <BlockTitle data={title} />
       </div>
-    </div>
+    </main>
   );
 };

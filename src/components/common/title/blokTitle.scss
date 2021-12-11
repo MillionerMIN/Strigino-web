@@ -9,9 +9,40 @@
 }
 
 .block-description {
-  font-family: "Playfair Display", Georgia, "Times New Roman", "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", serif;
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
   font-style: italic;
   font-size: 16px;
-  margin: 0 auto;
   color: $px-grey;
+}
+
+.block-delimiter {
+  &_mr {
+    margin: 20px auto 14px auto;
+  }
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  border-radius: 7px;
+  background: $px-yellow;
+  margin: -1px 4px 0 4px;
+}
+
+.triangle {
+  width: 100px;
+  height: 0;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+
+  &_right {
+    border-left: 107px solid $px-yellow;
+  }
+
+  &_left {
+    border-right: 107px solid $px-yellow;
+  }
+
 }

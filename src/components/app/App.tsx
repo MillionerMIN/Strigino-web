@@ -2,7 +2,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '../../style/_iconsfont.scss';
 import { Header } from '../header/Header';
 import { Footer } from '../footer/Footer';
-import { Router } from '../route/Router';
+import { Routers } from '../route/Routers';
+import { HashRouter } from 'react-router-dom';
 
 const socials = [
   { name: 'Facebook', img: 'icon-facebook-icon', link: '#' },
@@ -16,9 +17,11 @@ const socials = [
 function App() {
   return (
     <div className="App">
-      <Header socials={socials} />
-      <Router />
-      <Footer socials={socials} />
+      <HashRouter>
+        <Header socials={socials} />
+        <Routers />
+        <Footer socials={socials} />
+      </HashRouter>
     </div>
   );
 }
