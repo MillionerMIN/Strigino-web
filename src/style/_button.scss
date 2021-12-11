@@ -3,7 +3,7 @@
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
-  color: #330f15 !important;
+  color: #330f15;
   border: 3px solid #cea76f;
   padding: 14px;
   max-width: 204px;
@@ -11,11 +11,6 @@
   text-decoration: none;
   line-height: 1.15;
   cursor: pointer;
-
-  &:hover {
-    background: #cea76f;
-    transition: all 0.3s linear;
-  }
 
   &_center {
     margin: 0 auto;

@@ -1,6 +1,7 @@
 import { CardNumber } from '../../cardNumber/CardNumber';
 import { Carousels } from '../../common/carousels/Carousels';
 import { Reservation } from '../../common/reservation/Reservation';
+import { BlockTitle } from '../../common/title/BlockTitle';
 
 import './home.scss';
 
@@ -12,10 +13,11 @@ export const Home = () => {
   ];
 
   return (
-    <div>
+    <div className="main">
       <Carousels data={arrayPhoto} />
       <Reservation />
-      <div className="main-content">
+      <BlockTitle />
+      <div className="main__content">
         <CardNumber />
       </div>
     </div>

@@ -1,10 +1,20 @@
+@import '../style/_variable';
+
 .title {
+  color: $px-footer;
+
   &_fs14 {
-    font-size: 14px;
+    font-size: 0.875rem;
   }
 
   &_fs15 {
-    font-size: 15px;
+    font-size: 0.93rem;
     font-weight: 500;
+  }
+
+  &_fs36 {
+    font-size: 2.25rem;
+    margin: 0;
+    font-weight: 700;
   }
 }

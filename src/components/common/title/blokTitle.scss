@@ -1,0 +1,17 @@
+@import '../../../style/_variable';
+
+.block-title {
+  text-align: center;
+
+  &_pb {
+    padding: 90px 0 60px 0;
+  }
+}
+
+.block-description {
+  font-family: "Playfair Display", Georgia, "Times New Roman", "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", serif;
+  font-style: italic;
+  font-size: 16px;
+  margin: 0 auto;
+  color: $px-grey;
+}
