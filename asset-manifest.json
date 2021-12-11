@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/Strigino-web/static/css/main.92a3dfbd.chunk.css",
-    "main.js": "/Strigino-web/static/js/main.92c38b32.chunk.js",
-    "main.js.map": "/Strigino-web/static/js/main.92c38b32.chunk.js.map",
+    "main.css": "/Strigino-web/static/css/main.a26b0faa.chunk.css",
+    "main.js": "/Strigino-web/static/js/main.e8f5b4b3.chunk.js",
+    "main.js.map": "/Strigino-web/static/js/main.e8f5b4b3.chunk.js.map",
     "runtime-main.js": "/Strigino-web/static/js/runtime-main.102e01a7.js",
     "runtime-main.js.map": "/Strigino-web/static/js/runtime-main.102e01a7.js.map",
     "static/css/2.0a9ec390.chunk.css": "/Strigino-web/static/css/2.0a9ec390.chunk.css",
-    "static/js/2.7bb4b7ab.chunk.js": "/Strigino-web/static/js/2.7bb4b7ab.chunk.js",
-    "static/js/2.7bb4b7ab.chunk.js.map": "/Strigino-web/static/js/2.7bb4b7ab.chunk.js.map",
+    "static/js/2.ac9bc8ab.chunk.js": "/Strigino-web/static/js/2.ac9bc8ab.chunk.js",
+    "static/js/2.ac9bc8ab.chunk.js.map": "/Strigino-web/static/js/2.ac9bc8ab.chunk.js.map",
     "index.html": "/Strigino-web/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/Strigino-web/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.92a3dfbd.chunk.css.map": "/Strigino-web/static/css/main.92a3dfbd.chunk.css.map",
-    "static/js/2.7bb4b7ab.chunk.js.LICENSE.txt": "/Strigino-web/static/js/2.7bb4b7ab.chunk.js.LICENSE.txt",
+    "static/css/main.a26b0faa.chunk.css.map": "/Strigino-web/static/css/main.a26b0faa.chunk.css.map",
+    "static/js/2.ac9bc8ab.chunk.js.LICENSE.txt": "/Strigino-web/static/js/2.ac9bc8ab.chunk.js.LICENSE.txt",
     "static/media/_iconsfont.scss": "/Strigino-web/static/media/icons.f16b8097.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.102e01a7.js",
     "static/css/2.0a9ec390.chunk.css",
-    "static/js/2.7bb4b7ab.chunk.js",
-    "static/css/main.92a3dfbd.chunk.css",
-    "static/js/main.92c38b32.chunk.js"
+    "static/js/2.ac9bc8ab.chunk.js",
+    "static/css/main.a26b0faa.chunk.css",
+    "static/js/main.e8f5b4b3.chunk.js"
   ]
 }
