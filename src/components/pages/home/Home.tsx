@@ -1,4 +1,3 @@
-import { CardNumber } from '../../cardNumber/CardNumber';
 import { Carousels } from '../../common/carousels/Carousels';
 import { Reservation } from '../../common/reservation/Reservation';
 import { BlockTitle } from '../../common/title/BlockTitle';
@@ -19,12 +18,10 @@ export const Home = () => {
   ];
 
   return (
-    <main className="main">
+    <main className="main main_pd">
       <Carousels data={arrayPhoto} />
       <Reservation />
-      <div className="main__content">
-        <BlockTitle data={title} />
-      </div>
+      <BlockTitle data={title} />
     </main>
   );
 };
