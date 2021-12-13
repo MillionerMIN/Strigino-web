@@ -1,6 +1,7 @@
 @import '../style/_variable';
 
 .title {
+  font-family: "Playfair Display", serif;
   color: $px-footer;
 
   &_fs14 {
@@ -21,4 +22,20 @@
   &_gold {
     color: $px-yellow;
   }
+
+  &_fs50 {
+    font-size: 3.125rem;
+    font-weight: 700;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  &_background {
+    background: #e7e3dc;
+  }
+
+  &_pd {
+    padding: 40px 60px;
+  }
+
 }

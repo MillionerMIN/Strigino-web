@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './header.scss';
 import { Social, SocialType } from '../common/social/Social';
 import { NavLink } from 'react-router-dom';
+import Logo from '../../icons/logo/logo-g.svg';
 
 type HeaderPropsType = {
   socials: SocialType[];
@@ -82,7 +83,13 @@ export const Header = (props: HeaderPropsType) => {
           <div className="container">
             <nav className="menu">
               <div className="block block_left">{menuLeft}</div>
-              <div>bfg</div>
+              <div className="block block_center">
+                <img
+                  className="block__logo"
+                  src={Logo}
+                  alt="Гостинично - Ресторанный комплекс 'Стригино'"
+                />
+              </div>
               <div className="block block_right">{menuRight}</div>
             </nav>
           </div>

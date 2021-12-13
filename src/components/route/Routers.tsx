@@ -1,6 +1,5 @@
-import { Routes, Router, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { About } from '../pages/about/About';
-
 import { Home } from '../pages/home/Home';
 import { HotelRoom } from '../pages/hotelRoom/HotelRoom';
 import './routers.scss';

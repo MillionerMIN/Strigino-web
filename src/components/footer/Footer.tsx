@@ -1,7 +1,8 @@
 import { NavLink } from 'react-router-dom';
 import { Social, SocialType } from '../common/social/Social';
 import Pay from '../../icons/cards/pay-card.png';
-import Logo from '../../img/logo/logo-w.png';
+import Logo from '../../img/logo/strigino-w-rus.svg';
+import LogoEn from '../../img/logo/strigino-eng.svg';
 
 import './footer.scss';
 
@@ -38,7 +39,8 @@ export const Footer = (props: FooterPropsType) => {
         <div className="container">
           <div className="footer__container">
             <div className="footer__left">
-              <img src={Logo} alt="Logo" />
+              <img className="footer__logo" src={Logo} alt="LogoRus" />
+              <img className="footer__logo" src={LogoEn} alt="LogoEn" />
             </div>
             <div className="footer__right text_fs13">
               <p>

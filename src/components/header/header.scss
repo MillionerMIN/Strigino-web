@@ -52,9 +52,10 @@
 }
 
 .menu {
+  position: relative;
   display: grid;
-  grid-template-columns: 455px 120px 455px;
-  column-gap: 133px;
+  grid-template-columns: 455px 186px 455px;
+  column-gap: 100px;
 }
 
 .block {
@@ -64,6 +65,26 @@
   justify-content: space-between;
   align-items: center;
 
+  &_center {
+    position: absolute;
+    max-width: 153px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: block;
+    background: #4e1720;
+    padding: 15px;
+    border-radius: 100%;
+    transition: all 0.3s linear;
+  }
+
+  &_right {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
   &__item {
     list-style-type: none;
     text-transform: uppercase;
@@ -72,6 +93,11 @@
   &__link {
     text-decoration: none;
     color: #fff;
+  }
+
+  &__logo {
+    max-width: 100%;
+    color: $px-yellow;
   }
 }
 

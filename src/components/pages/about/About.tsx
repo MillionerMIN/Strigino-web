@@ -1,15 +1,24 @@
 import { BlockTitle } from '../../common/title/BlockTitle';
 
 import './about.scss';
+import { HeadingBlock } from '../../common/heading-block/HeadingBlock';
+import { Reservation } from '../../common/reservation/Reservation';
 const title = {
   title: 'Гостинично – ресторанный комплекс «Стригино»',
   description:
     'Мы предлагаем широкий спектр услуг как для бизнеса,так и для индивидуального отдыха',
 };
 
+const heading = {
+  title: 'Об отеле',
+  photo: 'http://hotelstrigino.ru/images/info/vchod.JPG',
+};
+
 export const About = () => {
   return (
     <main className="about about_pd">
+      <HeadingBlock data={heading} />
+      <Reservation />
       <BlockTitle data={title} />
       <div className="container">
         <div className="about__content">
@@ -23,7 +32,7 @@ export const About = () => {
         </div>
         <div className="about__wrapper">
           <div className="about__left">
-            <h2>Коротко о нас</h2>
+            <h2 className="title title_fs36">Коротко о нас</h2>
             <p>
               Гостинично – ресторанный комплекс «Стригино» расположен в
               живописном уголке соснового бора, на берегу реки Ока, в 5 мин.

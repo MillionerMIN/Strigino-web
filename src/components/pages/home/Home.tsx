@@ -9,14 +9,13 @@ const title = {
   description:
     'Мы предлагаем широкий спектр услуг как для бизнеса,так и для индивидуального отдыха',
 };
+const arrayPhoto = [
+  { url: 'http://hotelstrigino.ru/assets/gallery/3/52.jpg' },
+  { url: 'http://hotelstrigino.ru/assets/gallery/3/53.JPG' },
+  { url: 'http://hotelstrigino.ru/assets/gallery/3/53.JPG' },
+];
 
 export const Home = () => {
-  const arrayPhoto = [
-    { url: 'http://hotelstrigino.ru/assets/gallery/3/52.jpg' },
-    { url: 'http://hotelstrigino.ru/assets/gallery/3/53.JPG' },
-    { url: 'http://hotelstrigino.ru/assets/gallery/3/53.JPG' },
-  ];
-
   return (
     <main className="main main_pd">
       <Carousels data={arrayPhoto} />
