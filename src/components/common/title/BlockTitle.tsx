@@ -18,7 +18,9 @@ export const BlockTitle = (props: BlockTitleType) => {
           <div className="dot"></div>
           <div className="triangle triangle_right"></div>
         </div>
-        <div className="block-description">{description}</div>
+        <div className="block-description block-description_mr">
+          {description}
+        </div>
       </div>
     </div>
   );

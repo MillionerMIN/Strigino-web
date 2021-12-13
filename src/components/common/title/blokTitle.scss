@@ -10,9 +10,14 @@
 
 .block-description {
   font-family: "Playfair Display", "Times New Roman", serif;
+  max-width: 450px;
   font-style: italic;
   font-size: 16px;
   color: $px-grey;
+
+  &_mr {
+    margin: 0 auto;
+  }
 }
 
 .block-delimiter {
