@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/Strigino-web/static/css/main.be3205a0.chunk.css",
-    "main.js": "/Strigino-web/static/js/main.5cf40f32.chunk.js",
-    "main.js.map": "/Strigino-web/static/js/main.5cf40f32.chunk.js.map",
+    "main.css": "/Strigino-web/static/css/main.ec3a5e7f.chunk.css",
+    "main.js": "/Strigino-web/static/js/main.6fd78e53.chunk.js",
+    "main.js.map": "/Strigino-web/static/js/main.6fd78e53.chunk.js.map",
     "runtime-main.js": "/Strigino-web/static/js/runtime-main.102e01a7.js",
     "runtime-main.js.map": "/Strigino-web/static/js/runtime-main.102e01a7.js.map",
     "static/css/2.0a9ec390.chunk.css": "/Strigino-web/static/css/2.0a9ec390.chunk.css",
-    "static/js/2.c32b51a7.chunk.js": "/Strigino-web/static/js/2.c32b51a7.chunk.js",
-    "static/js/2.c32b51a7.chunk.js.map": "/Strigino-web/static/js/2.c32b51a7.chunk.js.map",
+    "static/js/2.f2e60446.chunk.js": "/Strigino-web/static/js/2.f2e60446.chunk.js",
+    "static/js/2.f2e60446.chunk.js.map": "/Strigino-web/static/js/2.f2e60446.chunk.js.map",
     "index.html": "/Strigino-web/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/Strigino-web/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.be3205a0.chunk.css.map": "/Strigino-web/static/css/main.be3205a0.chunk.css.map",
-    "static/js/2.c32b51a7.chunk.js.LICENSE.txt": "/Strigino-web/static/js/2.c32b51a7.chunk.js.LICENSE.txt",
+    "static/css/main.ec3a5e7f.chunk.css.map": "/Strigino-web/static/css/main.ec3a5e7f.chunk.css.map",
+    "static/js/2.f2e60446.chunk.js.LICENSE.txt": "/Strigino-web/static/js/2.f2e60446.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/Strigino-web/static/media/PlayfairDisplay-VariableFont_wght.54971b72.ttf",
+    "static/media/_arrows.scss": "/Strigino-web/static/media/arrows.dab4c4dc.ttf",
     "static/media/_iconsfont.scss": "/Strigino-web/static/media/icons.f16b8097.ttf",
     "static/media/logo-g.7a0f32f1.svg": "/Strigino-web/static/media/logo-g.7a0f32f1.svg",
     "static/media/strigino-eng.45bf2eb4.svg": "/Strigino-web/static/media/strigino-eng.45bf2eb4.svg",
@@ -21,8 +22,8 @@
   "entrypoints": [
     "static/js/runtime-main.102e01a7.js",
     "static/css/2.0a9ec390.chunk.css",
-    "static/js/2.c32b51a7.chunk.js",
-    "static/css/main.be3205a0.chunk.css",
-    "static/js/main.5cf40f32.chunk.js"
+    "static/js/2.f2e60446.chunk.js",
+    "static/css/main.ec3a5e7f.chunk.css",
+    "static/js/main.6fd78e53.chunk.js"
   ]
 }
