@@ -13,15 +13,15 @@ export const CardNumber = (props: CardNumberType) => {
   const { title, desc, url, cost } = props.data;
 
   const description = desc.slice(0, 100);
-  const classCardNumber =
-    index % 2 === 0
-      ? 'cardNumber__image'
-      : 'cardNumber__image cardNumber__image_right';
-  const classInfoWrapper =
-    index % 2 === 0
-      ? 'info-wrapper info-wrapper_pd20'
-      : 'info-wrapper info-wrapper_pd20 info-wrapper_left';
-  const classPrice = index % 2 === 0 ? 'price price_right' : 'price price_left';
+  // const classCardNumber =
+  //   index % 2 === 0
+  //     ? 'cardNumber__image'
+  //     : 'cardNumber__image cardNumber__image_right';
+  // const classInfoWrapper =
+  //   index % 2 === 0
+  //     ? 'info-wrapper info-wrapper_pd20'
+  //     : 'info-wrapper info-wrapper_pd20 info-wrapper_left';
+  // const classPrice = index % 2 === 0 ? 'price price_right' : 'price price_left';
 
   return (
     <div className="cardNumber cardNumber_pd10 cardNumber_mr">
@@ -30,7 +30,7 @@ export const CardNumber = (props: CardNumberType) => {
           <div className="title">Single</div>
           <div className="icon icon-delimiter"></div>
         </div> */}
-        <div className={classCardNumber}>
+        <div className={'cardNumber__image cardNumber__image_right'}>
           <NavLink to={'#'} title={title}>
             <img className="cardNumber__photo" src={url} alt={title} />
             <div className="cardNumber__more">
@@ -42,7 +42,7 @@ export const CardNumber = (props: CardNumberType) => {
         </div>
 
         {/* infirmation card */}
-        <div className={classInfoWrapper}>
+        <div className={'info-wrapper info-wrapper_pd20'}>
           <div className="info">
             <NavLink className="info__title link_color" to={'#'} title="Single">
               {title}
@@ -56,7 +56,7 @@ export const CardNumber = (props: CardNumberType) => {
             >
               Забронировать
             </NavLink>
-            <div className={classPrice}>
+            <div className={'price price_right'}>
               от <span className="value text_fs26">{cost}</span>{' '}
               <span className="currency text_fs26">RUB</span>
             </div>

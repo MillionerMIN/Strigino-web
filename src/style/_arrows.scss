@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'arrows';
+  src: url('../font/fonts/arrows.eot?arq0n0');
+  src: url('../font/fonts/arrows.eot?arq0n0#iefix') format('embedded-opentype'),
+    url('../font/fonts/arrows.ttf?arq0n0') format('truetype'),
+    url('../font/fonts/arrows.woff?arq0n0') format('woff'),
+    url('../font/fonts/arrows.svg?arq0n0#arrows') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="arrows-"]::before,
+[class*=" arrows-"]::before {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'arrows' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.arrows-arrowLeft:before {
+  content: "\e900";
+}
+
+.arrows-arrowRight:before {
+  content: "\e901";
+}

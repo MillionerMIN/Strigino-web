@@ -2,6 +2,7 @@ import { Carousels } from '../../common/carousels/Carousels';
 import { Reservation } from '../../common/reservation/Reservation';
 import { BlockTitle } from '../../common/title/BlockTitle';
 import { CustomMap } from '../../customMap/CustomMap';
+import Navigation from '../../navigation/Navigation';
 
 import './home.scss';
 
@@ -11,9 +12,9 @@ const title = {
     'Мы предлагаем широкий спектр услуг как для бизнеса,так и для индивидуального отдыха',
 };
 const arrayPhoto = [
-  { url: 'http://hotelstrigino.ru/assets/gallery/3/52.jpg' },
-  { url: 'http://hotelstrigino.ru/assets/gallery/3/53.JPG' },
-  { url: 'http://hotelstrigino.ru/assets/gallery/3/53.JPG' },
+  { url: 'https://cf.bstatic.com/images/hotel/max600/940/94033968.jpg' },
+  { url: 'https://cf.bstatic.com/images/hotel/max600/607/60716065.jpg' },
+  { url: 'https://cf.bstatic.com/images/hotel/max600/168/168167243.jpg' },
 ];
 
 export const Home = () => {
@@ -22,6 +23,7 @@ export const Home = () => {
       <Carousels data={arrayPhoto} />
       <Reservation />
       <BlockTitle data={title} />
+      <Navigation />
       <CustomMap />
     </main>
   );

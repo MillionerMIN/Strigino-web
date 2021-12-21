@@ -2,6 +2,7 @@
 
 .block-title {
   text-align: center;
+  font-weight: 600;
 
   &_pb {
     padding: 90px 0 60px 0;
@@ -9,7 +10,7 @@
 }
 
 .block-description {
-  font-family: "Playfair Display", "Times New Roman", serif;
+  font-family: "Playfair Display", "Times New Roman", "Microsoft Yahei", "微软雅黑", STXihei, "华文细黑", serif;
   max-width: 450px;
   font-style: italic;
   font-size: 16px;

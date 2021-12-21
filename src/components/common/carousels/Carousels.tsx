@@ -17,5 +17,9 @@ export const Carousels = (props: CarouselsPropsType) => {
     </Carousel.Item>
   ));
 
-  return <Carousel interval={5000}>{carouselItems}</Carousel>;
+  return (
+    <Carousel className="carousels" interval={5000}>
+      {carouselItems}
+    </Carousel>
+  );
 };
