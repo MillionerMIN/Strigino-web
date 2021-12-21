@@ -1,7 +1,7 @@
 import { Carousel } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
 import './navigation.scss';
-import '../../style/_arrows.scss';
+import '../../../../style/_arrows.scss';
 
 const arrayItems = [
   {

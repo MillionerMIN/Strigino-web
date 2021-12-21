@@ -2,9 +2,10 @@ import { Carousels } from '../../common/carousels/Carousels';
 import { Reservation } from '../../common/reservation/Reservation';
 import { BlockTitle } from '../../common/title/BlockTitle';
 import { CustomMap } from '../../customMap/CustomMap';
-import Navigation from '../../navigation/Navigation';
+import Navigation from './navigation/Navigation';
 
 import './home.scss';
+import SpecialBlock from './specialBlock/SpecialBlock';
 
 const title = {
   title: 'ЧТО МЫ ВАМ ПРЕДЛАГАЕМ',
@@ -24,6 +25,7 @@ export const Home = () => {
       <Reservation />
       <BlockTitle data={title} />
       <Navigation />
+      <SpecialBlock />
       <CustomMap />
     </main>
   );
