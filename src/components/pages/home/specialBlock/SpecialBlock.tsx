@@ -15,11 +15,11 @@ const arrayShares = [
     title: 'ljbdfbdfkbh',
   },
   {
-    img: 'https://cf.bstatic.com/images/hotel/max600/607/60716065.jpg',
+    img: 'https://cf.bstatic.com/images/hotel/max600/940/94036158.jpg',
     title: 'ljbdfbdfkbh',
   },
   {
-    img: 'https://cf.bstatic.com/images/hotel/max600/607/60716065.jpg',
+    img: 'http://hotelstrigino.ru/assets/cache_image/assets/gallery/4/86_398x275_70a.jpg',
     title: 'ljbdfbdfkbh',
   },
   {
@@ -42,7 +42,7 @@ const SpecialBlock = () => {
       <div className="container">
         <BlockTitle data={title} />
         <div className="special-block__slider">
-          <SwipeToSlide />
+          <SwipeToSlide data={arrayShares} />
         </div>
         <div className="special-block__button">
           <div className="button button_text-white button_center">
