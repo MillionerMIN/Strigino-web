@@ -14,6 +14,7 @@ const heading = {
   title: 'Ресторан',
   photo: 'https://cf.bstatic.com/images/hotel/max600/168/168167243.jpg',
 };
+
 const eventsRes = [
   {
     title: '«Свадбы»',
@@ -58,12 +59,12 @@ const Restaurant = () => {
     <CardNumber key={i} data={item} index={i} />
   ));
   return (
-    <main className="restaurant">
+    <div className="restaurant restaurant_pd">
       <HeadingBlock data={heading} />
       <Reservation />
       <BlockTitle data={title} />
       <div className="restaurant-wrapper">{events}</div>
-    </main>
+    </div>
   );
 };
 

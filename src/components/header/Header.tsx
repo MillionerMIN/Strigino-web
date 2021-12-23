@@ -30,7 +30,7 @@ export const Header = (props: HeaderPropsType) => {
   ));
   const menusRight = [
     { value: 'номера', ref: '/rooms' },
-    { value: 'конференц-услуги', ref: '/service' },
+    { value: 'конференц-услуги', ref: '/conference-facilities' },
     { value: 'контакты', ref: '/contact' },
   ];
 

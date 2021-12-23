@@ -17,7 +17,7 @@ const heading = {
 
 export const About = () => {
   return (
-    <main className="about about_pd">
+    <div className="about about_pd">
       <HeadingBlock data={heading} />
       <Reservation />
       <BlockTitle data={title} />
@@ -100,6 +100,6 @@ export const About = () => {
           </div>
         </div>
       </div>
-    </main>
+    </div>
   );
 };
