@@ -1,8 +1,9 @@
 import { BlockTitle } from '../../common/title/BlockTitle';
-
-import './about.scss';
 import { HeadingBlock } from '../../common/heading-block/HeadingBlock';
 import { Reservation } from '../../common/reservation/Reservation';
+
+import './about.scss';
+
 const title = {
   title: 'Гостинично – ресторанный комплекс «Стригино»',
   description:

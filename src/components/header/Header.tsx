@@ -18,7 +18,7 @@ export const Header = (props: HeaderPropsType) => {
   const menusLeft = [
     { value: 'об отеле', ref: '/about' },
     { value: 'спецпредложения', ref: '/special-offers' },
-    { value: 'ресторан', ref: '/restaurants' },
+    { value: 'ресторан', ref: '/restaurant' },
   ];
 
   const menuLeft = menusLeft.map((item, i) => (
