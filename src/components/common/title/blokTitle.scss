@@ -52,3 +52,17 @@
   }
 
 }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  .block-title {
+
+    &_pb {
+      padding: 90px 0 30px 0;
+    }
+  }
+
+  .block-description {
+    max-width: 100%;
+  }
+}

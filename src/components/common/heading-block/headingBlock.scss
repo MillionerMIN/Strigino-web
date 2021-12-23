@@ -50,3 +50,15 @@
   border: 3px solid #e7e3dc;
   padding: 24px;
 }
+
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  .heading-block {
+    height: 300px;
+  }
+
+  .heading {
+    padding: 10px;
+  }
+}

@@ -5,7 +5,7 @@
   color: $px-footer;
 
   &_fs28 {
-    font-size: 28px;
+    font-size: 1.75rem;
     font-weight: 700;
   }
 
@@ -49,6 +49,28 @@
 
   &_uppercase {
     text-transform: uppercase;
+  }
+
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  .title {
+    &_fs28 {
+      font-size: 1.125px;
+    }
+
+    &_fs36 {
+      font-size: 1.625rem;
+    }
+
+    &_fs50 {
+      font-size: 1.625rem;
+    }
+
+    &_pd {
+      padding: 10px 20px;
+    }
   }
 
 }

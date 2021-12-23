@@ -3,7 +3,7 @@
 .cardNumber {
   background: $px-bg;
   position: relative;
-  width: 1200px;
+  max-width: 1200px;
 
 
   &_pd10 {
@@ -127,7 +127,7 @@
   border: 2px solid $px-yellow;
   padding: 85px 90px 55px 90px;
   position: relative;
-  height: 360px;
+  max-height: 360px;
   overflow: hidden;
 
   &__title {
@@ -186,5 +186,44 @@
   &__value {
     font-size: 26px;
     font-weight: 900;
+  }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  .cardNumber {
+    &__grid {
+      grid-template-columns: none;
+      background-color: #fff;
+      background-image: url('../../../img/bg/kisspng-pattern.png');
+      background-repeat: round;
+    }
+
+    &__image {
+      justify-self: center;
+    }
+  }
+
+  .delimiter {
+    &_mr10 {
+      margin: 5px 0;
+    }
+
+    &::before {
+      width: 33%;
+    }
+  }
+
+  .info {
+    padding: 35px 90px 55px 90px;
+    position: static;
+  }
+
+  .price {
+    top: 358px;
+
+    &_right {
+      right: calc(50% - 105px);
+    }
   }
 }

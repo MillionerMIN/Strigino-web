@@ -33,3 +33,12 @@
     color: $px-footer;
   }
 }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  .text {
+    &_fs22 {
+      font-size: 1.125rem;
+    }
+  }
+}

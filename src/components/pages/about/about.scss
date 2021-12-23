@@ -71,3 +71,26 @@
 .image {
   width: 100%
 }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  .about {
+
+    &_pd {
+      padding: 0 0 75px 0;
+    }
+
+    &__wrapper {
+      grid-template-columns: none;
+      grid-template-rows: auto;
+    }
+
+    &__note {
+      padding: 30px 0;
+    }
+
+    &__title {
+      margin-top: 15px;
+    }
+  }
+}
