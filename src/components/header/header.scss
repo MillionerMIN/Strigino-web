@@ -56,6 +56,7 @@
   display: grid;
   grid-template-columns: 455px 186px 455px;
   column-gap: 100px;
+  justify-content: center;
 }
 
 .block {
@@ -200,4 +201,8 @@
 @media (max-width: 1199.98px) {}
 
 // X-Large devices (large desktops, less than 1400px)
-@media (max-width: 1399.98px) {}
+@media (max-width: 1399.98px) {
+  .menu {
+    column-gap: 10px;
+  }
+}
