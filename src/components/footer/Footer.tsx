@@ -40,7 +40,6 @@ export const Footer = (props: FooterPropsType) => {
           <div className="footer__container">
             <div className="footer__left">
               <img className="footer__logo" src={Logo} alt="LogoRus" />
-              <img className="footer__logo" src={LogoEn} alt="LogoEn" />
             </div>
             <div className="footer__right text_fs13">
               <p>
@@ -49,11 +48,9 @@ export const Footer = (props: FooterPropsType) => {
                 ----------, Дата регистрации в торговом реестре ----------:
                 06.07.2008 г.
               </p>
-              <span>Вы можете оплатить наши услуги с помощью:</span>
-              <img src={Pay} alt="Pay" />
-            </div>
-            <div className="footer__bottom">
-              2015-2021 © Отель-ресторан Стригино | Все права защищены
+              <div className="footer__bottom">
+                2015-2021 © Отель-ресторан Стригино | Все права защищены
+              </div>
             </div>
           </div>
         </div>

@@ -128,11 +128,17 @@
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
   .navigation {
+    &_pd {
+      padding-bottom: 70px;
+    }
 
     &__carousel {
       grid-template-columns: 100%;
 
-      &-inner {}
+      &-inner {
+        width: 100%;
+        padding-bottom: 0;
+      }
 
 
       &-control {
@@ -155,10 +161,22 @@
     &__item {
       height: 100%;
       grid-template-columns: 100%;
+      justify-items: center;
+      position: static;
+    }
+
+    &__wrapper {
+      position: relative;
     }
 
     &__info {
-      padding: 15px 10px;
+      text-align: center;
+      padding: 35px 10px;
+    }
+
+    &__price {
+      top: calc(100% - 192px - 63px);
+      left: calc(50% - 109px);
     }
   }
 

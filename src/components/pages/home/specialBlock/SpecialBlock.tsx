@@ -1,5 +1,6 @@
 import SwipeToSlide from '../../../common/slider/SwipeToSlide';
 import { BlockTitle } from '../../../common/title/BlockTitle';
+import SpecialCard from './specialCard/SpecialCard';
 import './specialBlock.scss';
 
 const title = {
@@ -12,7 +13,8 @@ const title = {
 const arrayShares = [
   {
     img: 'https://cf.bstatic.com/images/hotel/max600/607/60716065.jpg',
-    title: 'ljbdfbdfkbh',
+    title: 'Зимний weekend',
+    desc: 'Специальное предложение на зимние выходные',
   },
   {
     img: 'https://cf.bstatic.com/images/hotel/max600/940/94036158.jpg',
@@ -37,13 +39,22 @@ const arrayShares = [
 ];
 
 const SpecialBlock = () => {
+  const widthWindow = window.screen.width;
+
+  const content =
+    widthWindow < 1199.98 ? (
+      <SpecialCard items={arrayShares} />
+    ) : (
+      <div className="special-block__slider">
+        <SwipeToSlide data={arrayShares} />
+      </div>
+    );
+
   return (
     <div className="special-block special-block_pd">
       <div className="container">
         <BlockTitle data={title} />
-        <div className="special-block__slider">
-          <SwipeToSlide data={arrayShares} />
-        </div>
+        {content}
         <div className="special-block__button">
           <div className="button button_text-white button_center">
             Смотреть все

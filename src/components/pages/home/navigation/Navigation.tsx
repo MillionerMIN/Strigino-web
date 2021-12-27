@@ -33,23 +33,27 @@ const Navigation = () => {
   const carouselItem = arrayItems.map((item, index) => (
     <Carousel.Item key={index}>
       <div className="navigation__item">
-        <img className="navigation__image" src={item.src} alt="First slide" />
+        <div className="navigation__wrapper">
+          <img className="navigation__image" src={item.src} alt="First slide" />
+        </div>
+        <div className="price price_leftBottom navigation__price">
+          от <span className="value text_fs26">2500</span>{' '}
+          <span className="currency text_fs26">RUB</span>
+        </div>
         <Carousel.Caption bsPrefix="navigation__info">
-          <h3 className="title title_fs28">Комфортабельные номера</h3>
+          <h3 className="title title_fs28 title_custom">
+            Комфортабельные номера
+          </h3>
           <p className="text text_fs15 text_color">
             Номерной фонд гостиницы включает 67 просторных и роскошных номеров.
           </p>
           <NavLink
             to={item.to}
             title={item.title}
-            className="button button_start button_hover link_color"
+            className="button button_center button_hover link_color"
           >
             {item.title}
           </NavLink>
-          <div className={'price price_leftBottom'}>
-            от <span className="value text_fs26">2500</span>{' '}
-            <span className="currency text_fs26">RUB</span>
-          </div>
         </Carousel.Caption>
       </div>
     </Carousel.Item>
@@ -59,7 +63,7 @@ const Navigation = () => {
     <div className="navigation navigation_pd">
       <div className="container">
         <Carousel
-          interval={20000}
+          // interval={20000}
           nextIcon={nextIcon}
           prevIcon={prevIcon}
           bsPrefix="navigation__carousel"

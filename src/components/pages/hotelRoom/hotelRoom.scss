@@ -21,3 +21,12 @@
     grid-template-columns: 2fr 1fr;
   }
 }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  .rooms {
+    &_pd {
+      padding: 0 0 40px 0;
+    }
+  }
+}

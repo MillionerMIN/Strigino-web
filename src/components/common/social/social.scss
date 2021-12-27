@@ -39,3 +39,19 @@
     }
   }
 }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+  .social {
+
+    justify-self: center;
+
+    &__link {
+
+      &-fs25 {
+        font-size: 2.55rem;
+        color: $px-yellow;
+      }
+    }
+  }
+}

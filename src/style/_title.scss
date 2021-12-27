@@ -49,7 +49,10 @@
 
   &_uppercase {
     text-transform: uppercase;
+    font-weight: 700;
   }
+
+  &_custom {}
 
 }
 
@@ -57,7 +60,7 @@
 @media (max-width: 1199.98px) {
   .title {
     &_fs28 {
-      font-size: 1.125px;
+      font-size: 1.125rem;
     }
 
     &_fs36 {
@@ -70,6 +73,10 @@
 
     &_pd {
       padding: 10px 20px;
+    }
+
+    &_custom {
+      font-size: 1.375rem;
     }
   }
 
