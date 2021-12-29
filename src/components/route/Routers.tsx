@@ -1,9 +1,9 @@
 import { Routes, Route } from 'react-router-dom';
-import PageError from '../pages/pageError/pageError';
 import { About } from '../pages/about/About';
 import ConferenceFacilities from '../pages/conference-facilities/ConferenceFacilities';
 import { Home } from '../pages/home/Home';
 import { HotelRoom } from '../pages/hotelRoom/HotelRoom';
+import PageError from '../pages/pageError/PageError';
 import Restaurant from '../pages/restaurant/Restaurant';
 import './routers.scss';
 
@@ -23,7 +23,7 @@ export const Routers = () => {
       {/*Routes выбирает первый подходящий роут*/}
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path={PATH.NOT_FOUND} element={<PageError />} />
+        <Route path="*" element={<PageError />} />
         <Route path={PATH.ABOUT} element={<About />} />
         <Route path={PATH.RESTAURANT} element={<Restaurant />} />
         <Route path={PATH.ROOMS} element={<HotelRoom />} />

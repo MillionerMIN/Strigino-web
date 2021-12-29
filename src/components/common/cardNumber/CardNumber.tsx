@@ -9,7 +9,7 @@ type CardNumberType = {
 };
 
 export const CardNumber = (props: CardNumberType) => {
-  const { index } = props;
+  // const { index } = props;
   const { title, desc, url, cost } = props.data;
 
   const description = desc.slice(0, 100);
