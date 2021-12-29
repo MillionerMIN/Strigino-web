@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/Strigino-web/static/css/main.aa4b1c6c.chunk.css",
-    "main.js": "/Strigino-web/static/js/main.b53fa461.chunk.js",
-    "main.js.map": "/Strigino-web/static/js/main.b53fa461.chunk.js.map",
+    "main.css": "/Strigino-web/static/css/main.3955a8bc.chunk.css",
+    "main.js": "/Strigino-web/static/js/main.5f19e51d.chunk.js",
+    "main.js.map": "/Strigino-web/static/js/main.5f19e51d.chunk.js.map",
     "runtime-main.js": "/Strigino-web/static/js/runtime-main.102e01a7.js",
     "runtime-main.js.map": "/Strigino-web/static/js/runtime-main.102e01a7.js.map",
     "static/css/2.fa42bc69.chunk.css": "/Strigino-web/static/css/2.fa42bc69.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.40db748c.chunk.js.map": "/Strigino-web/static/js/2.40db748c.chunk.js.map",
     "index.html": "/Strigino-web/index.html",
     "static/css/2.fa42bc69.chunk.css.map": "/Strigino-web/static/css/2.fa42bc69.chunk.css.map",
-    "static/css/main.aa4b1c6c.chunk.css.map": "/Strigino-web/static/css/main.aa4b1c6c.chunk.css.map",
+    "static/css/main.3955a8bc.chunk.css.map": "/Strigino-web/static/css/main.3955a8bc.chunk.css.map",
     "static/js/2.40db748c.chunk.js.LICENSE.txt": "/Strigino-web/static/js/2.40db748c.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/Strigino-web/static/media/PlayfairDisplay-VariableFont_wght.54971b72.ttf",
     "static/media/_arrows.scss": "/Strigino-web/static/media/arrows.dab4c4dc.ttf",
@@ -24,7 +24,7 @@
     "static/js/runtime-main.102e01a7.js",
     "static/css/2.fa42bc69.chunk.css",
     "static/js/2.40db748c.chunk.js",
-    "static/css/main.aa4b1c6c.chunk.css",
-    "static/js/main.b53fa461.chunk.js"
+    "static/css/main.3955a8bc.chunk.css",
+    "static/js/main.5f19e51d.chunk.js"
   ]
 }
