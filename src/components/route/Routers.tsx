@@ -1,14 +1,14 @@
-import { lazy, Suspense } from 'react';
+import React, { Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Home } from '../pages/home/Home';
 
-const About = lazy(() => import('../pages/about/About'));
-const Restaurant = lazy(() => import('../pages/restaurant/Restaurant'));
-const HotelRoom = lazy(() => import('../pages/hotelRoom/HotelRoom'));
-const ConferenceFacilities = lazy(
+const About = React.lazy(() => import('../pages/about/About'));
+const Restaurant = React.lazy(() => import('../pages/restaurant/Restaurant'));
+const HotelRoom = React.lazy(() => import('../pages/hotelRoom/HotelRoom'));
+const ConferenceFacilities = React.lazy(
   () => import('../pages/conference-facilities/ConferenceFacilities')
 );
-const PageError = lazy(() => import('../pages/pageError/PageError'));
+const PageError = React.lazy(() => import('../pages/pageError/PageError'));
 
 export const PATH = {
   HOME: '/home',
