@@ -3,6 +3,7 @@ import './header.scss';
 import { Social, SocialType } from '../common/social/Social';
 import { NavLink } from 'react-router-dom';
 import Logo from '../../icons/logo/logo-g.svg';
+import MobHeader from './MobHeader';
 
 type HeaderPropsType = {
   socials: SocialType[];
@@ -23,7 +24,11 @@ export const Header = (props: HeaderPropsType) => {
 
   const menuLeft = menusLeft.map((item, i) => (
     <li className="block__item" key={i}>
-      <NavLink className="block__link title_fs15" to={item.ref}>
+      <NavLink
+        className="block__link title_fs15"
+        to={item.ref}
+        onClick={handleClick}
+      >
         {item.value}
       </NavLink>
     </li>
@@ -36,7 +41,11 @@ export const Header = (props: HeaderPropsType) => {
 
   const menuRight = menusRight.map((item, i) => (
     <li className="block__item" key={i}>
-      <NavLink className="block__link title_fs15" to={item.ref}>
+      <NavLink
+        className="block__link title_fs15"
+        to={item.ref}
+        onClick={handleClick}
+      >
         {item.value}
       </NavLink>
     </li>
@@ -58,6 +67,8 @@ export const Header = (props: HeaderPropsType) => {
           </div>
         </button>
       </div>
+      {/* {MOB-HEADER} */}
+      <MobHeader />
       {/* HEADER */}
       <header className={clazz}>
         <div className="header__social">

@@ -1,0 +1,36 @@
+@import '../../style/variable';
+
+.mobHeader {
+  min-width: 100%;
+  min-height: 60px;
+  background: $px-main;
+  z-index: 10;
+
+  &_position {
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    position: relative;
+  }
+
+  &__logo {
+    position: absolute;
+    max-width: 100px;
+    top: 0;
+    margin: auto;
+    display: block;
+    background: #4e1720;
+    padding: 7px;
+    border-radius: 100%;
+  }
+
+  &__img {
+    max-width: 100%;
+  }
+}
