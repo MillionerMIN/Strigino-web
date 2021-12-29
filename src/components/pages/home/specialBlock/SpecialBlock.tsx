@@ -1,8 +1,8 @@
 import SwipeToSlide from '../../../common/slider/SwipeToSlide';
 import { BlockTitle } from '../../../common/title/BlockTitle';
-import spat1 from '../../../../img/home/specialBlock1.jpg';
-import spat2 from '../../../../img/home/specialBlock2.jpg';
-import spat3 from '../../../../img/home/specialBlock3.jpg';
+import spat1 from '../../../../img/home/specialBlock1.avif';
+import spat2 from '../../../../img/home/specialBlock2.avif';
+import spat3 from '../../../../img/home/specialBlock3.avif';
 import SpecialCard from './specialCard/SpecialCard';
 import './specialBlock.scss';
 

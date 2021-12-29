@@ -1,7 +1,7 @@
 import { Carousel } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
-import navig1 from '../../../../img/home/navigation-1.jpg';
-import navig2 from '../../../../img/home/navigation-2.jpg';
+import navig1 from '../../../../img/home/navigation-1.avif';
+import navig2 from '../../../../img/home/navigation-2.avif';
 import './navigation.scss';
 import '../../../../style/_arrows.scss';
 
