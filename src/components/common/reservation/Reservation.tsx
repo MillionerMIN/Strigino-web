@@ -7,7 +7,7 @@ export const Reservation = () => {
       <div className="container">
         <NavLink to={'#'}>
           <span className="icon"></span>
-          <span className="lable">Забранировать</span>
+          <span className="lable">Забронировать</span>
         </NavLink>
       </div>
     </div>
