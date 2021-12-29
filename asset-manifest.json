@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Strigino-web/static/css/main.177a610c.chunk.css",
-    "main.js": "/Strigino-web/static/js/main.0ea0f50e.chunk.js",
-    "main.js.map": "/Strigino-web/static/js/main.0ea0f50e.chunk.js.map",
+    "main.js": "/Strigino-web/static/js/main.1ff2c4ae.chunk.js",
+    "main.js.map": "/Strigino-web/static/js/main.1ff2c4ae.chunk.js.map",
     "runtime-main.js": "/Strigino-web/static/js/runtime-main.7a352d4a.js",
     "runtime-main.js.map": "/Strigino-web/static/js/runtime-main.7a352d4a.js.map",
     "static/css/2.fa42bc69.chunk.css": "/Strigino-web/static/css/2.fa42bc69.chunk.css",
@@ -64,6 +64,6 @@
     "static/css/2.fa42bc69.chunk.css",
     "static/js/2.6f827eab.chunk.js",
     "static/css/main.177a610c.chunk.css",
-    "static/js/main.0ea0f50e.chunk.js"
+    "static/js/main.1ff2c4ae.chunk.js"
   ]
 }
