@@ -1,4 +1,5 @@
-import Logo from '../../icons/logo/logo.svg';
+import { NavLink } from 'react-router-dom';
+import Logo from '../../icons/logo/logo.png';
 
 import './mobHeader.scss';
 
@@ -8,11 +9,13 @@ const MobHeader = () => {
       <div className="mobHeader__wrapper">
         <div className="mobHeader__left"></div>
         <div className="mobHeader__logo">
-          <img
-            className="mobHeader__img"
-            src={Logo}
-            alt="Гостинично - Ресторанный комплекс 'Стригино'"
-          />
+          <NavLink to="/">
+            <img
+              className="mobHeader__img"
+              src={Logo}
+              alt="Гостинично - Ресторанный комплекс 'Стригино'"
+            />
+          </NavLink>
         </div>
         <div className="mobHeader__right"></div>
       </div>

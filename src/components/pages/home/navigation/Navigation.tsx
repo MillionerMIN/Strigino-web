@@ -38,7 +38,7 @@ const Navigation = () => {
         <div className="navigation__wrapper">
           <img className="navigation__image" src={item.src} alt="First slide" />
         </div>
-        <div className="price price_leftBottom navigation__price">
+        <div className="navigation__price">
           от <span className="value text_fs26">2500</span>{' '}
           <span className="currency text_fs26">RUB</span>
         </div>

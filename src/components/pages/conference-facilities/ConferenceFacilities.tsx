@@ -20,7 +20,7 @@ const roomsService = [
   {
     title: '«Конферент-зал»',
     desc: 'Зал переговоров позволяет с максимальным комфортом организовать и провести мероприятия любого формата.',
-    url: 'http://hotelstrigino.ru/assets/gallery/8/89.jpg',
+    url: comfroom,
     cost: 3300,
   },
 ];
