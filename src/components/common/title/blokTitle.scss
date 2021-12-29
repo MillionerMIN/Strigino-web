@@ -66,3 +66,12 @@
     max-width: 100%;
   }
 }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+
+  .block-description {
+    font-size: 14px;
+  }
+
+}

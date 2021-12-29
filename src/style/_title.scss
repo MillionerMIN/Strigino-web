@@ -81,3 +81,17 @@
   }
 
 }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .title {
+
+    &_fs36 {
+      font-size: 1.315rem;
+    }
+
+    &_fs50 {
+      font-size: 1.315rem;
+    }
+  }
+}

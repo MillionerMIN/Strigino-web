@@ -18,7 +18,7 @@ export const HeadingBlock = (props: HeadingBlockType) => {
         <div className="heading-wrapper">
           <div className="container">
             <div className="heading">
-              <h1 className="title title_fs50 title_background title_pd t">
+              <h1 className="title title_fs50 title_background title_pd">
                 {title}
               </h1>
             </div>
