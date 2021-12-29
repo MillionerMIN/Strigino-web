@@ -2,6 +2,7 @@ import { CardNumber } from '../../common/cardNumber/CardNumber';
 import { HeadingBlock } from '../../common/heading-block/HeadingBlock';
 import { Reservation } from '../../common/reservation/Reservation';
 import { BlockTitle } from '../../common/title/BlockTitle';
+import comfroom from '../../../img/conference-facilities/conference-facilities.jpg';
 import './conferenceFacilities.scss';
 
 const title = {
@@ -12,7 +13,7 @@ const title = {
 
 const heading = {
   title: 'Конференц-услуги',
-  photo: 'https://zaly.kiev.ua/pictures/1145.jpg',
+  photo: comfroom,
 };
 
 const roomsService = [

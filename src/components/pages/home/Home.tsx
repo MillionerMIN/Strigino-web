@@ -3,9 +3,9 @@ import { Reservation } from '../../common/reservation/Reservation';
 import { BlockTitle } from '../../common/title/BlockTitle';
 import { CustomMap } from '../../customMap/CustomMap';
 import Navigation from './navigation/Navigation';
+import SpecialBlock from './specialBlock/SpecialBlock';
 
 import './home.scss';
-import SpecialBlock from './specialBlock/SpecialBlock';
 
 const title = {
   title: 'ЧТО МЫ ВАМ ПРЕДЛАГАЕМ',

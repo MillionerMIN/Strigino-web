@@ -1,16 +1,18 @@
 import { Carousel } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom';
+import navig1 from '../../../../img/home/navigation-1.jpg';
+import navig2 from '../../../../img/home/navigation-2.jpg';
 import './navigation.scss';
 import '../../../../style/_arrows.scss';
 
 const arrayItems = [
   {
-    src: 'https://cf.bstatic.com/images/hotel/max600/112/112501370.jpg',
+    src: navig1,
     title: 'Забронировать',
     to: '#',
   },
   {
-    src: 'https://cf.bstatic.com/images/hotel/max600/940/94036155.jpg',
+    src: navig2,
     title: 'Читать больше',
     to: '#',
   },
@@ -63,7 +65,8 @@ const Navigation = () => {
     <div className="navigation navigation_pd">
       <div className="container">
         <Carousel
-          // interval={20000}
+          slide={true}
+          interval={10000}
           nextIcon={nextIcon}
           prevIcon={prevIcon}
           bsPrefix="navigation__carousel"

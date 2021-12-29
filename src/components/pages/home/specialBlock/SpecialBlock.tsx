@@ -1,5 +1,8 @@
 import SwipeToSlide from '../../../common/slider/SwipeToSlide';
 import { BlockTitle } from '../../../common/title/BlockTitle';
+import spat1 from '../../../../img/home/specialBlock1.jpg';
+import spat2 from '../../../../img/home/specialBlock2.jpg';
+import spat3 from '../../../../img/home/specialBlock3.jpg';
 import SpecialCard from './specialCard/SpecialCard';
 import './specialBlock.scss';
 
@@ -12,28 +15,28 @@ const title = {
 
 const arrayShares = [
   {
-    img: 'https://cf.bstatic.com/images/hotel/max600/607/60716065.jpg',
+    img: spat1,
     title: 'Зимний weekend',
     desc: 'Специальное предложение на зимние выходные',
   },
   {
-    img: 'https://cf.bstatic.com/images/hotel/max600/940/94036158.jpg',
+    img: spat2,
     title: 'ljbdfbdfkbh',
   },
   {
-    img: 'http://hotelstrigino.ru/assets/cache_image/assets/gallery/4/86_398x275_70a.jpg',
+    img: spat3,
     title: 'ljbdfbdfkbh',
   },
   {
-    img: 'https://cf.bstatic.com/images/hotel/max600/607/60716065.jpg',
+    img: spat1,
     title: 'ljbdfbdfkbh',
   },
   {
-    img: 'https://cf.bstatic.com/images/hotel/max600/607/60716065.jpg',
+    img: spat2,
     title: 'ljbdfbdfkbh',
   },
   {
-    img: 'https://cf.bstatic.com/images/hotel/max600/607/60716065.jpg',
+    img: spat3,
     title: 'ljbdfbdfkbh',
   },
 ];
