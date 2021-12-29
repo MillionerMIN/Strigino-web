@@ -1,4 +1,4 @@
-import Logo from '../../icons/logo/logo-strigino.svg';
+import Logo from '../../icons/logo/logo.svg';
 
 import './mobHeader.scss';
 

@@ -245,3 +245,38 @@
     top: 360px;
   }
 }
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+
+  .cardNumber {
+    &__photo {
+      height: 200px;
+    }
+  }
+
+  .info {
+
+
+    &__title {
+      font-size: 20px;
+    }
+  }
+
+  .price {
+    width: 160px;
+    min-width: auto;
+    left: 0 !important;
+    right: 0 !important;
+    padding: 7px 0 13px;
+    margin: auto;
+    line-height: 1;
+    top: 180px;
+    font-size: 12px;
+
+    &__value {
+      font-size: 20px;
+      font-weight: 900;
+    }
+  }
+}

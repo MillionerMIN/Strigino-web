@@ -191,4 +191,15 @@
 }
 
 // X-Small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {}
+@media (max-width: 575.98px) {
+
+  .navigation {
+    &__price {
+      top: calc(100% - 192px - 53px);
+      left: calc(50% - 90px);
+      width: 160px;
+      padding: 8px 10px 6px 10px;
+      font-size: 12px;
+    }
+  }
+}

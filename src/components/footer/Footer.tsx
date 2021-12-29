@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { Social, SocialType } from '../common/social/Social';
-import Logo from '../../img/logo/strigino-w-rus.svg';
+import Logo from '../../icons/logo/logo-strigino.svg';
 
 import './footer.scss';
 
@@ -46,9 +46,9 @@ export const Footer = (props: FooterPropsType) => {
                 ----------, Дата регистрации в торговом реестре ----------:
                 06.07.2008 г.
               </p>
-              <div className="footer__bottom">
-                2015-2021 © Отель-ресторан Стригино | Все права защищены
-              </div>
+            </div>
+            <div className="footer__bottom">
+              2015-2021 © Отель-ресторан Стригино | Все права защищены
             </div>
           </div>
         </div>

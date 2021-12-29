@@ -42,3 +42,12 @@
     }
   }
 }
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .text {
+    &_fs26 {
+      font-size: 1.33rem;
+    }
+  }
+}
