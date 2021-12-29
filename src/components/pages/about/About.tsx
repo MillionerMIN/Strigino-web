@@ -15,7 +15,7 @@ const heading = {
   photo: 'http://hotelstrigino.ru/images/info/vchod.JPG',
 };
 
-export const About = () => {
+const About = () => {
   return (
     <div className="about about_pd">
       <HeadingBlock data={heading} />
@@ -103,3 +103,5 @@ export const About = () => {
     </div>
   );
 };
+
+export default About;

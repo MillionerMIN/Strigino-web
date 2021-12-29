@@ -62,7 +62,7 @@ const roomsHotel = [
   },
 ];
 
-export const HotelRoom = () => {
+const HotelRoom = () => {
   const rooms = roomsHotel.map((item, i) => (
     <CardNumber key={i} data={item} index={i} />
   ));
@@ -78,3 +78,5 @@ export const HotelRoom = () => {
     </>
   );
 };
+
+export default HotelRoom;
