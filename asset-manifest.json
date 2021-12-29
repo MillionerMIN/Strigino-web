@@ -1,30 +1,31 @@
 {
   "files": {
-    "main.css": "/Strigino-web/static/css/main.5bf713b8.chunk.css",
-    "main.js": "/Strigino-web/static/js/main.d1619e95.chunk.js",
-    "main.js.map": "/Strigino-web/static/js/main.d1619e95.chunk.js.map",
+    "main.css": "/Strigino-web/static/css/main.505d07b4.chunk.css",
+    "main.js": "/Strigino-web/static/js/main.ecea4262.chunk.js",
+    "main.js.map": "/Strigino-web/static/js/main.ecea4262.chunk.js.map",
     "runtime-main.js": "/Strigino-web/static/js/runtime-main.102e01a7.js",
     "runtime-main.js.map": "/Strigino-web/static/js/runtime-main.102e01a7.js.map",
     "static/css/2.fa42bc69.chunk.css": "/Strigino-web/static/css/2.fa42bc69.chunk.css",
-    "static/js/2.b838642d.chunk.js": "/Strigino-web/static/js/2.b838642d.chunk.js",
-    "static/js/2.b838642d.chunk.js.map": "/Strigino-web/static/js/2.b838642d.chunk.js.map",
+    "static/js/2.40db748c.chunk.js": "/Strigino-web/static/js/2.40db748c.chunk.js",
+    "static/js/2.40db748c.chunk.js.map": "/Strigino-web/static/js/2.40db748c.chunk.js.map",
     "index.html": "/Strigino-web/index.html",
     "static/css/2.fa42bc69.chunk.css.map": "/Strigino-web/static/css/2.fa42bc69.chunk.css.map",
-    "static/css/main.5bf713b8.chunk.css.map": "/Strigino-web/static/css/main.5bf713b8.chunk.css.map",
-    "static/js/2.b838642d.chunk.js.LICENSE.txt": "/Strigino-web/static/js/2.b838642d.chunk.js.LICENSE.txt",
+    "static/css/main.505d07b4.chunk.css.map": "/Strigino-web/static/css/main.505d07b4.chunk.css.map",
+    "static/js/2.40db748c.chunk.js.LICENSE.txt": "/Strigino-web/static/js/2.40db748c.chunk.js.LICENSE.txt",
     "static/media/index.scss": "/Strigino-web/static/media/PlayfairDisplay-VariableFont_wght.54971b72.ttf",
     "static/media/_arrows.scss": "/Strigino-web/static/media/arrows.dab4c4dc.ttf",
     "static/media/_iconsfont.scss": "/Strigino-web/static/media/icons.f16b8097.ttf",
     "static/media/cardNumber.scss": "/Strigino-web/static/media/kisspng-pattern.038d7a4a.png",
     "static/media/logo-g.6165a90e.svg": "/Strigino-web/static/media/logo-g.6165a90e.svg",
+    "static/media/logo-strigino.f5752013.svg": "/Strigino-web/static/media/logo-strigino.f5752013.svg",
     "static/media/slick-theme.css": "/Strigino-web/static/media/slick.c94f7671.ttf",
     "static/media/strigino-w-rus.a9854b87.svg": "/Strigino-web/static/media/strigino-w-rus.a9854b87.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.102e01a7.js",
     "static/css/2.fa42bc69.chunk.css",
-    "static/js/2.b838642d.chunk.js",
-    "static/css/main.5bf713b8.chunk.css",
-    "static/js/main.d1619e95.chunk.js"
+    "static/js/2.40db748c.chunk.js",
+    "static/css/main.505d07b4.chunk.css",
+    "static/js/main.ecea4262.chunk.js"
   ]
 }
