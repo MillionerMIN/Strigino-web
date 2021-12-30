@@ -1,2 +1,0 @@
-(this["webpackJsonpstrigino-web"]=this["webpackJsonpstrigino-web"]||[]).push([[7],{80:function(t,n,i){},85:function(t,n,i){"use strict";i.r(n);var s=i.p+"static/media/not-found.ecc6f277.png",c=(i(80),i(1));n.default=function(){return Object(c.jsx)("div",{className:"pageError",children:Object(c.jsx)("img",{src:s,alt:"NodFound"})})}}}]);
-//# sourceMappingURL=7.2f170e24.chunk.js.map
