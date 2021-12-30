@@ -3,13 +3,18 @@ import Logo from '../../icons/logo/logo.png';
 
 import './mobHeader.scss';
 
-const MobHeader = () => {
+type MobHeaderType = {
+  click: () => void;
+};
+
+const MobHeader = (props: MobHeaderType) => {
+  const { click } = props;
   return (
     <div className="mobHeader mobHeader_position">
       <div className="mobHeader__wrapper">
         <div className="mobHeader__left"></div>
         <div className="mobHeader__logo">
-          <NavLink to="/">
+          <NavLink to="/" onClick={click}>
             <img
               className="mobHeader__img"
               src={Logo}

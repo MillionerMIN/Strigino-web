@@ -16,7 +16,7 @@ export const CustomMap = () => {
           modules={['control.ZoomControl', 'control.FullscreenControl']}
         >
           <Placemark
-            defaultGeometry={[56.19559973943425, 43.77523846336301]}
+            defaultGeometry={[56.195599, 43.7752384]}
             modules={['geoObject.addon.balloon', 'geoObject.addon.hint']}
           />
           <GeolocationControl

@@ -10,6 +10,7 @@ const HotelRoom = React.lazy(() => import('../pages/hotelRoom/HotelRoom'));
 const ConferenceFacilities = React.lazy(
   () => import('../pages/conference-facilities/ConferenceFacilities')
 );
+const Contacts = React.lazy(() => import('../pages/contacts/Contacts'));
 const PageError = React.lazy(() => import('../pages/pageError/PageError'));
 
 export const PATH = {
@@ -18,7 +19,8 @@ export const PATH = {
   ABOUT: '/about',
   RESTAURANT: '/restaurant',
   ROOMS: '/rooms',
-  CONF: '/conference-facilities',
+  CONFERENCE: '/conference-facilities',
+  CONTACTS: '/contacts',
 };
 
 export const Routers = () => {
@@ -32,7 +34,8 @@ export const Routers = () => {
           <Route path={PATH.ABOUT} element={<About />} />
           <Route path={PATH.RESTAURANT} element={<Restaurant />} />
           <Route path={PATH.ROOMS} element={<HotelRoom />} />
-          <Route path={PATH.CONF} element={<ConferenceFacilities />} />
+          <Route path={PATH.CONFERENCE} element={<ConferenceFacilities />} />
+          <Route path={PATH.CONTACTS} element={<Contacts />} />
         </Routes>
       </Suspense>
     </main>

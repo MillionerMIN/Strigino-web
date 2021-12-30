@@ -36,7 +36,7 @@ export const Header = (props: HeaderPropsType) => {
   const menusRight = [
     { value: 'номера', ref: '/rooms' },
     { value: 'конференц-услуги', ref: '/conference-facilities' },
-    { value: 'контакты', ref: '/contact' },
+    { value: 'контакты', ref: '/contacts' },
   ];
 
   const menuRight = menusRight.map((item, i) => (
@@ -68,7 +68,7 @@ export const Header = (props: HeaderPropsType) => {
         </button>
       </div>
       {/* {MOB-HEADER} */}
-      <MobHeader />
+      <MobHeader click={handleClick} />
       {/* HEADER */}
       <header className={clazz}>
         <div className="header__social">
