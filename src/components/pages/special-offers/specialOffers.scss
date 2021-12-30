@@ -1,0 +1,122 @@
+.special-offers {
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+
+  &__image {
+    max-height: 350px;
+    position: relative;
+    object-fit: cover;
+
+    img {
+      width: 100%;
+
+    }
+
+    &::before {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      content: "";
+      width: 100%;
+      height: 100%;
+      background: rgba(206, 167, 111, 0);
+      transition: all 0.3s linear;
+    }
+
+    &__more {
+      position: absolute;
+      left: 0;
+      top: 0;
+
+      &::before {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 400px;
+        height: 400px;
+        content: "";
+        background: #cea76f;
+        transform: translateX(-125%) rotate(45deg);
+        transition: 1s;
+      }
+
+      &::after {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 400px;
+        height: 400px;
+        content: "";
+        background: #cea76f;
+        transform: translateX(170%) rotate(45deg);
+        transition: 1s;
+      }
+    }
+
+    &__btn {
+      position: absolute;
+      width: 200px;
+      height: 50px;
+      top: 194px;
+      left: 208px;
+      opacity: 0;
+      transition: 0.5s ease-in-out;
+    }
+
+    &__info {
+      padding: 35px 20px 20px 20px;
+      position: relative;
+      background: #fff;
+
+      &_wrapper {
+        border: 2px solid #cea76f;
+        padding: 35px;
+        text-align: center;
+
+        &::before {
+          margin: auto;
+          width: 0;
+          height: 0;
+          border-left: 50px solid transparent;
+          border-right: 50px solid transparent;
+          border-bottom: 100px solid #cea76f;
+        }
+      }
+
+      &_descr {
+        margin: 0 auto;
+        font-size: 15px;
+        color: #4e1720;
+        line-height: 22px;
+        max-width: 340px;
+      }
+    }
+  }
+}
+
+// .special-offers__image:hover .special-offers__more::before {
+//   transform: translateX(92%) rotate(45deg) scale(2);
+//   transition: 0.5s;
+//   opacity: 0.4;
+// }
+
+// .special-offers__image:hover .special-offers__btn {
+//   opacity: 1;
+//   z-index: 3;
+// }
+
+// .cardNumber__image:hover .cardNumber__more::after {
+//   transform: translateX(-44%) rotate(45deg) scale(2);
+//   transition: 0.5s;
+//   opacity: 0.4;
+// }
+
+// .special-offers:hover {
+//   background-color: #ffffff;
+//   transition: all 0.3s linear;
+//   color: #cea76f;
+// }
