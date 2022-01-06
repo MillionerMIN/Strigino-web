@@ -1,7 +1,25 @@
+@import './_variable';
+
 //Transition
 @mixin transition($transition) {
   -moz-transition: $transition;
   -o-transition: $transition;
   -webkit-transition: $transition;
   transition: $transition;
+}
+
+@mixin delimiter {
+  &_mr10 {
+    margin: 10px auto;
+  }
+
+  &::before {
+    display: inline-block;
+    content: '';
+    width: 70%;
+    height: 5px;
+    background: $px-yellow;
+    clip-path: polygon(0 50%, 50% 100%, 100% 50%, 50% 0);
+    margin: 5px;
+  }
 }

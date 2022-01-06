@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import { HeadingBlock } from '../../common/heading-block/HeadingBlock';
 import { Reservation } from '../../common/reservation/Reservation';
 import { BlockTitle } from '../../common/title/BlockTitle';
@@ -45,8 +46,8 @@ const offers = [
 
 const SpecialOffers = () => {
   const itemsOffer = offers.map((item, i) => (
-    <div className="special-offetrs__item" key={i}>
-      <a href="" className="special-offers__link">
+    <div className="special-offers__item" key={i}>
+      <NavLink to="#" className="special-offers__link">
         <div className="special-offers__image">
           <img src={item.img} alt={item.title} />
           <div className="special-offers__more">
@@ -57,16 +58,16 @@ const SpecialOffers = () => {
         </div>
         <div className="special-offers__info">
           <div className="special-offers__info_wrapper">
-            <div className="title title_fs28">{item.title}</div>
-            <div className="delimiter delimiter_mr10"></div>
+            <div className="title title_fs28 title_uppercase">{item.title}</div>
+            <div className="delimiter"></div>
             <div className="special-offers__info_descr">{item.description}</div>
           </div>
         </div>
-      </a>
+      </NavLink>
     </div>
   ));
   return (
-    <div className="special-offers">
+    <div className="special-offers special-offers_pd">
       <HeadingBlock data={heading} />
       <Reservation />
       <BlockTitle data={title} />
