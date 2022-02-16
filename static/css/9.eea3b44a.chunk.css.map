@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/pages/pageError/pageError.scss"],"names":[],"mappings":"AAAA,WACE,UAAA,CACA,aAAA,CACA,gBAAA,CAGF,IACE,UAAA","file":"9.eea3b44a.chunk.css","sourcesContent":[".pageError {\n  width: 100%;\n  margin: 0 auto;\n  object-fit: cover;\n}\n\nimg {\n  width: 100%;\n}"]}
