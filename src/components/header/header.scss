@@ -216,6 +216,34 @@
     display: block;
   }
 
+  .header {
+    max-width: 342px;
+    height: 100%;
+    background: rgba(78, 23, 32, 0.88);
+    @include transition(ease all 0.35s);
+    transform: translateX(-100%);
+    z-index: 9;
+
+    &__menu {
+      background: none;
+    }
+
+    &_position {
+      position: fixed;
+      left: 0;
+      top: 0;
+      padding: 135px 0 135px 0;
+    }
+
+    &_open {
+      transform: translateX(0);
+    }
+
+    &__social {
+      display: none;
+    }
+  }
+
 
   .block {
     grid-template-columns: 1fr;
