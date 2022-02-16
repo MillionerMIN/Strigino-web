@@ -1,8 +1,8 @@
-import { HeadingBlock } from '../../common/heading-block/HeadingBlock';
-import { Reservation } from '../../common/reservation/Reservation';
-import { BlockTitle } from '../../common/title/BlockTitle';
-import { CustomMap } from '../../customMap/CustomMap';
-import h24 from '../../../icons/contacts/24h.svg';
+import { HeadingBlock } from '../../components/common/heading-block/HeadingBlock';
+import { Reservation } from '../../components/common/reservation/Reservation';
+import { BlockTitle } from '../../components/common/title/BlockTitle';
+import { CustomMap } from '../../components/customMap/CustomMap';
+import h24 from '../../assets/icons/contacts/24h.svg';
 
 import './contacts.scss';
 

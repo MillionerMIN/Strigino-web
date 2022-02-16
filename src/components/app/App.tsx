@@ -1,8 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../style/_iconsfont.scss';
+import '../../assets/style/_iconsfont.scss';
 import { Header } from '../header/Header';
 import { Footer } from '../footer/Footer';
-import { Routers } from '../route/Routers';
+import { Routers } from '../../route/Routers';
 import { HashRouter } from 'react-router-dom';
 
 const socials = [

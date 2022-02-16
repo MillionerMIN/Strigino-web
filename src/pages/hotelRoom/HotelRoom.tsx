@@ -1,13 +1,13 @@
-import { CardNumber } from '../../common/cardNumber/CardNumber';
-import { HeadingBlock } from '../../common/heading-block/HeadingBlock';
-import { Reservation } from '../../common/reservation/Reservation';
-import { BlockTitle } from '../../common/title/BlockTitle';
-import room1 from '../../../img/hotelRoom/Студио.jpg';
-import room2 from '../../../img/hotelRoom/Семейный.jpg';
-import room3 from '../../../img/hotelRoom/Бизнес.jpg';
-import room4 from '../../../img/hotelRoom/Свадебный.jpg';
-import room5 from '../../../img/hotelRoom/СтандартDOUBLE.jpg';
-import room6 from '../../../img/hotelRoom/СтандартTWIN.jpg';
+import { CardNumber } from '../../components/common/cardNumber/CardNumber';
+import { HeadingBlock } from '../../components/common/heading-block/HeadingBlock';
+import { Reservation } from '../../components/common/reservation/Reservation';
+import { BlockTitle } from '../../components/common/title/BlockTitle';
+import room1 from '../../assets/img/hotelRoom/Студио.jpg';
+import room2 from '../../assets/img/hotelRoom/Семейный.jpg';
+import room3 from '../../assets/img/hotelRoom/Бизнес.jpg';
+import room4 from '../../assets/img/hotelRoom/Свадебный.jpg';
+import room5 from '../../assets/img/hotelRoom/СтандартDOUBLE.jpg';
+import room6 from '../../assets/img/hotelRoom/СтандартTWIN.jpg';
 
 import './hotelRoom.scss';
 

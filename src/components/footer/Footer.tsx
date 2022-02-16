@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { Social, SocialType } from '../common/social/Social';
-import Logo from '../../icons/logo/logo-strigino.png';
+import Logo from '../../assets/icons/logo/logo-strigino.png';
 
 import './footer.scss';
 

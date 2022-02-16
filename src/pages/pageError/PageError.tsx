@@ -1,4 +1,4 @@
-import NodFound from '../../../img/not-found/not-found.png';
+import NodFound from '../../assets/img/not-found/not-found.png';
 import './pageError.scss';
 
 const PageError = () => {

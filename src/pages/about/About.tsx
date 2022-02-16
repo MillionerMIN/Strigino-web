@@ -1,6 +1,6 @@
-import { BlockTitle } from '../../common/title/BlockTitle';
-import { HeadingBlock } from '../../common/heading-block/HeadingBlock';
-import { Reservation } from '../../common/reservation/Reservation';
+import { BlockTitle } from '../../components/common/title/BlockTitle';
+import { HeadingBlock } from '../../components/common/heading-block/HeadingBlock';
+import { Reservation } from '../../components/common/reservation/Reservation';
 
 import './about.scss';
 

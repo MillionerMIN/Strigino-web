@@ -1,13 +1,13 @@
-import { CardNumber } from '../../common/cardNumber/CardNumber';
-import { HeadingBlock } from '../../common/heading-block/HeadingBlock';
-import { Reservation } from '../../common/reservation/Reservation';
-import { BlockTitle } from '../../common/title/BlockTitle';
-import Wedding from '../../../img/restaurant/wedding.jpg';
-import Anniversary from '../../../img/restaurant/anniversary.jpg';
-import OfficeParties from '../../../img/restaurant/office-parties.jpg';
-import Graduation from '../../../img/restaurant/graduation.jpg';
-import Birthday from '../../../img/restaurant/birthday.jpg';
-import SlideFourchette from '../../../img/restaurant/slide-fourchette.jpg';
+import { CardNumber } from '../../components/common/cardNumber/CardNumber';
+import { HeadingBlock } from '../../components/common/heading-block/HeadingBlock';
+import { Reservation } from '../../components/common/reservation/Reservation';
+import { BlockTitle } from '../../components/common/title/BlockTitle';
+import Wedding from '../../assets/img/restaurant/wedding.jpg';
+import Anniversary from '../../assets/img/restaurant/anniversary.jpg';
+import OfficeParties from '../../assets/img/restaurant/office-parties.jpg';
+import Graduation from '../../assets/img/restaurant/graduation.jpg';
+import Birthday from '../../assets/img/restaurant/birthday.jpg';
+import SlideFourchette from '../../assets/img/restaurant/slide-fourchette.jpg';
 import './restaurant.scss';
 
 const title = {

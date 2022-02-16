@@ -1,4 +1,4 @@
-@import '../../../style/_variable';
+@import '../../../assets/style/_variable';
 
 .cardNumber {
   background: $px-bg;
@@ -195,7 +195,7 @@
     &__grid {
       grid-template-columns: none;
       background-color: #fff;
-      background-image: url('../../../img/bg/kisspng-pattern.png');
+      background-image: url('../../../assets/img/bg/kisspng-pattern.png');
       background-repeat: round;
     }
 

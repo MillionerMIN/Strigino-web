@@ -1,8 +1,8 @@
-import { CardNumber } from '../../common/cardNumber/CardNumber';
-import { HeadingBlock } from '../../common/heading-block/HeadingBlock';
-import { Reservation } from '../../common/reservation/Reservation';
-import { BlockTitle } from '../../common/title/BlockTitle';
-import comfroom from '../../../img/conference-facilities/conference-facilities.jpg';
+import { CardNumber } from '../../components/common/cardNumber/CardNumber';
+import { HeadingBlock } from '../../components/common/heading-block/HeadingBlock';
+import { Reservation } from '../../components/common/reservation/Reservation';
+import { BlockTitle } from '../../components/common/title/BlockTitle';
+import comfroom from '../../assets/img/conference-facilities/conference-facilities.jpg';
 import './conferenceFacilities.scss';
 
 const title = {

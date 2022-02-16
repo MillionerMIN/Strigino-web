@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { RoomHotelType } from '../../pages/hotelRoom/HotelRoom';
+import { RoomHotelType } from '../../../pages/hotelRoom/HotelRoom';
 
 import './cardNumber.scss';
 

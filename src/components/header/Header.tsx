@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './header.scss';
 import { Social, SocialType } from '../common/social/Social';
 import { NavLink } from 'react-router-dom';
-import Logo from '../../icons/logo/logo.png';
+import Logo from '../../assets/icons/logo/logo.png';
 import MobHeader from './MobHeader';
 
 type HeaderPropsType = {

@@ -1,7 +1,7 @@
-import { Carousels } from '../../common/carousels/Carousels';
-import { Reservation } from '../../common/reservation/Reservation';
-import { BlockTitle } from '../../common/title/BlockTitle';
-import { CustomMap } from '../../customMap/CustomMap';
+import { Carousels } from '../../components/common/carousels/Carousels';
+import { Reservation } from '../../components/common/reservation/Reservation';
+import { BlockTitle } from '../../components/common/title/BlockTitle';
+import { CustomMap } from '../../components/customMap/CustomMap';
 import Navigation from './navigation/Navigation';
 import SpecialBlock from './specialBlock/SpecialBlock';
 
