@@ -7,10 +7,49 @@
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Web site created using create-react-app" />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon-32x32.png" />
+  <script type="text/javascript">
+    (function (k, o, t, e, l) {
+      l = document.createElement("script");
+      l.type = "text/javascript";
+      l.src = "https://bookonline24.ru/widget.js";
+      l.async = !0;
+      l.onload = l.onreadystatechange = function () {
+        e = this.readyState;
+        !o && (!e || e === "complete") && (o = 1) && k();
+      };
+      t = document.getElementsByTagName("script")[0];
+      t.parentNode.insertBefore(l, t);
+    })(function () {
+      HotelWidget.init({
+        id: "be8a583c-e783-41c6-a4fb-96aa39848fe9",
+        type: "horizontalBlock",
+        form: {
+          // Замените ID элемента для виджета здесь
+          container: "WidgetId",
+        }
+      }, "https://bookonline24.ru/");
+    });
+  </script>
+  <style>
+    .BookingControl_control {
+      padding: 0px;
+      border: none;
+    }
+
+    .react-ui-1ai6r11.react-ui-nj9s63 {
+      background: #cea76f
+    }
+  </style>
+
+
   <title>Strigino</title>
 </head>
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
   <div id="root"></div>
+  <!-- <script defer="defer">
+    let widgets = document.querySelector('.WidgetApp_container');
+    widgets.style.cssText = `max-width:800px; margin: 0 auto;`;
+  </script> -->
 </body>
 </html>

@@ -2,7 +2,7 @@ import { Carousel } from 'react-bootstrap';
 import './carousels.scss';
 
 type CarouselsPropsType = {
-  data: { url: string }[];
+  data: { url: string; alt: string }[];
 };
 
 export const Carousels = (props: CarouselsPropsType) => {
@@ -12,7 +12,7 @@ export const Carousels = (props: CarouselsPropsType) => {
       <img
         className="d-block w-100 carousels__img"
         src={item.url}
-        alt="First slide"
+        alt={item.alt}
       />
     </Carousel.Item>
   ));

@@ -54,13 +54,15 @@ const SpecialBlock = () => {
     );
 
   return (
-    <div className="special-block special-block_pd">
-      <div className="container">
-        <BlockTitle data={title} />
-        {content}
-        <div className="special-block__button">
-          <div className="button button_text-white button_center">
-            Смотреть все
+    <div className="special-block">
+      <div className="special-block__bg">
+        <div className="container">
+          <BlockTitle data={title} />
+          {content}
+          <div className="special-block__button">
+            <div className="button button_text-white button_center">
+              Смотреть все
+            </div>
           </div>
         </div>
       </div>

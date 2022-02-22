@@ -88,8 +88,22 @@
   }
 
   &__item {
+    position: relative;
     list-style-type: none;
     text-transform: uppercase;
+
+    &::before {
+      content: '';
+      width: 0;
+      height: 3px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      background: #ffffff;
+      display: block;
+    }
   }
 
   &__link {

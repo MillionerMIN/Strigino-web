@@ -1,9 +1,14 @@
 @import '../../../assets/style/_variable';
 
 .special-block {
-  background-color: $px-main;
 
-  &_pd {
+  background-image: url('../../../assets/images/home/sliderHome_1.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+
+
+  &__bg {
+    background-color: rgba(78, 23, 32, 0.95);
     padding-bottom: 90px;
   }
 

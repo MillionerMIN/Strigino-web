@@ -16,8 +16,6 @@ export const Header = (props: HeaderPropsType) => {
     setClick(!click);
   };
 
-  console.log(click);
-
   const menusLeft = [
     { value: 'об отеле', ref: '/about' },
     { value: 'спецпредложения', ref: '/special-offers' },

@@ -1,11 +1,15 @@
+import './home.scss';
+
 import { Carousels } from '../../components/common/carousels/Carousels';
 import { Reservation } from '../../components/common/reservation/Reservation';
 import { BlockTitle } from '../../components/common/title/BlockTitle';
 import { CustomMap } from '../../components/customMap/CustomMap';
 import Navigation from './navigation/Navigation';
 import SpecialBlock from './specialBlock/SpecialBlock';
-
-import './home.scss';
+import Slider_1 from '../../assets/images/home/sliderHome_1.jpg';
+import Slider_2 from '../../assets/images/home/sliderHome_2.jpg';
+import Slider_3 from '../../assets/images/home/sliderHome_3.jpg';
+import Slider_4 from '../../assets/images/home/sliderHome_4.jpg';
 
 const title = {
   title: 'ЧТО МЫ ВАМ ПРЕДЛАГАЕМ',
@@ -19,9 +23,10 @@ const mapTitle = {
     'Отель-ресторан "Стригино" располагается по координатам GPS: широта: 56°11′44.16″N (56.195599), долгота: 43°46′30.86″E (43.7752384)',
 };
 const arrayPhoto = [
-  { url: 'https://cf.bstatic.com/images/hotel/max600/940/94033968.jpg' },
-  { url: 'https://cf.bstatic.com/images/hotel/max600/607/60716065.jpg' },
-  { url: 'https://cf.bstatic.com/images/hotel/max600/168/168167243.jpg' },
+  { url: Slider_1, alt: 'slider_1' },
+  { url: Slider_2, alt: 'slider_2' },
+  { url: Slider_3, alt: 'slider_3' },
+  { url: Slider_4, alt: 'slider_4' },
 ];
 
 export const Home = () => {
