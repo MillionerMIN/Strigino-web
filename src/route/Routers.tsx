@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Home } from '../pages/home/Home';
+import ReservationPage from '../pages/reservation-page/ReservationPage';
 
 import './routers.scss';
 
@@ -25,6 +26,7 @@ export const PATH = {
   ROOMS: '/rooms',
   CONFERENCE: '/conference-facilities',
   CONTACTS: '/contacts',
+  RESERVATION: '/reservation',
 };
 
 export const Routers = () => {
@@ -41,6 +43,7 @@ export const Routers = () => {
           <Route path={PATH.ROOMS} element={<HotelRoom />} />
           <Route path={PATH.CONFERENCE} element={<ConferenceFacilities />} />
           <Route path={PATH.CONTACTS} element={<Contacts />} />
+          <Route path={PATH.RESERVATION} element={<ReservationPage />} />
         </Routes>
       </Suspense>
     </main>

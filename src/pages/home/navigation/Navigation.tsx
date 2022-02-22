@@ -9,12 +9,12 @@ const arrayItems = [
   {
     src: navig1,
     title: 'Забронировать',
-    to: '#',
+    to: '/reservation',
   },
   {
     src: navig2,
     title: 'Читать больше',
-    to: '#',
+    to: '/rooms',
   },
 ];
 

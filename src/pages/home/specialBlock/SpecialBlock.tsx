@@ -5,6 +5,7 @@ import spat2 from '../../../assets/img/home/specialBlock2.jpg';
 import spat3 from '../../../assets/img/home/specialBlock3.jpg';
 import SpecialCard from './specialCard/SpecialCard';
 import './specialBlock.scss';
+import { NavLink } from 'react-router-dom';
 
 const title = {
   title: 'Акции и спецпредложения',
@@ -58,11 +59,14 @@ const SpecialBlock = () => {
       <div className="special-block__bg">
         <div className="container">
           <BlockTitle data={title} />
-          {content}
+          {/* {content} */}
           <div className="special-block__button">
-            <div className="button button_text-white button_center">
+            <NavLink
+              to="/special-offers"
+              className="button button_text-white button_center button_hover"
+            >
               Смотреть все
-            </div>
+            </NavLink>
           </div>
         </div>
       </div>

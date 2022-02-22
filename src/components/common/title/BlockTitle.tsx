@@ -3,7 +3,7 @@ import './blokTitle.scss';
 type BlockTitleType = {
   data: {
     title: string;
-    description: string;
+    description?: string;
     colorTitle?: string;
   };
 };
