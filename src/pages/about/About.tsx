@@ -1,18 +1,20 @@
 import { BlockTitle } from '../../components/common/title/BlockTitle';
 import { HeadingBlock } from '../../components/common/heading-block/HeadingBlock';
 import { Reservation } from '../../components/common/reservation/Reservation';
+import AboutPhoto from '../../assets/images/about/about.jpg';
+import AboutPhoto_1 from '../../assets/images/about/about_1.jpg';
 
 import './about.scss';
 
 const title = {
   title: 'Гостинично – ресторанный комплекс «Стригино»',
   description:
-    'Мы предлагаем широкий спектр услуг как для бизнеса,так и для индивидуального отдыха',
+    'Мы предлагаем широкий спектр услуг как для бизнеса, так и для индивидуального отдыха',
 };
 
 const heading = {
   title: 'Об отеле',
-  photo: 'http://hotelstrigino.ru/images/info/vchod.JPG',
+  photo: AboutPhoto,
 };
 
 const About = () => {
@@ -24,11 +26,7 @@ const About = () => {
       <div className="container">
         <div className="about__content">
           <div className="about__image">
-            <img
-              className="image"
-              src="http://hotelstrigino.ru/images/slider/novogodnie-korporativyi-2021-banner2.jpg"
-              alt="1.jpg"
-            />
+            <img className="image" src={AboutPhoto_1} alt="1.jpg" />
           </div>
         </div>
         <div className="about__wrapper">
