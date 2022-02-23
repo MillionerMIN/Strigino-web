@@ -69,7 +69,8 @@
 }
 
 .image {
-  width: 100%
+  width: 100%;
+  filter: saturate(0.75) contrast(0.85) brightness(1.1);
 }
 
 // Large devices (desktops, less than 1200px)

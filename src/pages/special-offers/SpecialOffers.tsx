@@ -3,10 +3,15 @@ import { HeadingBlock } from '../../components/common/heading-block/HeadingBlock
 import { Reservation } from '../../components/common/reservation/Reservation';
 import { BlockTitle } from '../../components/common/title/BlockTitle';
 import './specialOffers.scss';
+import PhotoHeader from '../../assets/images/about/about.jpg';
+import PhotoOffer_1 from '../../assets/images/special-offers/special_1.jpg';
+import PhotoOffer_2 from '../../assets/images/special-offers/special_2.jpg';
+import PhotoOffer_3 from '../../assets/images/special-offers/special_3.jpg';
+import PhotoOffer_4 from '../../assets/images/special-offers/special_4.jpg';
 
 const heading = {
   title: 'СПЕЦПРЕДЛОЖЕНИЯ',
-  photo: 'http://hotelstrigino.ru/images/info/vchod.JPG',
+  photo: PhotoHeader,
 };
 
 const title = {
@@ -17,27 +22,27 @@ const title = {
 
 const offers = [
   {
-    img: 'https://wedding.4banket.ru/wp-content/uploads/2018/04/Zachem-brosat-i-lovit-svadebnyiy-buket-mifyi-i-realnost1-850x636.jpg',
+    img: PhotoOffer_4,
     href: '#',
     title: 'Ваша свадьба',
     description: 'Свадебный номер в подарок',
   },
   {
-    img: 'https://corsocatering.ru/wp-content/themes/kat/img/furshet-korporativ/furshet-korporativ-0.jpg',
+    img: PhotoOffer_3,
     href: '#',
     title: 'Банкеты и корпоративы',
     description:
       'При заказе в понедельник,вторник,Среда---СКИДКА 10% (кроме праздничных дней)',
   },
   {
-    img: 'https://www.hoteleurope.by/upload/resize_cache/iblock/291/570_350_2/2914372df18b0486e8083f6fd7e2ee5d.jpg',
+    img: PhotoOffer_2,
     href: '#',
     title: 'Раннее бронирование',
     description:
       'Тариф доступен для бронирования не менее, чем за 20 дней до заезда',
   },
   {
-    img: 'http://thehotelmatola.com/assets/images/accommodation-bg.jpg',
+    img: PhotoOffer_1,
     href: '#',
     title: 'Тариф "Длительное проживание"',
     description: 'LONG STAY – СКИДКИ ПРИ ПРОЖИВАНИИ ОТ 4 ДНЕЙ',
