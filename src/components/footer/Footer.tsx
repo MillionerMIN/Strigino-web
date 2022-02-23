@@ -25,10 +25,10 @@ export const Footer = (props: FooterPropsType) => {
                   д.139
                 </span>
               </NavLink>
-              <NavLink className="footer__link" to={'/#'}>
+              <a className="footer__link" href="tel:79990763646">
                 <span>Телефон для бронирования:</span>
-                <span className="value">8(831) 269-16-12</span>
-              </NavLink>
+                <span className="value">+7 999 076-36-46</span>
+              </a>
             </div>
           </div>
         </div>
