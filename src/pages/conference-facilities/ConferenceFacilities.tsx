@@ -18,9 +18,10 @@ const heading = {
 
 const roomsService = [
   {
+    id: '',
     title: '«Конферент-зал»',
     desc: 'Зал переговоров позволяет с максимальным комфортом организовать и провести мероприятия любого формата.',
-    url: comfroom,
+    image: comfroom,
     cost: 3300,
   },
 ];

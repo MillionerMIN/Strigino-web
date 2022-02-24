@@ -1,32 +1,22 @@
 import { BlockTitle } from '../../components/common/title/BlockTitle';
 import { HeadingBlock } from '../../components/common/heading-block/HeadingBlock';
 import { Reservation } from '../../components/common/reservation/Reservation';
-import AboutPhoto from '../../assets/images/about/about.jpg';
 import AboutPhoto_1 from '../../assets/images/about/about_1.jpg';
 
 import './about.scss';
-
-const title = {
-  title: 'Гостинично – ресторанный комплекс «Стригино»',
-  description:
-    'Мы предлагаем широкий спектр услуг как для бизнеса, так и для индивидуального отдыха',
-};
-
-const heading = {
-  title: 'Об отеле',
-  photo: AboutPhoto,
-};
+import { getAboutData } from '../../data/aboutData';
 
 const About = () => {
+  const content = getAboutData();
   return (
     <div className="about about_pd">
-      <HeadingBlock data={heading} />
+      <HeadingBlock data={content.header} />
       <Reservation />
-      <BlockTitle data={title} />
+      <BlockTitle data={content.title} />
       <div className="container">
         <div className="about__content">
           <div className="about__image">
-            <img className="image" src={AboutPhoto_1} alt="1.jpg" />
+            <img className="image" src={AboutPhoto_1} alt="PhotoHotel.jpg" />
           </div>
         </div>
         <div className="about__wrapper">
@@ -37,7 +27,6 @@ const About = () => {
               живописном уголке соснового бора, на берегу реки Ока, в 5 мин.
               езды от аэропорта.
             </p>
-
             <p>
               Отель «Стригино» представляет современному жителю мегаполиса
               уникальный шанс на полноценный загородный отдых от привычной суеты

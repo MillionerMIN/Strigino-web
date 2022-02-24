@@ -1,85 +1,19 @@
-import { CardNumber } from '../../components/common/cardNumber/CardNumber';
+import './hotelRoom.scss';
+import { Outlet } from 'react-router-dom';
+
 import { HeadingBlock } from '../../components/common/heading-block/HeadingBlock';
 import { Reservation } from '../../components/common/reservation/Reservation';
-import { BlockTitle } from '../../components/common/title/BlockTitle';
-import room1 from '../../assets/img/hotelRoom/Студио.jpg';
-import room2 from '../../assets/img/hotelRoom/Семейный.jpg';
-import room3 from '../../assets/img/hotelRoom/Бизнес.jpg';
-import room4 from '../../assets/img/hotelRoom/Свадебный.jpg';
-import room5 from '../../assets/img/hotelRoom/СтандартDOUBLE.jpg';
-import room6 from '../../assets/img/hotelRoom/СтандартTWIN.jpg';
-
-import './hotelRoom.scss';
-
-const title = {
-  title: 'ЛУЧШИЕ НОМЕРА ДЛЯ ВАС',
-  description:
-    'Отель «Стригино» предоставляет широкий перечень номеров для бизнеса и индивидуального отдыха',
-};
-
-const heading = {
-  title: 'номера',
-  photo: 'http://hotelstrigino.ru/assets/gallery/1/17.jpg',
-};
-
-export type RoomHotelType = {
-  title: string;
-  desc: string;
-  url: string;
-  cost: number;
-};
-
-const roomsHotel = [
-  {
-    title: '«Студио»',
-    desc: 'Однокомнатный номер, современный дизайн, двуспальная кровать, плазменный телевизор, телефон, ванная, туалетная комната, чайник, фен, холодильник, халат, тапочки, косметические принадлежности, балкон',
-    url: room1,
-    cost: 3300,
-  },
-  {
-    title: '«Семейный»',
-    desc: 'Трехкомнатный номер площадь: 70 м2, размещение семьи из 4 человек, двуспальная кровать и две раздельные односпальные кровати, плазменный телевизор, телефон, ванная, туалетная комната, чайник, фен, холодильник, халат, тапочки, косметические принадлежности, балкон',
-    url: room2,
-    cost: 3800,
-  },
-  {
-    title: '«Бизнес»',
-    desc: 'Двухкомнатный номер, двуспальная кровать, письменный стол, плазменный телевизор, телефон, ванная, туалетная комната, чайник, фен, холодильник, халат, тапочки, косметические принадлежности, балкон',
-    url: room3,
-    cost: 2300,
-  },
-  {
-    title: '«Свадебный»',
-    desc: 'Двухкомнатный номер, Бело-бордовый дизайн интерьера создаст романтическую атмосферу, двуспальная кровать, плазменный телевизор, телефон, ванная, туалетная комната, чайник, фен, холодильник, халат, тапочки, косметические принадлежности, балкон',
-    url: room4,
-    cost: 2300,
-  },
-  {
-    title: '«Стандарт DOUBLE»',
-    desc: 'Двухкомнатный номер, двуспальная кровать, плазменный телевизор, телефон, ванная, туалетная комната, набор полотенец, косметические принадлежности, балкон',
-    url: room5,
-    cost: 2300,
-  },
-  {
-    title: '«Стандарт TWIN»',
-    desc: 'Две односпальные кровати, плазменный телевизор, телефон, ванная, туалетная комната, набор полотенец, косметические принадлежности, балкон',
-    url: room6,
-    cost: 2300,
-  },
-];
+import { getHotelRooms } from '../../data/hotelRoomsData';
 
 const HotelRoom = () => {
-  const rooms = roomsHotel.map((item, i) => (
-    <CardNumber key={i} data={item} index={i} />
-  ));
+  const content = getHotelRooms();
 
   return (
     <>
       <main className="rooms rooms_pd">
-        <HeadingBlock data={heading} />
+        <HeadingBlock data={content.header} />
         <Reservation />
-        <BlockTitle data={title} />
-        <div className="rooms-list-wrapper">{rooms}</div>
+        <Outlet />
       </main>
     </>
   );

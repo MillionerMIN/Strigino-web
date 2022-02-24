@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import './header.scss';
-import { Social, SocialType } from '../common/social/Social';
+import { Social } from '../common/social/Social';
 import { NavLink } from 'react-router-dom';
 import Logo from '../../assets/icons/logo/logo.png';
 import MobHeader from './MobHeader';
+import { SocialType } from '../../data/socialData';
+import { getMenuLeft, getMenuRight } from '../../data/headerLinkData';
 
 type HeaderPropsType = {
   socials: SocialType[];
@@ -16,11 +18,7 @@ export const Header = (props: HeaderPropsType) => {
     setClick(!click);
   };
 
-  const menusLeft = [
-    { value: 'об отеле', ref: '/about' },
-    { value: 'спецпредложения', ref: '/special-offers' },
-    { value: 'ресторан', ref: '/restaurant' },
-  ];
+  const menusLeft = getMenuLeft();
 
   const menuLeft = menusLeft.map((item, i) => (
     <li className="block__item" key={i}>
@@ -33,11 +31,7 @@ export const Header = (props: HeaderPropsType) => {
       </NavLink>
     </li>
   ));
-  const menusRight = [
-    { value: 'номера', ref: '/rooms' },
-    { value: 'конференц-услуги', ref: '/conference-facilities' },
-    { value: 'контакты', ref: '/contacts' },
-  ];
+  const menusRight = getMenuRight();
 
   const menuRight = menusRight.map((item, i) => (
     <li className="block__item" key={i}>

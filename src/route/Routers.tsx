@@ -1,7 +1,6 @@
 import React, { Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Home } from '../pages/home/Home';
-import ReservationPage from '../pages/reservation-page/ReservationPage';
 
 import './routers.scss';
 
@@ -16,6 +15,11 @@ const SpecialOffers = React.lazy(
   () => import('../pages/special-offers/SpecialOffers')
 );
 const PageError = React.lazy(() => import('../pages/pageError/PageError'));
+const ReservationPage = React.lazy(
+  () => import('../pages/reservation-page/ReservationPage')
+);
+const RoomsList = React.lazy(() => import('../components/roomsList/RoomsList'));
+const RoomInfo = React.lazy(() => import('../components/roomInfo/RoomInfo'));
 
 export const PATH = {
   HOME: '/',
@@ -27,6 +31,7 @@ export const PATH = {
   CONFERENCE: '/conference-facilities',
   CONTACTS: '/contacts',
   RESERVATION: '/reservation',
+  // ROOMS_STUDIO: '/rooms/studio',
 };
 
 export const Routers = () => {
@@ -40,7 +45,11 @@ export const Routers = () => {
           <Route path={PATH.ABOUT} element={<About />} />
           <Route path={PATH.SPECIAL} element={<SpecialOffers />} />
           <Route path={PATH.RESTAURANT} element={<Restaurant />} />
-          <Route path={PATH.ROOMS} element={<HotelRoom />} />
+          <Route path={PATH.ROOMS} element={<HotelRoom />}>
+            <Route index element={<RoomsList />} />
+            <Route path=":roomId" element={<RoomInfo />} />
+          </Route>
+
           <Route path={PATH.CONFERENCE} element={<ConferenceFacilities />} />
           <Route path={PATH.CONTACTS} element={<Contacts />} />
           <Route path={PATH.RESERVATION} element={<ReservationPage />} />

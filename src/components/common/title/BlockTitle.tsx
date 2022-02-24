@@ -2,9 +2,9 @@ import './blokTitle.scss';
 
 type BlockTitleType = {
   data: {
-    title: string;
-    description?: string;
-    colorTitle?: string;
+    title: string | undefined;
+    description?: string | undefined;
+    colorTitle?: string | undefined;
   };
 };
 

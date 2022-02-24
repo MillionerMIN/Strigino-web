@@ -1,14 +1,9 @@
+import { SocialType } from '../../../data/socialData';
 import './social.scss';
 
 type SocialPropsType = {
   socials: SocialType[];
   className?: string;
-};
-
-export type SocialType = {
-  name: string;
-  img: string;
-  link: string;
 };
 
 export const Social = (props: SocialPropsType) => {

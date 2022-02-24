@@ -1,8 +1,10 @@
 import { NavLink } from 'react-router-dom';
-import { Social, SocialType } from '../common/social/Social';
+import { Social } from '../common/social/Social';
 import Logo from '../../assets/icons/logo/logo-strigino.png';
 
 import './footer.scss';
+import { SocialType } from '../../data/socialData';
+import { getOrganisationData } from '../../data/footerData';
 
 type FooterPropsType = {
   socials: SocialType[];
@@ -10,6 +12,7 @@ type FooterPropsType = {
 
 export const Footer = (props: FooterPropsType) => {
   const { socials } = props;
+  const content = getOrganisationData();
 
   return (
     <footer className="footer">
@@ -20,14 +23,11 @@ export const Footer = (props: FooterPropsType) => {
             <div className="footer__contacts">
               <NavLink className="footer__link" to={'#'}>
                 <span className="lable">Наш адрес:</span>
-                <span className="value">
-                  Россия, г.Н. Новгород, Автозаводский район, ул. Гнилицкая,
-                  д.139
-                </span>
+                <span className="value">{content.address}</span>
               </NavLink>
-              <a className="footer__link" href="tel:79990763646">
+              <a className="footer__link" href={`tel:${content.phoneNumber}`}>
                 <span>Телефон для бронирования:</span>
-                <span className="value">+7 999 076-36-46</span>
+                <span className="value">{content.phone}</span>
               </a>
             </div>
           </div>
@@ -40,12 +40,7 @@ export const Footer = (props: FooterPropsType) => {
               <img className="footer__logo" src={Logo} alt="LogoRus" />
             </div>
             <div className="footer__right text_fs13">
-              <p>
-                Свидетельство о государственной регистрации № -------- от 6 июня
-                ---- г. Гостинично - Ресторанный комплекс "Стригино" УНП
-                ----------, Дата регистрации в торговом реестре ----------:
-                06.07.2008 г.
-              </p>
+              <p>{content.certificate}</p>
             </div>
             <div className="footer__bottom">
               2015-2021 © Отель-ресторан Стригино | Все права защищены

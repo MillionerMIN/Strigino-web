@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { RoomHotelType } from '../../../pages/hotelRoom/HotelRoom';
+import { RoomHotelType } from '../../../data/hotelRoomsData';
 
 import './cardNumber.scss';
 
@@ -10,7 +10,7 @@ type CardNumberType = {
 
 export const CardNumber = (props: CardNumberType) => {
   // const { index } = props;
-  const { title, desc, url, cost } = props.data;
+  const { id, title, desc, image, cost } = props.data;
 
   const description = desc.slice(0, 100);
   // const classCardNumber =
@@ -31,8 +31,8 @@ export const CardNumber = (props: CardNumberType) => {
           <div className="icon icon-delimiter"></div>
         </div> */}
         <div className={'cardNumber__image cardNumber__image_right'}>
-          <NavLink to={'#'} title={title}>
-            <img className="cardNumber__photo" src={url} alt={title} />
+          <NavLink to={id} title={title}>
+            <img className="cardNumber__photo" src={image} alt={title} />
             <div className="cardNumber__more">
               <div className=" button button_center button_text-white button_border-white cardNumber__btn">
                 Читать больше
@@ -50,7 +50,7 @@ export const CardNumber = (props: CardNumberType) => {
             <div className="delimiter delimiter_mr10"></div>
             <div className="description text_fs15">{description}</div>
             <NavLink
-              to={'#'}
+              to={'/reservation'}
               title="Забронировать"
               className="button button_order button_hover link_color"
             >
