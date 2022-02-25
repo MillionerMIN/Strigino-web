@@ -10,7 +10,7 @@ type CardNumberType = {
 
 export const CardNumber = (props: CardNumberType) => {
   // const { index } = props;
-  const { id, title, desc, image, cost } = props.data;
+  const { id, title, desc, photos, cost } = props.data;
 
   const description = desc.slice(0, 100);
   // const classCardNumber =
@@ -32,7 +32,7 @@ export const CardNumber = (props: CardNumberType) => {
         </div> */}
         <div className={'cardNumber__image cardNumber__image_right'}>
           <NavLink to={id} title={title}>
-            <img className="cardNumber__photo" src={image} alt={title} />
+            <img className="cardNumber__photo" src={photos[0]} alt={title} />
             <div className="cardNumber__more">
               <div className=" button button_center button_text-white button_border-white cardNumber__btn">
                 Читать больше
@@ -44,7 +44,7 @@ export const CardNumber = (props: CardNumberType) => {
         {/* infirmation card */}
         <div className={'info-wrapper info-wrapper_pd20'}>
           <div className="info">
-            <NavLink className="info__title link_color" to={'#'} title="Single">
+            <NavLink className="info__title link_color" to={id} title="Single">
               {title}
             </NavLink>
             <div className="delimiter delimiter_mr10"></div>

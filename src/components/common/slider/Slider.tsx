@@ -1,11 +1,11 @@
 type SliderPropsType = {
-  data: string[];
+  data: any;
 };
 
 export const Slider = (props: SliderPropsType) => {
   const { data } = props;
 
-  const photo = data.map((item, i) => (
+  const photo = data.map((item: string, i: number) => (
     <div className="carousel-item active" key={i}>
       <img src={item} className="d-block w-100" alt="image" />
     </div>
