@@ -3,7 +3,7 @@ import './roomInfo.scss';
 import { useParams } from 'react-router-dom';
 import { getHotelRoom, getHotelRooms } from '../../data/hotelRoomsData';
 import { BlockTitle } from '../common/title/BlockTitle';
-import { Slider } from '../common/slider/Slider';
+import SliderCustom from '../common/customSlider/SliderCustom';
 
 const RoomInfo = () => {
   const param = useParams();
@@ -19,7 +19,7 @@ const RoomInfo = () => {
     <div className="room-info room-info_pd">
       <div className="container">
         <BlockTitle data={title} />
-        <Slider data={room?.photos} />
+        <SliderCustom photos={room?.photos} />
       </div>
     </div>
   );

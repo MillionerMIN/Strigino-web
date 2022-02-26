@@ -7,7 +7,7 @@ export const Slider = (props: SliderPropsType) => {
 
   const photo = data.map((item: string, i: number) => (
     <div className="carousel-item active" key={i}>
-      <img src={item} className="d-block w-100" alt="image" />
+      <img src={item} className="d-block w-100" alt={item} />
     </div>
   ));
 
