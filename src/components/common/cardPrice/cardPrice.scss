@@ -1,0 +1,48 @@
+@import '../../../assets/style/_variable';
+
+.contact-price {
+  max-width: 780px;
+  margin: 0 auto;
+  background: $px-yellow;
+  padding: 15px;
+}
+
+.contact-price__grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  border: 1px solid #ffffff;
+  justify-items: center;
+  text-align: center;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 131px;
+    background: #ffffff;
+    width: 1px;
+    height: 100%;
+    display: block;
+    content: "";
+  }
+}
+
+.contact-price__icon {
+  width: 100%;
+  padding: 10px;
+  color: #fff;
+  font-size: 3rem;
+  align-self: center;
+}
+
+.contact-price__info {
+  font-size: 2.125rem;
+  font-family: "Playfair Display", serif;
+  line-height: 1;
+  align-self: center;
+  color: #fff;
+
+  span {
+    font-weight: 900;
+  }
+}

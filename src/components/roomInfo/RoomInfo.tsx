@@ -4,22 +4,39 @@ import { useParams } from 'react-router-dom';
 import { getHotelRoom, getHotelRooms } from '../../data/hotelRoomsData';
 import { BlockTitle } from '../common/title/BlockTitle';
 import SliderCustom from '../common/customSlider/SliderCustom';
+import CardPrice from '../common/cardPrice/CardPrice';
 
 const RoomInfo = () => {
   const param = useParams();
   const desc = getHotelRooms().title.description;
   const room = getHotelRoom(param.roomId);
-  console.log(room?.photos);
 
   const title = {
     title: room?.title,
     description: desc,
+  };
+
+  const cardsPrice = () => {
+    if (room?.person === 2) {
+      return (
+        <>
+          <CardPrice person={1} cost={room?.cost_1} />
+          <CardPrice person={2} cost={room?.cost_2} />
+        </>
+      );
+    } else {
+      return <CardPrice person={1} cost={room?.cost_1} />;
+    }
   };
   return (
     <div className="room-info room-info_pd">
       <div className="container">
         <BlockTitle data={title} />
         <SliderCustom photos={room?.photos} />
+        <div className="row justify-content-md-center room-info__information">
+          <div className="col">{room?.desc}</div>
+          <div className="col col-lg-4">{cardsPrice()}</div>
+        </div>
       </div>
     </div>
   );

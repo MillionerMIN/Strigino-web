@@ -1,7 +1,9 @@
 @import '../../../assets/style/variable';
 
 
-.slick-list {}
+.slick-slider {
+  margin-bottom: 80px;
+}
 
 .slick-list::before {
   position: absolute;

@@ -54,7 +54,8 @@ export type RoomHotelType = {
   title: string;
   desc: string;
   photos: string[];
-  cost: number;
+  cost_1?: number;
+  cost_2?: number;
   person?: number;
   square?: number;
 };
@@ -83,7 +84,8 @@ const hotelRoomsData: HotelRoomsDataType = {
       title: 'Стандарт однокомнатный',
       desc: 'Небольшой номер с двухспальной кроватью и санузлом с душевой кабиной',
       photos: [stM_1, stM_2, stM_3],
-      cost: 2300,
+      cost_1: 2300,
+      cost_2: 3300,
       person: 2,
       square: 18,
     },
@@ -92,7 +94,8 @@ const hotelRoomsData: HotelRoomsDataType = {
       title: 'Стандарт двухкомнотный',
       desc: 'Двухкомнатный номер с ванной и отдельным санузлом.Раскладной диван и большая двухспальная кровать',
       photos: [st_1, st_2, st_3, st_4, st_5],
-      cost: 2300,
+      cost_1: 2300,
+      cost_2: 3300,
       person: 3,
       square: 26,
     },
@@ -101,7 +104,8 @@ const hotelRoomsData: HotelRoomsDataType = {
       title: 'Студио',
       desc: 'Просторный однокомнатный дизайнерский номер с оригинальной мебелью.',
       photos: [st1_1, st1_2, st1_3, st1_4],
-      cost: 3300,
+      cost_1: 3300,
+      cost_2: 4300,
       person: 2,
       square: 35,
     },
@@ -110,7 +114,8 @@ const hotelRoomsData: HotelRoomsDataType = {
       title: 'Студио',
       desc: 'Просторный однокомнатный дизайнерский номер с оригинальной мебелью.',
       photos: [st2_1, st2_2, st2_3, st2_4],
-      cost: 3300,
+      cost_1: 3300,
+      cost_2: 4300,
       person: 2,
       square: 35,
     },
@@ -119,7 +124,8 @@ const hotelRoomsData: HotelRoomsDataType = {
       title: 'Студио',
       desc: 'Просторный однокомнатный дизайнерский номер с оригинальной мебелью.',
       photos: [st3_1, st3_2, st3_3, st3_4],
-      cost: 3300,
+      cost_1: 3300,
+      cost_2: 4300,
       person: 2,
       square: 35,
     },
@@ -128,7 +134,8 @@ const hotelRoomsData: HotelRoomsDataType = {
       title: 'Семейный',
       desc: 'Трехкомнатный номер площадь: 70 м2, размещение семьи из 4 человек, двуспальная кровать и две раздельные односпальные кровати, плазменный телевизор, телефон, ванная, туалетная комната, чайник, фен, холодильник, халат, тапочки, косметические принадлежности, балкон',
       photos: [fam_1, fam_2, fam_3, fam_4],
-      cost: 3800,
+      cost_1: 3800,
+      cost_2: 3800,
       person: 6,
       square: 60,
     },
@@ -137,7 +144,8 @@ const hotelRoomsData: HotelRoomsDataType = {
       title: 'Бизнес',
       desc: 'Двухкомнатный номер, двуспальная кровать, письменный стол, плазменный телевизор, телефон, ванная, туалетная комната, чайник, фен, холодильник, халат, тапочки, косметические принадлежности, балкон',
       photos: [bus_1, bus_2, bus_3, bus_4],
-      cost: 2300,
+      cost_1: 2300,
+      cost_2: 2300,
       person: 2, //уточнить
       square: 40, //уточнить
     },
@@ -146,7 +154,8 @@ const hotelRoomsData: HotelRoomsDataType = {
       title: 'Свадебный',
       desc: 'Двухкомнатный номер, Бело-бордовый дизайн интерьера создаст романтическую атмосферу',
       photos: [wed_1, wed_2],
-      cost: 2300,
+      cost_1: 2300,
+      cost_2: 2300,
       person: 2,
       square: 28,
     },
@@ -155,14 +164,16 @@ const hotelRoomsData: HotelRoomsDataType = {
       title: 'Стандарт DOUBLE',
       desc: 'Двухкомнатный номер',
       photos: [doub_1, doub_2, doub_3],
-      cost: 2300,
+      cost_1: 2300,
+      cost_2: 2300,
     },
     {
       id: 'twin',
       title: 'Стандарт TWIN',
       desc: 'Две односпальные кровати, плазменный телевизор, телефон, ванная, туалетная комната, набор полотенец, косметические принадлежности, балкон',
       photos: [twin_1, twin_2, twin_3],
-      cost: 2300,
+      cost_1: 2300,
+      cost_2: 2300,
     },
   ],
 };

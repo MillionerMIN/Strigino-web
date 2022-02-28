@@ -1,0 +1,11 @@
+.room-info__information {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+  }
+}

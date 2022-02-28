@@ -1,5 +1,6 @@
 import React, { Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
+import Loader from '../components/common/lotties/Loader';
 import { Home } from '../pages/home/Home';
 
 import './routers.scss';
@@ -38,7 +39,7 @@ export const Routers = () => {
   return (
     <main className="main main_mr-top">
       {/*Routes выбирает первый подходящий роут*/}
-      <Suspense fallback={<div>Loading....</div>}>
+      <Suspense fallback={<Loader />}>
         <Routes>
           <Route path={PATH.HOME} element={<Home />} />
           <Route path="*" element={<PageError />} />

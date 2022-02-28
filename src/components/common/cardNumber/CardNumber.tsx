@@ -4,13 +4,14 @@ import { RoomHotelType } from '../../../data/hotelRoomsData';
 import './cardNumber.scss';
 
 type CardNumberType = {
-  index: number;
+  index?: number;
   data: RoomHotelType;
+  hour?: boolean;
 };
 
 export const CardNumber = (props: CardNumberType) => {
-  // const { index } = props;
-  const { id, title, desc, photos, cost } = props.data;
+  const { hour } = props;
+  const { id, title, desc, photos, cost_1 } = props.data;
 
   const description = desc.slice(0, 100);
   // const classCardNumber =
@@ -57,8 +58,9 @@ export const CardNumber = (props: CardNumberType) => {
               Забронировать
             </NavLink>
             <div className={'price price_right'}>
-              от <span className="value text_fs26">{cost}</span>{' '}
+              от <span className="value text_fs26">{cost_1}</span>{' '}
               <span className="currency text_fs26">RUB</span>
+              {hour ? '/час' : ''}
             </div>
           </div>
         </div>
