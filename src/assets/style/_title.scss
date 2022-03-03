@@ -3,6 +3,7 @@
 .title {
   font-family: "Playfair Display", serif;
   color: $px-footer;
+  text-align: center;
 
   &_fs28 {
     font-size: 1.75rem;
@@ -38,6 +39,7 @@
   &_background {
     background: #e7e3dc;
   }
+
 
   &_pd {
     padding: 40px 60px;
