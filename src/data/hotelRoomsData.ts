@@ -29,20 +29,9 @@ import fam_2 from '../assets/images/hotelRoom/family/family_2.jpg';
 import fam_3 from '../assets/images/hotelRoom/family/family_3.jpg';
 import fam_4 from '../assets/images/hotelRoom/family/family_4.jpg';
 
-//business photos
-import bus_1 from '../assets/images/hotelRoom/business/business_1.jpg';
-import bus_2 from '../assets/images/hotelRoom/business/business_2.jpg';
-import bus_3 from '../assets/images/hotelRoom/business/business_3.jpg';
-import bus_4 from '../assets/images/hotelRoom/business/business_4.jpg';
-
 //wedding photos
 import wed_1 from '../assets/images/hotelRoom/wedding/wedding_1.jpg';
 import wed_2 from '../assets/images/hotelRoom/wedding/wedding_2.jpg';
-
-//double photos
-import doub_1 from '../assets/images/hotelRoom/double/bouble_1.jpg';
-import doub_2 from '../assets/images/hotelRoom/double/bouble_2.jpg';
-import doub_3 from '../assets/images/hotelRoom/double/bouble_3.jpg';
 
 //twin photos
 import twin_1 from '../assets/images/hotelRoom/twin/twin_1.jpg';
@@ -53,6 +42,7 @@ export type RoomHotelType = {
   id: string;
   title: string;
   desc: string;
+  descMore?: string;
   photos: string[];
   cost_1?: number;
   cost_2?: number;
@@ -82,98 +72,86 @@ const hotelRoomsData: HotelRoomsDataType = {
     {
       id: 'standard-mini',
       title: 'Стандарт однокомнатный',
-      desc: 'Небольшой номер с двухспальной кроватью и санузлом с душевой кабиной',
+      desc: 'Небольшой номер с двухспальной кроватью',
+      descMore: ', санузлом с душевой кабиной',
       photos: [stM_1, stM_2, stM_3],
-      cost_1: 2300,
-      cost_2: 3300,
+      cost_1: 1900,
+      cost_2: 2000,
       person: 2,
       square: 18,
     },
     {
       id: 'standard',
       title: 'Стандарт двухкомнотный',
-      desc: 'Двухкомнатный номер с ванной и отдельным санузлом.Раскладной диван и большая двухспальная кровать',
+      desc: 'Двухкомнатный номер с одной двуспальной кроватью, включен легкий завтрак',
       photos: [st_1, st_2, st_3, st_4, st_5],
       cost_1: 2300,
-      cost_2: 3300,
+      cost_2: 2500,
       person: 3,
       square: 26,
     },
     {
       id: 'studio_1',
       title: 'Студио',
-      desc: 'Просторный однокомнатный дизайнерский номер с оригинальной мебелью.',
+      desc: 'Просторный однокомнатный дизайнерский номер с оригинальной мебелью, включен легкий завтрак',
       photos: [st1_1, st1_2, st1_3, st1_4],
       cost_1: 3300,
-      cost_2: 4300,
+      cost_2: 3500,
       person: 2,
       square: 35,
     },
     {
       id: 'studio_2',
       title: 'Студио',
-      desc: 'Просторный однокомнатный дизайнерский номер с оригинальной мебелью.',
+      desc: 'Просторный однокомнатный дизайнерский номер с оригинальной мебелью, включен легкий завтрак',
       photos: [st2_1, st2_2, st2_3, st2_4],
       cost_1: 3300,
-      cost_2: 4300,
+      cost_2: 3500,
       person: 2,
       square: 35,
     },
     {
       id: 'studio_3',
       title: 'Студио',
-      desc: 'Просторный однокомнатный дизайнерский номер с оригинальной мебелью.',
+      desc: 'Просторный однокомнатный дизайнерский номер с оригинальной мебелью, включен легкий завтрак',
       photos: [st3_1, st3_2, st3_3, st3_4],
       cost_1: 3300,
-      cost_2: 4300,
+      cost_2: 3500,
       person: 2,
       square: 35,
     },
     {
       id: 'family',
       title: 'Семейный',
-      desc: 'Трехкомнатный номер площадь: 70 м2, размещение семьи из 4 человек, двуспальная кровать и две раздельные односпальные кровати, плазменный телевизор, телефон, ванная, туалетная комната, чайник, фен, холодильник, халат, тапочки, косметические принадлежности, балкон',
+      desc: 'Трехкомнатный номер площадью 70 м2, размещение семьи из 4 человек,  включен легкий завтрак',
+      descMore:
+        ', двуспальная кровать и две раздельные односпальные кровати, плазменный телевизор, телефон, ванная, туалетная комната, чайник, фен, холодильник, халат, тапочки, косметические принадлежности, балкон',
       photos: [fam_1, fam_2, fam_3, fam_4],
       cost_1: 3800,
       cost_2: 3800,
-      person: 6,
-      square: 60,
-    },
-    {
-      id: 'business',
-      title: 'Бизнес',
-      desc: 'Двухкомнатный номер, двуспальная кровать, письменный стол, плазменный телевизор, телефон, ванная, туалетная комната, чайник, фен, холодильник, халат, тапочки, косметические принадлежности, балкон',
-      photos: [bus_1, bus_2, bus_3, bus_4],
-      cost_1: 2300,
-      cost_2: 2300,
-      person: 2, //уточнить
-      square: 40, //уточнить
+      person: 4,
+      square: 70,
     },
     {
       id: 'wedding',
       title: 'Свадебный',
-      desc: 'Двухкомнатный номер, Бело-бордовый дизайн интерьера создаст романтическую атмосферу',
+      desc: 'Двухкомнатный номер, бело-бордовый дизайн интерьера создаст романтическую атмосферу, включен легкий завтрак',
       photos: [wed_1, wed_2],
       cost_1: 2300,
-      cost_2: 2300,
+      cost_2: 2500,
       person: 2,
       square: 28,
     },
     {
-      id: 'double',
-      title: 'Стандарт DOUBLE',
-      desc: 'Двухкомнатный номер',
-      photos: [doub_1, doub_2, doub_3],
-      cost_1: 2300,
-      cost_2: 2300,
-    },
-    {
       id: 'twin',
       title: 'Стандарт TWIN',
-      desc: 'Две односпальные кровати, плазменный телевизор, телефон, ванная, туалетная комната, набор полотенец, косметические принадлежности, балкон',
+      desc: 'Двухместный номер с двумя односпальными кроватями, включен легкий завтрак',
+      descMore:
+        ', плазменный телевизор, телефон, ванная, туалетная комната, набор полотенец, косметические принадлежности, балкон',
       photos: [twin_1, twin_2, twin_3],
-      cost_1: 2300,
-      cost_2: 2300,
+      cost_1: 2600,
+      cost_2: 2600,
+      person: 2,
     },
   ],
 };

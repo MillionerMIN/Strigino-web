@@ -51,7 +51,10 @@ export const Routers = () => {
             <Route path=":roomId" element={<RoomInfo />} />
           </Route>
 
-          <Route path={PATH.CONFERENCE} element={<ConferenceFacilities />} />
+          <Route path={PATH.CONFERENCE} element={<ConferenceFacilities />}>
+            {/* <Route index element={<RoomsList />} />
+            <Route path=":roomId" element={<RoomInfo />} /> */}
+          </Route>
           <Route path={PATH.CONTACTS} element={<Contacts />} />
           <Route path={PATH.RESERVATION} element={<ReservationPage />} />
         </Routes>

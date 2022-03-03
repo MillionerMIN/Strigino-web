@@ -17,7 +17,7 @@ const RoomInfo = () => {
   };
 
   const cardsPrice = () => {
-    if (room?.person === 2) {
+    if (room?.person !== 1) {
       return (
         <>
           <CardPrice person={1} cost={room?.cost_1} />
