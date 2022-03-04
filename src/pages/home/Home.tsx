@@ -10,6 +10,7 @@ import Slider_1 from '../../assets/images/home/sliderHome_1.jpg';
 import Slider_2 from '../../assets/images/home/sliderHome_2.jpg';
 import Slider_3 from '../../assets/images/home/sliderHome_3.jpg';
 import Slider_4 from '../../assets/images/home/sliderHome_4.jpg';
+import setScrollTop from '../../components/common/scrollUp/setScrollTop';
 
 const title = {
   title: 'ЧТО МЫ ВАМ ПРЕДЛАГАЕМ',
@@ -30,6 +31,7 @@ const arrayPhoto = [
 ];
 
 export const Home = () => {
+  setScrollTop();
   return (
     <main className="main">
       <Carousels data={arrayPhoto} />

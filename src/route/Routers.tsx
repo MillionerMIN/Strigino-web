@@ -1,6 +1,7 @@
 import React, { Suspense } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Loader from '../components/common/lotties/Loader';
+import ScrollUp from '../components/common/scrollUp/ScrollUp';
 import { Home } from '../pages/home/Home';
 
 import './routers.scss';
@@ -38,6 +39,7 @@ export const PATH = {
 export const Routers = () => {
   return (
     <main className="main main_mr-top">
+      <ScrollUp />
       {/*Routes выбирает первый подходящий роут*/}
       <Suspense fallback={<Loader />}>
         <Routes>

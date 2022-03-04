@@ -5,8 +5,10 @@ import AboutPhoto_1 from '../../assets/images/about/about_1.jpg';
 
 import './about.scss';
 import { getAboutData } from '../../data/aboutData';
+import setScrollTop from '../../components/common/scrollUp/setScrollTop';
 
 const About = () => {
+  setScrollTop();
   const content = getAboutData();
   return (
     <div className="about about_pd">

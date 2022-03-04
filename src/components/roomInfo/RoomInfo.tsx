@@ -5,8 +5,10 @@ import { getHotelRoom, getHotelRooms } from '../../data/hotelRoomsData';
 import { BlockTitle } from '../common/title/BlockTitle';
 import SliderCustom from '../common/customSlider/SliderCustom';
 import CardPrice from '../common/cardPrice/CardPrice';
+import setScrollTop from '../common/scrollUp/setScrollTop';
 
 const RoomInfo = () => {
+  setScrollTop();
   const param = useParams();
   const desc = getHotelRooms().title.description;
   const room = getHotelRoom(param.roomId);

@@ -3,12 +3,14 @@ import './reservationPage.scss';
 import { BlockTitle } from '../../components/common/title/BlockTitle';
 import { useEffect } from 'react';
 import { initWidget } from '../../components/common/init-widget/initWidget';
+import setScrollTop from '../../components/common/scrollUp/setScrollTop';
 
 const title = {
   title: 'Бронирование',
 };
 
 const ReservationPage = () => {
+  setScrollTop();
   useEffect(
     () =>
       initWidget({

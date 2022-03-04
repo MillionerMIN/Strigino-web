@@ -4,8 +4,10 @@ import { Reservation } from '../../components/common/reservation/Reservation';
 import { BlockTitle } from '../../components/common/title/BlockTitle';
 import './conferenceFacilities.scss';
 import { getConferenceData } from '../../data/conferenceData';
+import setScrollTop from '../../components/common/scrollUp/setScrollTop';
 
 const ConferenceFacilities = () => {
+  setScrollTop();
   const roomSer = getConferenceData();
   const events = roomSer.roomsService.map((item, i) => (
     <CardNumber key={i} data={item} index={i} hour />

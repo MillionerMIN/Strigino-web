@@ -5,6 +5,7 @@ import { CustomMap } from '../../components/customMap/CustomMap';
 import h24 from '../../assets/icons/contacts/24h.svg';
 
 import './contacts.scss';
+import setScrollTop from '../../components/common/scrollUp/setScrollTop';
 
 const heading = {
   title: 'Контакты',
@@ -55,6 +56,7 @@ const lists = [
 ];
 
 const Contacts = () => {
+  setScrollTop();
   const itemsList = lists.map((item, i) => (
     <div className="contacts__block_item" key={i}>
       <div className="contacts__block_name">{item.name}</div>

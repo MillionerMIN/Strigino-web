@@ -1,0 +1,51 @@
+@import '../../../assets/style/_variable';
+
+.scroll-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  color: $px-main;
+  border-radius: 60px;
+  cursor: pointer;
+  background: $px-yellow;
+  visibility: hidden;
+  opacity: 0;
+  transition: .2s;
+  transform: translateY(25px);
+}
+
+.scroll-up__svg {
+  width: 80%;
+  height: 80%;
+}
+
+.scroll-up:hover {
+  opacity: 1;
+}
+
+.scroll-up__active {
+  visibility: visible;
+  opacity: 0.5;
+  transform: translateY(0);
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+
+  .scroll-up {
+    right: 22px;
+    bottom: 100px;
+  }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {}

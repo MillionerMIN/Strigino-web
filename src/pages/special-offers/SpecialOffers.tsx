@@ -4,8 +4,10 @@ import { Reservation } from '../../components/common/reservation/Reservation';
 import { BlockTitle } from '../../components/common/title/BlockTitle';
 import './specialOffers.scss';
 import { getSpacialOffersData } from '../../data/spacialOffers';
+import setScrollTop from '../../components/common/scrollUp/setScrollTop';
 
 const SpecialOffers = () => {
+  setScrollTop();
   const content = getSpacialOffersData();
 
   const itemsOffer = content.offers.map((item, i) => (
