@@ -6,6 +6,8 @@ import './footer.scss';
 import { SocialType } from '../../data/socialData';
 import { getOrganisationData } from '../../data/footerData';
 
+const now = new Date();
+
 type FooterPropsType = {
   socials: SocialType[];
 };
@@ -13,6 +15,7 @@ type FooterPropsType = {
 export const Footer = (props: FooterPropsType) => {
   const { socials } = props;
   const content = getOrganisationData();
+  const fullYear = now.getFullYear();
 
   return (
     <footer className="footer">
@@ -43,7 +46,7 @@ export const Footer = (props: FooterPropsType) => {
               <p>{content.certificate}</p>
             </div>
             <div className="footer__bottom">
-              2015-2021 © Отель-ресторан Стригино | Все права защищены
+              2015-{fullYear} © Отель-ресторан Стригино | Все права защищены
             </div>
           </div>
         </div>
