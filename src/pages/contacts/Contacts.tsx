@@ -6,10 +6,11 @@ import h24 from '../../assets/icons/contacts/24h.svg';
 
 import './contacts.scss';
 import setScrollTop from '../../components/common/scrollUp/setScrollTop';
+import ContactImage from '../../assets/images/contacts/contacts.jpg';
 
 const heading = {
   title: 'Контакты',
-  photo: 'http://hotelstrigino.ru/images/info/vchod.JPG',
+  photo: ContactImage,
 };
 
 const title = {
