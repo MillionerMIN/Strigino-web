@@ -1,5 +1,6 @@
 import { YMaps, Map, Placemark, GeolocationControl } from 'react-yandex-maps';
 import logo from '../../assets/icons/logo/logo-map.png';
+import M_1 from '../../assets/images/mapImg/about_1.jpg';
 import iconMap from '../../assets/icons/map/icon_map.png';
 import './customMap.scss';
 
@@ -8,8 +9,14 @@ const placemarks = [
     geometry: [56.195234, 43.775302],
     properties: {
       balloonContentHeader: `<img class="map__logo" src='${logo}' alt="Strigino" /><span class="map__header">Hotel Strigino</span>`,
-      balloonContentBody:
-        'Ресторан "Стригино" имеет возможность проведения различных мероприятий: деловых встреч, семинаров, фуршетов, корпоративов, юбилеев и других праздничных и торжественных событий.',
+      balloonContentBody: `Ресторан "Стригино" имеет возможность проведения различных мероприятий: деловых встреч, семинаров, фуршетов, корпоративов, юбилеев и других праздничных и торжественных событий.`,
+      balloonContentFooter: `<div class="map__hint_phones">
+      <a class="map__hint_link" href="tel:79990763646">+7 999 076-36-46</a><a class="map__hint_link" href="tel:79302859866">+7 930 285-98-66</a><a class="map__hint_link" href="tel:78312691612">+7 831 269-16-12</a>
+      </div>
+        `,
+      hintContent: `<div class="map__hint">
+      <img class="map__hint_img" src='${M_1}' alt="Img_1" />
+      <p>Номера телефонов:</p><div class="map__hint_phones"><a class="map__hint_link" href="tel:79990763646">+7 999 076-36-46</a><a class="map__hint_link" href="tel:79302859866">+7 930 285-98-66</a><a class="map__hint_link" href="tel:78312691612">+7 831 269-16-12</a></div></div>`,
       iconCaption: 'Hotel Strigino',
       iconContent: 'Strigino',
     },

@@ -98,6 +98,20 @@ const Contacts = () => {
               </a>
               <a
                 className="contacts__item"
+                href="tel:+79302859866"
+                title="+7 (930) 285-98-66"
+              >
+                +7(930) <span>285-98-66</span>
+              </a>
+              <a
+                className="contacts__item"
+                href="tel:+78312691612"
+                title="+7 (831) 269-16-12"
+              >
+                +7(831) <span>269-16-12</span>
+              </a>
+              <a
+                className="contacts__item"
                 href="mailto:hotelstrigino@mail.ru"
                 title="hotelstrigino@mail.ru"
               >

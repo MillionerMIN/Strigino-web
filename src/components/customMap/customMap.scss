@@ -22,6 +22,38 @@
   height: 32px;
 }
 
+.map__hint {
+  margin: 5px;
+  width: 250px;
+  border-radius: 4px;
+
+  &p {
+    font-size: 0.9rem;
+    margin: 0;
+  }
+}
+
+.map__hint_img {
+  width: 100%;
+}
+
+.map__hint_phones {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.map__hint_link {
+  padding: 2px 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+
+  &:hover {
+    color: $px-yellow;
+  }
+}
+
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
   .map {
