@@ -11,12 +11,16 @@ const placemarks = [
       balloonContentHeader: `<img class="map__logo" src='${logo}' alt="Strigino" /><span class="map__header">Hotel Strigino</span>`,
       balloonContentBody: `Ресторан "Стригино" имеет возможность проведения различных мероприятий: деловых встреч, семинаров, фуршетов, корпоративов, юбилеев и других праздничных и торжественных событий.`,
       balloonContentFooter: `<div class="map__hint_phones">
-      <a class="map__hint_link" href="tel:79990763646">+7 999 076-36-46</a><a class="map__hint_link" href="tel:79302859866">+7 930 285-98-66</a><a class="map__hint_link" href="tel:78312691612">+7 831 269-16-12</a>
+      <div class="map__hint_social">
+      <a class="map__hint_link" href="tel:+79990763646">+7 999 076-36-46</a>
+      <ul class="social social_mr social_pd"><li class="social__item"><a class="social__link social__link-fs25" href="https://www.facebook.com/hotelstrigino" title="Facebook"><span class="icon-facebook-icon"></span></a></li><li class="social__item"><a class="social__link social__link-fs25" href="https://instagram.com/strigino_restaurant_hotel?utm_medium=copy_link" title="Instagram"><span class="icon-instagram-icon"></span></a></li><li class="social__item"><a class="social__link social__link-fs25" href="viber://add?number=79990763646" title="Viber"><span class="icon-viber-icon"></span></a></li><li class="social__item"><a class="social__link social__link-fs25" href="https://api.whatsapp.com/send?phone=79990763646" title="Whatsapp"><span class="icon-whatsapp-icon"></span></a></li><li class="social__item"><a class="social__link social__link-fs25" href="#" title="Telegram"><span class="icon-telegram-icon"></span></a></li></ul>
+      </div>
+      <a class="map__hint_link" href="tel:+79302859866">+7 930 285-98-66</a><a class="map__hint_link" href="tel:+78312691612">+7 831 269-16-12</a>
       </div>
         `,
       hintContent: `<div class="map__hint">
       <img class="map__hint_img" src='${M_1}' alt="Img_1" />
-      <p>Номера телефонов:</p><div class="map__hint_phones"><a class="map__hint_link" href="tel:79990763646">+7 999 076-36-46</a><a class="map__hint_link" href="tel:79302859866">+7 930 285-98-66</a><a class="map__hint_link" href="tel:78312691612">+7 831 269-16-12</a></div></div>`,
+      <p>Номера телефонов:</p><div class="map__hint_phones"><a class="map__hint_link" href="tel:+79990763646">+7 999 076-36-46</a><a class="map__hint_link" href="tel:+79302859866">+7 930 285-98-66</a><a class="map__hint_link" href="tel:+78312691612">+7 831 269-16-12</a></div></div>`,
       iconCaption: 'Hotel Strigino',
       iconContent: 'Strigino',
     },

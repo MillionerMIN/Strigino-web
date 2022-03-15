@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom';
 import Loader from '../components/common/lotties/Loader';
 import ScrollUp from '../components/common/scrollUp/ScrollUp';
 import { Home } from '../pages/home/Home';
+import { socialsData } from '../data/socialData';
 
 import './routers.scss';
 
@@ -57,7 +58,10 @@ export const Routers = () => {
             {/* <Route index element={<RoomsList />} />
             <Route path=":roomId" element={<RoomInfo />} /> */}
           </Route>
-          <Route path={PATH.CONTACTS} element={<Contacts />} />
+          <Route
+            path={PATH.CONTACTS}
+            element={<Contacts socials={socialsData} />}
+          />
           <Route path={PATH.RESERVATION} element={<ReservationPage />} />
         </Routes>
       </Suspense>

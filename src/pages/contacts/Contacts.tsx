@@ -7,6 +7,8 @@ import h24 from '../../assets/icons/contacts/24h.svg';
 import './contacts.scss';
 import setScrollTop from '../../components/common/scrollUp/setScrollTop';
 import ContactImage from '../../assets/images/contacts/contacts.jpg';
+import { SocialType } from '../../data/socialData';
+import { Social } from '../../components/common/social/Social';
 
 const heading = {
   title: 'Контакты',
@@ -24,12 +26,15 @@ const mapTitle = {
   description:
     'Отель-ресторан "Стригино" располагается по координатам GPS: широта: 56°11′44.16″N (56.195599), долгота: 43°46′30.86″E (43.7752384)',
 };
-
 const lists = [
   {
     name: 'Бронирование',
     href: 'tel:+79990763646',
     tel: '+7 (999) 076-36-46',
+    href2: 'tel:+79302859866',
+    tel2: '+7 (930) 285-98-66',
+    href3: 'tel:+78312691612',
+    tel3: '+7 (831) 269-16-12',
     mailto: 'mailto:hotelstrigino@mail.ru',
     email: 'hotelstrigino@mail.ru',
   },
@@ -37,6 +42,10 @@ const lists = [
     name: 'Организация деловых мероприятий',
     href: 'tel:+79990763646',
     tel: '+7 (999) 076-36-46',
+    href2: 'tel:+79302859866',
+    tel2: '+7 (930) 285-98-66',
+    href3: 'tel:+78312691612',
+    tel3: '+7 (831) 269-16-12',
     mailto: 'mailto:hotelstrigino@mail.ru',
     email: 'hotelstrigino@mail.ru',
   },
@@ -44,6 +53,10 @@ const lists = [
     name: 'Ресторан',
     href: 'tel:+79990763646',
     tel: '+7 (999) 076-36-46',
+    href2: 'tel:+79302859866',
+    tel2: '+7 (930) 285-98-66',
+    href3: 'tel:+78312691612',
+    tel3: '+7 (831) 269-16-12',
     mailto: 'mailto:hotelstrigino@mail.ru',
     email: 'hotelstrigino@mail.ru',
   },
@@ -51,12 +64,21 @@ const lists = [
     name: 'Банкетная служба',
     href: 'tel:+79990763646',
     tel: '+7 (999) 076-36-46',
+    href2: 'tel:+79302859866',
+    tel2: '+7 (930) 285-98-66',
+    href3: 'tel:+78312691612',
+    tel3: '+7 (831) 269-16-12',
     mailto: 'mailto:hotelstrigino@mail.ru',
     email: 'hotelstrigino@mail.ru',
   },
 ];
 
-const Contacts = () => {
+type ContactsPropsType = {
+  socials: SocialType[];
+};
+
+const Contacts = (props: ContactsPropsType) => {
+  const { socials } = props;
   setScrollTop();
   const itemsList = lists.map((item, i) => (
     <div className="contacts__block_item" key={i}>
@@ -64,8 +86,19 @@ const Contacts = () => {
       <div className="contacts__block_info">
         <div className="contacts__block_line">
           <div className="contacts__block_label">тел.: </div>
-          <a className="contacts__block_link" href={item.href}>
-            {item.tel}
+          <div className="contacts__block_social">
+            <a className="contacts__block_link" href={item.href}>
+              {item.tel}
+            </a>
+            <Social className="social__link-fs25" socials={socials} />
+          </div>
+          <div className="contacts__block_label">тел.: </div>
+          <a className="contacts__block_link" href={item.href2}>
+            {item.tel2}
+          </a>
+          <div className="contacts__block_label">тел.: </div>
+          <a className="contacts__block_link" href={item.href3}>
+            {item.tel3}
           </a>
         </div>
         <div className="contacts__block_line">

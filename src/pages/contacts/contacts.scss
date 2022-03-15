@@ -74,6 +74,11 @@
       box-shadow: 0 0 50px 30px rgb(0 0 0 / 3%);
     }
 
+    &_social {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
     &_list {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -109,6 +114,11 @@
         color: $px-yellow;
         text-decoration: underline;
       }
+    }
+
+    &_line {
+      display: grid;
+      grid-template-columns: 50px auto;
     }
 
   }

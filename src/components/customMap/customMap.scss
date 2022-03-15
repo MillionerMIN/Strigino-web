@@ -54,6 +54,11 @@
   }
 }
 
+.map__hint_social {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+}
+
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
   .map {
