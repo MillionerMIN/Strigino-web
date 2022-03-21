@@ -57,11 +57,13 @@ export const CardNumber = (props: CardNumberType) => {
             >
               Забронировать
             </NavLink>
-            <div className={'price price_right'}>
-              от <span className="value text_fs26">{cost_1}</span>{' '}
-              <span className="currency text_fs26">RUB</span>
-              {hour ? '/час' : ''}
-            </div>
+            {cost_1 && (
+              <div className={'price price_right'}>
+                от <span className="value text_fs26">{cost_1}</span>{' '}
+                <span className="currency text_fs26">RUB</span>
+                {hour ? '/час' : ''}
+              </div>
+            )}
           </div>
         </div>
       </div>

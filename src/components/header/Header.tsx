@@ -99,6 +99,10 @@ export const Header = (props: HeaderPropsType) => {
               </div>
               <div className="block block_right">{menuRight}</div>
             </nav>
+
+            <div className="menu__mobile_wrapper">
+              <Social className="menu__mobile_social" socials={socials} />
+            </div>
           </div>
         </div>
       </header>

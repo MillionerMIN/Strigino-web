@@ -30,10 +30,12 @@
 
   &__contacts {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr;
     justify-items: center;
     padding: 6px 0;
     margin: 6px 0;
+    color: $px-yellow;
+    font-weight: 700;
   }
 
   &__information {
@@ -54,10 +56,18 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 10px;
+    align-items: start;
   }
 
   &__logo {
     max-width: 80%;
+  }
+
+  &__phones {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-content: center;
+    justify-items: end;
   }
 
   &__right {
@@ -111,6 +121,10 @@
       grid-template-columns: 300px;
       justify-content: center;
       margin-bottom: 25px;
+    }
+
+    &__phones {
+      justify-items: center;
     }
 
     &__right {

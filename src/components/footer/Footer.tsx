@@ -16,6 +16,11 @@ export const Footer = (props: FooterPropsType) => {
   const { socials } = props;
   const content = getOrganisationData();
   const fullYear = now.getFullYear();
+  const phones = content.phones.map((phone, index) => (
+    <a className="footer__link" href={`tel:${phone.phoneNumber}`} key={index}>
+      <span className="value">{phone.phone}</span>
+    </a>
+  ));
 
   return (
     <footer className="footer">
@@ -28,10 +33,6 @@ export const Footer = (props: FooterPropsType) => {
                 <span className="lable">Наш адрес:</span>
                 <span className="value">{content.address}</span>
               </NavLink>
-              <a className="footer__link" href={`tel:${content.phoneNumber}`}>
-                <span>Телефон для бронирования:</span>
-                <span className="value">{content.phone}</span>
-              </a>
             </div>
           </div>
         </div>
@@ -41,6 +42,10 @@ export const Footer = (props: FooterPropsType) => {
           <div className="footer__container">
             <div className="footer__left">
               <img className="footer__logo" src={Logo} alt="LogoRus" />
+              <div className="footer__phones">
+                <span>Телефон для бронирования:</span>
+                {phones}
+              </div>
             </div>
             <div className="footer__right text_fs13">
               <p>{content.certificate}</p>

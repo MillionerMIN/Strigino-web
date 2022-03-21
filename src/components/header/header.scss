@@ -118,6 +118,16 @@
   }
 }
 
+.menu__mobile_wrapper {
+  display: none;
+}
+
+.menu__mobile_social span {
+  font-size: 30px;
+  color: $px-yellow;
+  justify-self: center;
+}
+
 .block__item:hover.block__item::before {
   width: 100%;
   transition: all .5s ease-out;
@@ -261,6 +271,10 @@
     &__social {
       display: none;
     }
+  }
+
+  .menu__mobile_wrapper {
+    display: grid;
   }
 
 
