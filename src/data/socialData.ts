@@ -25,7 +25,11 @@ export const socialsData: SocialType[] = [
     img: 'icon-whatsapp-icon',
     link: 'https://api.whatsapp.com/send?phone=79990763646',
   },
-  { name: 'Telegram', img: 'icon-telegram-icon', link: '#' },
+  {
+    name: 'Telegram',
+    img: 'icon-telegram-icon',
+    link: 'https://telegram.im/@Strigino139',
+  },
 ];
 
 export function getSocialsData() {
