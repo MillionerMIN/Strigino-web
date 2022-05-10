@@ -7,10 +7,11 @@ type CardNumberType = {
   index?: number;
   data: RoomHotelType;
   hour?: boolean;
+  reservation?: string;
 };
 
 export const CardNumber = (props: CardNumberType) => {
-  const { hour } = props;
+  const { hour, reservation = '/reservation' } = props;
   const { id, title, desc, photos, cost_1 } = props.data;
 
   const description = desc.slice(0, 100);
@@ -51,7 +52,7 @@ export const CardNumber = (props: CardNumberType) => {
             <div className="delimiter delimiter_mr10"></div>
             <div className="description text_fs15">{description}</div>
             <NavLink
-              to={'/reservation'}
+              to={reservation}
               title="Забронировать"
               className="button button_order button_hover link_color"
             >

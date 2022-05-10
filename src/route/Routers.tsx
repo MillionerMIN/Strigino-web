@@ -9,6 +9,9 @@ import './routers.scss';
 
 const About = React.lazy(() => import('../pages/about/About'));
 const Restaurant = React.lazy(() => import('../pages/restaurant/Restaurant'));
+const ReservationRestaurantPage = React.lazy(
+  () => import('../pages/reservation-restaurant-page/ReservationRestaurantPage')
+);
 const HotelRoom = React.lazy(() => import('../pages/hotelRoom/HotelRoom'));
 const ConferenceFacilities = React.lazy(
   () => import('../pages/conference-facilities/ConferenceFacilities')
@@ -30,6 +33,7 @@ export const PATH = {
   ABOUT: '/about',
   SPECIAL: '/special-offers',
   RESTAURANT: '/restaurant',
+  RESTAURANT_RESERVATION: '/reservation-restaurant',
   ROOMS: '/rooms',
   CONFERENCE: '/conference-facilities',
   CONTACTS: '/contacts',
@@ -49,6 +53,10 @@ export const Routers = () => {
           <Route path={PATH.ABOUT} element={<About />} />
           <Route path={PATH.SPECIAL} element={<SpecialOffers />} />
           <Route path={PATH.RESTAURANT} element={<Restaurant />} />
+          <Route
+            path={PATH.RESTAURANT_RESERVATION}
+            element={<ReservationRestaurantPage />}
+          />
           <Route path={PATH.ROOMS} element={<HotelRoom />}>
             <Route index element={<RoomsList />} />
             <Route path=":roomId" element={<RoomInfo />} />

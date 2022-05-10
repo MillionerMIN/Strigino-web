@@ -11,7 +11,12 @@ const Restaurant = () => {
   setScrollTop();
   const content = getRestaurantData();
   const events = content.eventsRes.map((item, i) => (
-    <CardNumber key={i} data={item} index={i} />
+    <CardNumber
+      key={i}
+      data={item}
+      index={i}
+      reservation={'/reservation-restaurant'}
+    />
   ));
   return (
     <div className="restaurant restaurant_pd">
