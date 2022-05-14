@@ -1,25 +1,67 @@
 @import '../../assets/style/_variable';
 
-.reservation-page {
-  background: #fff;
+.reservation-restaurant-page {}
+
+.reservation-restaurant-page_pd {
+  padding: 0 0 100px 0;
 }
 
-.reservation-page_pd {
-  padding: 50px 0 100px 0;
-}
-
-.reservation-page__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background: $px-main;
+.reservation-restaurant-page__gifts {
+  max-width: 800px;
+  background: $px-yellow;
   color: #fff;
 }
 
-.reservation-page__title {
+.reservation-restaurant-page__gifts_md {
+  margin: 0 auto 50px;
+}
+
+.reservation-restaurant-page__gifts_pd {
+  padding: 1.25rem 2.5rem;
+}
+
+.reservation-restaurant-page__wrapper {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 3.75rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.reservation-restaurant-page__contact {
+  width: 100%;
+  align-self: flex-start;
+  margin: 0 auto;
+  background: $px-yellow;
+  color: #fff;
+  padding: 15px;
+}
+
+.reservation-restaurant-page__info {
+  border: 1px solid #fff;
+  padding: 1.25rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  font-family: "Playfair Display", serif;
+
+}
+
+.reservation-restaurant-page__contactTitle {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.reservation-restaurant-page__title {
   padding: 16px 10px;
   align-self: center;
+}
+
+.reservation-restaurant-page__item {
+  font-size: 1.375rem;
+  font-weight: 700;
 }
 
 .reservation-page__line {

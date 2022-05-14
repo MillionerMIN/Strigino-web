@@ -2,7 +2,7 @@ import './headingBlock.scss';
 
 type HeadingBlockType = {
   data: {
-    title: string;
+    title: string | undefined;
     photo: string;
   };
 };

@@ -1,0 +1,65 @@
+@import '../../assets/style/_variable';
+
+.form {
+  background: #fff;
+}
+
+.form_pd {
+  padding: 1.25rem;
+}
+
+.form__container {
+  border: 2px solid $px-yellow;
+}
+
+.form__container_pd {
+  padding: 40px 85px 65px 85px;
+}
+
+.form__note {
+  margin-bottom: 1.25rem;
+}
+
+.form__field {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 25px;
+}
+
+.form__field label {
+  font-size: 0.875rem;
+  color: #919191;
+  margin-bottom: 10px;
+}
+
+.form__field input {
+  color: $px-main;
+  border: 0;
+  background: rgba(206, 167, 111, 0.25);
+  height: 50px;
+  padding: 0 30px;
+
+  &::placeholder {
+    color: $px-yellow;
+  }
+}
+
+.form__field textarea {
+  color: $px-main;
+  border: 0;
+  background: rgba(206, 167, 111, 0.25);
+  height: 100px;
+  padding: 10px 30px;
+
+  &::placeholder {
+    color: $px-yellow;
+  }
+}
+
+.form__button {
+  width: 100%;
+  color: #ffffff !important;
+  background: #7a2332;
+  border: 0;
+  padding: 17px 14px;
+}
