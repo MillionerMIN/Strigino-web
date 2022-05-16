@@ -1,11 +1,10 @@
 import './formReservation.scss';
 
 import { Formik, Field, Form, FormikHelpers } from 'formik';
+import emailjs from '@emailjs/browser';
 
 interface Values {
   date: number;
-  timeStart: number;
-  timeEnd: number;
   numberPeople: number;
   firstName: string;
   phone: string;
@@ -14,7 +13,26 @@ interface Values {
 }
 
 const FormReservation = () => {
-  function sendEmail() {}
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        'service_90v1c3w',
+        'template_etqol4b',
+        e.currentTarget,
+        'nlC2xucQM9WVhNYSl'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    e.currentTarget.reset();
+  };
 
   return (
     <div className="form form_md form_pd">
@@ -22,11 +40,9 @@ const FormReservation = () => {
         <div className="form__note">
           Поля со звездочкой * обязательны для заполнения
         </div>
-        <Formik
+        {/* <Formik
           initialValues={{
             date: 0,
-            timeEnd: 0,
-            timeStart: 0,
             numberPeople: 0,
             firstName: '',
             phone: '',
@@ -35,77 +51,53 @@ const FormReservation = () => {
           }}
           onSubmit={(
             values: Values,
-            { setSubmitting }: FormikHelpers<Values>
           ) => {
-            setTimeout(() => {
-              alert(JSON.stringify(values, null, 2));
-              setSubmitting(false);
-            }, 500);
           }}
-        >
-          <Form>
-            <div className="form__field">
-              <label htmlFor="date">Дата *</label>
-              <Field id="data" name="data" type="date" />
-            </div>
+        > */}
+        <form onSubmit={sendEmail}>
+          <div className="form__field">
+            <label htmlFor="date">Дата *</label>
+            <input id="data" name="date" type="date" />
+          </div>
 
-            <div className="form__field">
-              <label htmlFor="timeStart">Время начала *</label>
-              <Field id="timeStart" name="timeStart" type="time" />
-            </div>
+          <div className="form__field">
+            <label htmlFor="numberPeople">Количество человек</label>
+            <input id="numberPeople" name="numberPeople" type="number" />
+          </div>
 
-            <div className="form__field">
-              <label htmlFor="timeEnd">Время окончания *</label>
-              <Field id="timeEnd" name="timeEnd" type="time" />
-            </div>
+          <div className="form__field">
+            <label htmlFor="firstName">Контактное лицо *</label>
+            <input
+              id="firstName"
+              name="firstName"
+              placeholder="Иванов Иван Иванович"
+            />
+          </div>
 
-            <div className="form__field">
-              <label htmlFor="numberPeople">Количество человек</label>
-              <Field id="numberPeople" name="numberPeople" type="number" />
-            </div>
+          <div className="form__field">
+            <label htmlFor="phone">Контактный телефон (с кодом страны) *</label>
+            <input id="phone" name="phone" placeholder="+7 (999) 111-11-11" />
+          </div>
 
-            <div className="form__field">
-              <label htmlFor="firstName">Контактное лицо *</label>
-              <Field
-                id="firstName"
-                name="firstName"
-                placeholder="Иванов Иван Иванович"
-              />
-            </div>
+          <div className="form__field">
+            <label htmlFor="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              placeholder="ivanov@gmail.com"
+              type="email"
+            />
+          </div>
 
-            <div className="form__field">
-              <label htmlFor="phone">
-                Контактный телефон (с кодом страны) *
-              </label>
-              <Field id="phone" name="phone" placeholder="+7 (999) 111-11-11" />
-            </div>
+          <div className="form__field">
+            <label htmlFor="comments">Коментарии</label>
+            <textarea id="comments" name="comments" placeholder="" />
+          </div>
 
-            <div className="form__field">
-              <label htmlFor="email">Email</label>
-              <Field
-                id="email"
-                name="email"
-                placeholder="ivanov@gmail.com"
-                type="email"
-              />
-            </div>
-
-            <div className="form__field">
-              <label htmlFor="comments">Коментарии</label>
-              <Field
-                as="textarea"
-                id="comments"
-                name="comments"
-                placeholder=""
-                type="email"
-              />
-            </div>
-
-            <button className="button_submit" type="submit">
-              Отправить запрос
-            </button>
-          </Form>
-        </Formik>
+          <button className="button_submit" type="submit">
+            Отправить запрос
+          </button>
+        </form>
       </div>
     </div>
   );
