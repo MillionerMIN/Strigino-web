@@ -48,7 +48,7 @@
   font-family: "Playfair Display";
   width: 100%;
   color: #ffffff !important;
-  background: #7a2332;
+  background: $px-main;
   font-weight: 600;
   border: 0;
   padding: 17px 14px;
@@ -58,6 +58,11 @@
     background-color: $px-yellow;
     transition: 0.7s;
     color: $px-footer;
+  }
+
+  &:disabled {
+    background: $px-grey;
+    opacity: 0.8;
   }
 }
 

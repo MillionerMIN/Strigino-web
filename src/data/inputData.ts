@@ -1,0 +1,42 @@
+export const inputs = [
+  {
+    id: 'data',
+    name: 'date',
+    type: 'date',
+    labelName: 'Дата *',
+    placeholder: '01.01.2022',
+    errorMessage: 'Укажите дату',
+  },
+  {
+    id: 'numberPeople',
+    name: 'numberPeople',
+    type: 'number',
+    placeholder: 'до 80',
+    labelName: 'Количество человек',
+    errorMessage: 'Количество человек не должно привышать 80',
+  },
+  {
+    id: 'name',
+    name: 'name',
+    type: 'text',
+    placeholder: 'Иванов Иван Иванович',
+    labelName: 'Контактное лицо *',
+    errorMessage: 'Укажите имя контактного лица ',
+  },
+  {
+    id: 'phone',
+    name: 'phone',
+    type: 'text',
+    placeholder: '+7 (999) 111 11 11',
+    labelName: 'Контактный телефон (с кодом страны) *',
+    errorMessage: 'Укажите номер телефон',
+  },
+  {
+    id: 'email',
+    name: 'email',
+    type: 'email',
+    placeholder: 'ivanov@gmail.com',
+    labelName: 'Email',
+    errorMessage: 'Некорректный email',
+  },
+];

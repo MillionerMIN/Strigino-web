@@ -1,0 +1,25 @@
+@import '../../../assets/style/variable';
+
+.formInput {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 25px;
+}
+
+.formInput label {
+  font-size: 0.875rem;
+  color: #919191;
+  margin-bottom: 10px;
+}
+
+.formInput input {
+  color: $px-main;
+  border: 0;
+  background: rgba(206, 167, 111, 0.25);
+  height: 50px;
+  padding: 0 30px;
+
+  &::placeholder {
+    color: $px-yellow;
+  }
+}

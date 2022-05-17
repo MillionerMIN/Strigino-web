@@ -2,10 +2,17 @@
 
 .form {
   background: #fff;
+  position: relative;
 }
 
 .form_pd {
   padding: 1.25rem;
+}
+
+.form__loader {
+  position: absolute;
+  top: -20px;
+  left: 325px;
 }
 
 .form__container {
@@ -20,19 +27,19 @@
   margin-bottom: 1.25rem;
 }
 
-.form__field {
+.formInput {
   display: grid;
   grid-template-columns: 1fr;
   margin-bottom: 25px;
 }
 
-.form__field label {
+.formInput label {
   font-size: 0.875rem;
   color: #919191;
   margin-bottom: 10px;
 }
 
-.form__field input {
+.formInput input {
   color: $px-main;
   border: 0;
   background: rgba(206, 167, 111, 0.25);
@@ -44,22 +51,38 @@
   }
 }
 
-.form__field textarea {
-  color: $px-main;
-  border: 0;
-  background: rgba(206, 167, 111, 0.25);
-  height: 100px;
-  padding: 10px 30px;
+.formInput div {
+  color: $px-error;
+  font-size: 0.875rem;
+}
 
-  &::placeholder {
-    color: $px-yellow;
+.form__alert {
+  position: fixed;
+  bottom: 10px;
+  left: calc(100% - 50% - 184px);
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {
+
+  .form__container_pd {
+    padding: 40px;
+  }
+
+  .form__loader {
+    top: -20px;
+    left: calc(100% - 60%);
   }
 }
 
-.form__button {
-  width: 100%;
-  color: #ffffff !important;
-  background: #7a2332;
-  border: 0;
-  padding: 17px 14px;
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .form__container_pd {
+    padding: 10px;
+  }
+
+  .form__loader {
+    top: -20px;
+    left: calc(100% - 75%);
+  }
 }

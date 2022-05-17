@@ -83,29 +83,31 @@ const Contacts = (props: ContactsPropsType) => {
   const itemsList = lists.map((item, i) => (
     <div className="contacts__block_item" key={i}>
       <div className="contacts__block_name">{item.name}</div>
-      <div className="contacts__block_info">
-        <div className="contacts__block_line">
-          <div className="contacts__block_label">тел.: </div>
-          <div className="contacts__block_social">
+      <div className="contacts__block_social">
+        <Social className="social__link-fs25" socials={socials} />
+        <div className="contacts__block_info">
+          <div className="contacts__block_line">
+            <div className="contacts__block_label">тел.: </div>
+
             <a className="contacts__block_link" href={item.href}>
               {item.tel}
             </a>
-            <Social className="social__link-fs25" socials={socials} />
+
+            <div className="contacts__block_label">тел.: </div>
+            <a className="contacts__block_link" href={item.href2}>
+              {item.tel2}
+            </a>
+            <div className="contacts__block_label">тел.: </div>
+            <a className="contacts__block_link" href={item.href3}>
+              {item.tel3}
+            </a>
           </div>
-          <div className="contacts__block_label">тел.: </div>
-          <a className="contacts__block_link" href={item.href2}>
-            {item.tel2}
-          </a>
-          <div className="contacts__block_label">тел.: </div>
-          <a className="contacts__block_link" href={item.href3}>
-            {item.tel3}
-          </a>
-        </div>
-        <div className="contacts__block_line">
-          <div className="contacts__block_label">e-mail: </div>
-          <a className="contacts__block_link" href={item.mailto}>
-            {item.email}
-          </a>
+          <div className="contacts__block_line">
+            <div className="contacts__block_label">e-mail: </div>
+            <a className="contacts__block_link" href={item.mailto}>
+              {item.email}
+            </a>
+          </div>
         </div>
       </div>
     </div>

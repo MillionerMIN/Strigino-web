@@ -3,7 +3,12 @@ import './loader.scss';
 import Lottie from 'react-lottie';
 import animationData from './loader.json';
 
-const Loader = () => {
+type LoaderType = {
+  className?: string;
+};
+
+const Loader = (props: LoaderType) => {
+  const { className } = props;
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -13,7 +18,7 @@ const Loader = () => {
     },
   };
   return (
-    <div className="loader">
+    <div className={`loader ${className}`}>
       <Lottie options={defaultOptions} width={150} height={150} />
     </div>
   );
