@@ -1,4 +1,4 @@
-import emailjs from '@emailjs/browser';
+
 import { ChangeEvent, useState } from 'react';
 
 type UseFormType = {
