@@ -6,8 +6,11 @@ import { Reservation } from '../../components/common/reservation/Reservation';
 import { BlockTitle } from '../../components/common/title/BlockTitle';
 import { getRestaurantData } from '../../data/restaurantData';
 import setScrollTop from '../../components/common/scrollUp/setScrollTop';
+import ModalWindow from '../../components/common/modalWindow/ModalWindow';
+import { useState } from 'react';
 
 const Restaurant = () => {
+  const [modalShow, setModalShow] = useState<boolean>(false);
   setScrollTop();
   const content = getRestaurantData();
   const events = content.eventsRes.map((item, i) => (
@@ -23,6 +26,13 @@ const Restaurant = () => {
       <HeadingBlock data={content.heading} />
       <Reservation />
       <BlockTitle data={content.title} />
+      <div
+        className="button button_center button_text-white button_border-white  restaurant__menuButton"
+        onClick={() => setModalShow(true)}
+      >
+        Наше меню
+      </div>
+      <ModalWindow state={modalShow} setModalShow={setModalShow} />
       <div className="restaurant-wrapper">{events}</div>
     </div>
   );

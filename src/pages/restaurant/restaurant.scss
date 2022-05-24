@@ -1,6 +1,21 @@
+@import '../../assets/style/variable';
+
 .restaurant {
   &_pd {
     padding: 0 0 100px 0;
+  }
+}
+
+.restaurant__menuButton {
+  background-color: #fff;
+  color: $px-main;
+  border: 3px solid $px-yellow;
+  margin-bottom: 40px;
+
+  &:hover {
+    background-color: $px-yellow;
+    transition: all 0.3s linear;
+    color: #fff;
   }
 }
 

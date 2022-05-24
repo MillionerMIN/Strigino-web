@@ -6,12 +6,13 @@ type BlockTitleType = {
     description?: string | undefined;
     colorTitle?: string | undefined;
   };
+  className?: string;
 };
 
 export const BlockTitle = (props: BlockTitleType) => {
   const { title, description, colorTitle } = props.data;
   return (
-    <div className="block-title block-title_pb">
+    <div className={`block-title block-title_pb ${props.className}`}>
       <div className="container">
         <h2 className={`title title_fs36 text-uppercase ${colorTitle}`}>
           {title}

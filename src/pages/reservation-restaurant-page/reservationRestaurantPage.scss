@@ -30,6 +30,27 @@
   align-items: center;
 }
 
+.reservation-restaurant-page__row {
+  align-self: start;
+  display: grid;
+  justify-items: center;
+  row-gap: 1.25rem;
+}
+
+.reservation-restaurant-page__menu {
+  padding: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all .3s ease;
+  font-size: 1.25rem;
+
+  &:hover {
+    text-shadow: 2px 2px 5px $px-yellow;
+    transform: scale(1.1);
+  }
+}
+
 .reservation-restaurant-page__contact {
   width: 100%;
   align-self: flex-start;
