@@ -352,7 +352,7 @@ export const buffetMenu: BuffetMenuType = [
             price: 250,
           },
           {
-            dishName: 'Мини-пирожное',
+            dishName: 'Мини пирожное',
             weight: '1шт.',
             price: 95,
           },

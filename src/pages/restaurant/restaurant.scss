@@ -6,6 +6,19 @@
   }
 }
 
+.restaurant__reservationButton {
+  background-color: $px-yellow;
+  color: #fff;
+  border: 3px solid $px-yellow;
+
+
+  &:hover {
+    background-color: #fff;
+    transition: all 0.3s linear;
+    color: $px-yellow;
+  }
+}
+
 .restaurant__menuButton {
   background-color: #fff;
   color: $px-main;
@@ -17,6 +30,12 @@
     transition: all 0.3s linear;
     color: #fff;
   }
+}
+
+.restaurant__reservation {
+  width: 100%;
+  padding: 1.25rem;
+  background-color: $px-main;
 }
 
 // Large devices (desktops, less than 1200px)

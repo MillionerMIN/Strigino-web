@@ -10,8 +10,6 @@ import striginoMenu, {
   MenuPropsType,
 } from '../../../data/striginoMenu';
 
-console.log(buffetMenu);
-
 type MyVerticallyCenteredModalType = {
   data: MenuPropsType;
   dataBuffer: BuffetMenuType;
