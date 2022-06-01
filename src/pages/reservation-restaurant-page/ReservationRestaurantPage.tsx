@@ -33,7 +33,6 @@ const ReservationRestaurantPage = () => {
         <ul className="reservation-restaurant-page__gifts reservation-restaurant-page__gifts_md reservation-restaurant-page__gifts_pd ">
           {giftsContent}
         </ul>
-
         <div className="reservation-restaurant-page__wrapper">
           <div className="reservation-restaurant-page__row">
             <div
