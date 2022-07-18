@@ -8,10 +8,13 @@ import FormReservation from '../../components/formReservation/FormReservation';
 import ModalWindow from '../../components/common/modalWindow/ModalWindow';
 import { useState } from 'react';
 import Border from '../../assets/icons/other/borderMenu.png';
+import GiftBox from '../../components/common/lotties/gift-box/GiftBox';
+import AlertCustom from '../../components/common/alert/AlertCustom';
 
 const ReservationRestaurantPage = () => {
   const [modalShow, setModalShow] = useState<boolean>(false);
   setScrollTop();
+  const [show, setShow] = useState<boolean>(false);
   const content = getRestaurantData();
 
   const giftsContent = content.eventsRes[0].reservation?.present.gifts.map(
@@ -35,6 +38,11 @@ const ReservationRestaurantPage = () => {
         </ul>
         <div className="reservation-restaurant-page__wrapper">
           <div className="reservation-restaurant-page__row">
+            <div onClick={() => setShow(true)}>
+              {show && <AlertCustom />}
+              <GiftBox />
+            </div>
+
             <div
               className="reservation-restaurant-page__menu"
               onClick={() => setModalShow(true)}
