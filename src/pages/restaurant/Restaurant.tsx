@@ -20,7 +20,7 @@ const Restaurant = () => {
       key={i}
       data={item}
       index={i}
-      reservation={'/reservation-restaurant'}
+      reservation={item.reservation?.route}
     />
   ));
 

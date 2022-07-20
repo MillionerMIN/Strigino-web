@@ -27,12 +27,12 @@ const restaurantData = {
       photos: [Wedding],
       cost_1: 1800,
       reservation: {
+        route: '/reservation-restaurant',
         titleReserve: '«Свадебная церемония»',
         present: {
           title: 'Наш предложение для бракосочетающихся',
           gifts: [
             'Просторный ресторан, с вместимостью до 80 гостей',
-            'Номер люкс для для молодых в подарок',
             'Номер для гостей с вашего банкета предоставляются с 15% скидкой',
             'Предоставляем номер для сбора невесты с 20% скидкой (бронировать зарание)',
             'При заказе от 2500 рублей с человека, чайный стол в подарок',
@@ -48,6 +48,20 @@ const restaurantData = {
       desc: '',
       photos: [Anniversary],
       // cost_1: 3800,
+      reservation: {
+        route: '/reservation-birthday',
+        titleReserve: '«Юбилеи, Дни рождения»',
+        present: {
+          title: 'Наш предложение',
+          gifts: [
+            'Скидки на номера для гостей -10%',
+            'Wi-Fi',
+            'Скидки юбелярам 5% или 10%',
+            'Музыкальное оборудование в аренду',
+            'Оформление президиума',
+          ],
+        },
+      },
     },
     {
       id: '',
@@ -62,6 +76,18 @@ const restaurantData = {
       desc: '',
       photos: [Graduation],
       // cost_1: 2300,
+      reservation: {
+        route: '/reservation-senior',
+        titleReserve: '«Выпускные»',
+        present: {
+          title: 'Наш предложение',
+          gifts: [
+            'Встреча рассвета на берегу реки Ока',
+            'Отличная персональная скидка -50% от меню',
+            'Индивидуальный подход',
+          ],
+        },
+      },
     },
     {
       id: '',
@@ -69,6 +95,20 @@ const restaurantData = {
       desc: '',
       photos: [Birthday],
       // cost_1: 2300,
+      reservation: {
+        route: '/reservation-children',
+        titleReserve: '«Детские праздники»',
+        present: {
+          title: 'Наш предложение',
+          gifts: [
+            'Просторный зал',
+            'Сладкий стол',
+            'Оформление фото зоны',
+            'Пригласим аниматора',
+            'Световое сопровождение',
+          ],
+        },
+      },
     },
     {
       id: '',
@@ -76,6 +116,20 @@ const restaurantData = {
       desc: '',
       photos: [SlideFourchette],
       // cost_1: 2300,
+      reservation: {
+        route: '/reservation-buffet',
+        titleReserve: '«Фуршеты, презентации»',
+        present: {
+          title: 'Наш предложение',
+          gifts: [
+            'Возможность проведения в двух залах(ресторан на 80 мест, конференц зал на 25 мест)',
+            'Бизнес-ланч',
+            'Кофе брейк',
+            'Wi-fi',
+            'Индивидуальные скидки на размещения гостей в отеле',
+          ],
+        },
+      },
     },
   ],
 };

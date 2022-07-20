@@ -6,6 +6,10 @@ import { Home } from '../pages/home/Home';
 import { socialsData } from '../data/socialData';
 
 import './routers.scss';
+import ReservationBirthdayPage from '../pages/reservation-birthday-page/ReservationBirthdayPage';
+import ReservationBuffetPage from '../pages/reservation-buffet-page/ReservationBuffetPage';
+import ReservationChildrenPage from '../pages/reservation-children-page/ReservationChildrenPage';
+import ReservationSeniorPage from '../pages/reservation-senior-page/ReservationSeniorPage';
 
 const About = React.lazy(() => import('../pages/about/About'));
 const Restaurant = React.lazy(() => import('../pages/restaurant/Restaurant'));
@@ -34,6 +38,10 @@ export const PATH = {
   SPECIAL: '/special-offers',
   RESTAURANT: '/restaurant',
   RESTAURANT_RESERVATION: '/reservation-restaurant',
+  RESTAURANT_BIRTHDAY: '/reservation-birthday',
+  RESTAURANT_SENIOR: '/reservation-senior',
+  RESTAURANT_CHILDREN: '/reservation-children',
+  RESTAURANT_BUFFET: '/reservation-buffet',
   ROOMS: '/rooms',
   CONFERENCE: '/conference-facilities',
   CONTACTS: '/contacts',
@@ -56,6 +64,22 @@ export const Routers = () => {
           <Route
             path={PATH.RESTAURANT_RESERVATION}
             element={<ReservationRestaurantPage />}
+          />
+          <Route
+            path={PATH.RESTAURANT_BIRTHDAY}
+            element={<ReservationBirthdayPage />}
+          />
+          <Route
+            path={PATH.RESTAURANT_SENIOR}
+            element={<ReservationSeniorPage />}
+          />
+          <Route
+            path={PATH.RESTAURANT_CHILDREN}
+            element={<ReservationChildrenPage />}
+          />
+          <Route
+            path={PATH.RESTAURANT_BUFFET}
+            element={<ReservationBuffetPage />}
           />
           <Route path={PATH.ROOMS} element={<HotelRoom />}>
             <Route index element={<RoomsList />} />

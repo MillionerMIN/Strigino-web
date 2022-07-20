@@ -10,6 +10,7 @@ const organisationData: OrganisationDataType = {
   phones: [
     { phone: '+7 (999) 076-36-46', phoneNumber: 79990763646 },
     { phone: '+7 (831) 269-16-12', phoneNumber: 78312691612 },
+    { phone: '+7 (831) 269-16-08', phoneNumber: 78312691608 },
   ],
   certificate:
     'Свидетельство о государственной регистрации № 1234 от 4 июня 2002 г. ООО Гостинично - Развлекательный комплекc "Стригино" ИНН 5256041654',

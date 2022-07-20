@@ -5,6 +5,7 @@ import { BlockTitle } from '../title/BlockTitle';
 
 import striginoMenu, {
   buffetMenu,
+  childrenMenu,
   BuffetMenuType,
   ItemType,
   MenuPropsType,
@@ -13,12 +14,13 @@ import striginoMenu, {
 type MyVerticallyCenteredModalType = {
   data: MenuPropsType;
   dataBuffer: BuffetMenuType;
+  dataChildren: MenuPropsType;
   show: boolean;
   onHide: () => void;
 };
 
 function MyVerticallyCenteredModal(props: MyVerticallyCenteredModalType) {
-  const { data, dataBuffer, onHide } = props;
+  const { data, dataBuffer, dataChildren, onHide } = props;
   return (
     <Modal
       {...props}
@@ -68,6 +70,23 @@ function MyVerticallyCenteredModal(props: MyVerticallyCenteredModalType) {
                   <div className="delimiter delimiter_mr10"></div>
                 </div>
                 <ul style={{ paddingLeft: 0 }}>{content}</ul>
+              </div>
+            );
+          })}
+          <BlockTitle
+            data={{ title: 'Детское меню' }}
+            className="modal-window__title"
+          />
+          {dataChildren.map((item, i) => {
+            return (
+              <div key={i} className="menu-content menu-content_md">
+                <div className="menu-header">
+                  <h4 className="menu-header__title">{item.title}</h4>
+                  <div className="delimiter delimiter_mr10"></div>
+                </div>
+                <ul style={{ paddingLeft: 0 }}>
+                  <MenuItems content={item.content} />
+                </ul>
               </div>
             );
           })}
@@ -139,6 +158,7 @@ const ModalWindow = (props: ModalWindowType) => {
   return (
     <>
       <MyVerticallyCenteredModal
+        dataChildren={childrenMenu}
         dataBuffer={buffetMenu}
         data={striginoMenu}
         show={state}
