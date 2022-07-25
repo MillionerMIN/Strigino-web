@@ -6,12 +6,28 @@ import { BlockTitle } from '../../components/common/title/BlockTitle';
 import { getRestaurantData } from '../../data/restaurantData';
 import setScrollTop from '../../components/common/scrollUp/setScrollTop';
 import ModalWindow from '../../components/common/modalWindow/ModalWindow';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import ModalWin from '../../components/common/modalWin/ModalWin';
 import FormReservation from '../../components/formReservation/FormReservation';
 
+import {
+  mainMenu,
+  childrenMenu,
+  mainMenu_2,
+  buffetMenu,
+  banquetMenu,
+  MenuPropsType,
+  BuffetMenuType,
+} from '../../data/striginoMenu';
+
+const Menu = React.lazy(() => import('../../components/common/menu/Menu'));
+
+const namesButton = [
+  { name: 'Наше меню', menu: { mainMenu, mainMenu_2, childrenMenu } },
+  { name: 'Банкетное меню', menu: { banquetMenu, buffetMenu } },
+];
+
 const Restaurant = () => {
-  const [modalShow, setModalShow] = useState<boolean>(false);
   const [modalReservation, setModalReservation] = useState<boolean>(false);
   setScrollTop();
   const content = getRestaurantData();
@@ -22,6 +38,9 @@ const Restaurant = () => {
       index={i}
       reservation={item.reservation?.route}
     />
+  ));
+  const buttonsMenu = namesButton.map((item, i) => (
+    <ButtonMenu key={i} name={item.name} menu={item.menu} />
   ));
 
   return (
@@ -36,13 +55,7 @@ const Restaurant = () => {
         </div>
       </div>
       <BlockTitle data={content.title} />
-      <div
-        className="button button_center button_text-white button_border-white  restaurant__menuButton"
-        onClick={() => setModalShow(true)}
-      >
-        Наше меню
-      </div>
-      <ModalWindow state={modalShow} setModalShow={setModalShow} />
+      <div className="restaurant__menuButton_wrapper">{buttonsMenu}</div>
       <ModalWin
         show={modalReservation}
         setModalShow={setModalReservation}
@@ -51,6 +64,45 @@ const Restaurant = () => {
       <div className="restaurant-wrapper">{events}</div>
     </div>
   );
+};
+
+const ButtonMenu = (props: ButtonMenuType) => {
+  const { name, menu } = props;
+  const [modalShow, setModalShow] = useState<boolean>(false);
+  return (
+    <>
+      <div
+        className="button button_center button_text-white button_border-white  restaurant__menuButton"
+        onClick={() => setModalShow(true)}
+      >
+        {name}
+      </div>
+      <ModalWindow
+        children={
+          <Menu
+            show={modalShow}
+            onHide={() => setModalShow(false)}
+            menuMain={menu.mainMenu}
+            menuMain_2={menu.mainMenu_2}
+            menuChildren={menu.childrenMenu}
+            menuBanquet={menu.banquetMenu}
+            menuBuffer={menu.buffetMenu}
+          />
+        }
+      />
+    </>
+  );
+};
+
+type ButtonMenuType = {
+  name: string;
+  menu: {
+    mainMenu?: MenuPropsType;
+    mainMenu_2?: MenuPropsType;
+    childrenMenu?: MenuPropsType;
+    banquetMenu?: MenuPropsType;
+    buffetMenu?: BuffetMenuType;
+  };
 };
 
 export default Restaurant;

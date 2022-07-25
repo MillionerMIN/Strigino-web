@@ -22,11 +22,19 @@
   }
 }
 
+.restaurant__menuButton_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 180px);
+  justify-content: center;
+  column-gap: 20px;
+  margin: 40px;
+}
+
 .restaurant__menuButton {
+  width: 100%;
   background-color: #fff;
   color: $px-main;
   border: 3px solid $px-yellow;
-  margin-bottom: 40px;
 
   &:hover {
     background-color: $px-yellow;

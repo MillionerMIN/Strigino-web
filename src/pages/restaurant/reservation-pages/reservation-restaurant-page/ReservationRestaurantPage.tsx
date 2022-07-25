@@ -1,7 +1,7 @@
 import './reservationRestaurantPage.scss';
 
 import Border from '../../../../assets/icons/other/borderMenu.png';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import setScrollTop from '../../../../components/common/scrollUp/setScrollTop';
 import { getRestaurantData } from '../../../../data/restaurantData';
 import { HeadingBlock } from '../../../../components/common/heading-block/HeadingBlock';
@@ -10,6 +10,11 @@ import AlertCustom from '../../../../components/common/alert/AlertCustom';
 import GiftBox from '../../../../components/common/lotties/gift-box/GiftBox';
 import ModalWindow from '../../../../components/common/modalWindow/ModalWindow';
 import FormReservation from '../../../../components/formReservation/FormReservation';
+import { banquetMenu, buffetMenu } from '../../../../data/striginoMenu';
+
+const Menu = React.lazy(
+  () => import('../../../../components/common/menu/Menu')
+);
 
 const ReservationRestaurantPage = () => {
   const [modalShow, setModalShow] = useState<boolean>(false);
@@ -56,7 +61,16 @@ const ReservationRestaurantPage = () => {
                 Меню
               </div>
             </div>
-            <ModalWindow state={modalShow} setModalShow={setModalShow} />
+            <ModalWindow
+              children={
+                <Menu
+                  show={modalShow}
+                  onHide={() => setModalShow(false)}
+                  menuBanquet={banquetMenu}
+                  menuBuffer={buffetMenu}
+                />
+              }
+            />
           </div>
           <div>
             <h2 className="title title_fs28 title_align-start">Форма заказа</h2>
