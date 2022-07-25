@@ -5,18 +5,18 @@ import 'slick-carousel/slick/slick-theme.css';
 import { Header } from '../header/Header';
 import { Footer } from '../footer/Footer';
 import { Routers } from '../../route/Routers';
-import { HashRouter } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 import { getSocialsData } from '../../data/socialData';
 
 function App() {
   const socials = getSocialsData();
   return (
     <div className="App">
-      <HashRouter>
+      <BrowserRouter>
         <Header socials={socials} />
         <Routers />
         <Footer socials={socials} />
-      </HashRouter>
+      </BrowserRouter>
     </div>
   );
 }
