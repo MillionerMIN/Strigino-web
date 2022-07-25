@@ -11,7 +11,14 @@ type ConferenceDataType = {
     desc: string;
     photos: string[];
     cost_1: number;
-    reservation: {};
+    reservation?: {
+      route: string;
+      titleReserve: string;
+      present: {
+        title: string;
+        gifts: string[];
+      };
+    };
   }[];
 };
 
@@ -34,18 +41,11 @@ const conferenceData: ConferenceDataType = {
       photos: [Conf_1, Conf_2],
       cost_1: 400,
       reservation: {
-        route: '/reservation-restaurant',
-        titleReserve: '«Свадебная церемония»',
+        route: '/conference-reservation',
+        titleReserve: '«Конферент-зал»',
         present: {
-          title: 'Наш предложение для бракосочетающихся',
-          gifts: [
-            'Просторный ресторан, с вместимостью до 80 гостей',
-            'Номер для гостей с вашего банкета предоставляются с 15% скидкой',
-            'Предоставляем номер для сбора невесты с 20% скидкой (бронировать зарание)',
-            'При заказе от 2500 рублей с человека, чайный стол в подарок',
-            'Профессионально обслуживающий персонал',
-            'Подготовка и оформление праздника',
-          ],
+          title: 'Наш предложение',
+          gifts: [],
         },
       },
     },

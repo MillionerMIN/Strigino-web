@@ -1,15 +1,15 @@
 import './reservationRestaurantPage.scss';
 
-import { BlockTitle } from '../../components/common/title/BlockTitle';
-import setScrollTop from '../../components/common/scrollUp/setScrollTop';
-import { HeadingBlock } from '../../components/common/heading-block/HeadingBlock';
-import { getRestaurantData } from '../../data/restaurantData';
-import FormReservation from '../../components/formReservation/FormReservation';
-import ModalWindow from '../../components/common/modalWindow/ModalWindow';
+import Border from '../../../../assets/icons/other/borderMenu.png';
 import { useState } from 'react';
-import Border from '../../assets/icons/other/borderMenu.png';
-import GiftBox from '../../components/common/lotties/gift-box/GiftBox';
-import AlertCustom from '../../components/common/alert/AlertCustom';
+import setScrollTop from '../../../../components/common/scrollUp/setScrollTop';
+import { getRestaurantData } from '../../../../data/restaurantData';
+import { HeadingBlock } from '../../../../components/common/heading-block/HeadingBlock';
+import { BlockTitle } from '../../../../components/common/title/BlockTitle';
+import AlertCustom from '../../../../components/common/alert/AlertCustom';
+import GiftBox from '../../../../components/common/lotties/gift-box/GiftBox';
+import ModalWindow from '../../../../components/common/modalWindow/ModalWindow';
+import FormReservation from '../../../../components/formReservation/FormReservation';
 
 const ReservationRestaurantPage = () => {
   const [modalShow, setModalShow] = useState<boolean>(false);

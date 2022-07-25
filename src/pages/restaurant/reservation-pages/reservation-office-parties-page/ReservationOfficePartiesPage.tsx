@@ -1,23 +1,23 @@
-import './reservationBuffetPage.scss';
+import './reservationOfficePartiesPage.scss';
 
-import { BlockTitle } from '../../components/common/title/BlockTitle';
-import setScrollTop from '../../components/common/scrollUp/setScrollTop';
-import { HeadingBlock } from '../../components/common/heading-block/HeadingBlock';
-import { getRestaurantData } from '../../data/restaurantData';
-import FormReservation from '../../components/formReservation/FormReservation';
-import ModalWindow from '../../components/common/modalWindow/ModalWindow';
 import { useState } from 'react';
-import Border from '../../assets/icons/other/borderMenu.png';
+import Border from '../../../../assets/icons/other/borderMenu.png';
+import setScrollTop from '../../../../components/common/scrollUp/setScrollTop';
+import { getRestaurantData } from '../../../../data/restaurantData';
+import { HeadingBlock } from '../../../../components/common/heading-block/HeadingBlock';
+import { BlockTitle } from '../../../../components/common/title/BlockTitle';
+import ModalWindow from '../../../../components/common/modalWindow/ModalWindow';
+import FormReservation from '../../../../components/formReservation/FormReservation';
 // import GiftBox from '../../components/common/lotties/gift-box/GiftBox';
 // import AlertCustom from '../../components/common/alert/AlertCustom';
 
-const ReservationBuffetPage = () => {
+const ReservationOfficePartiesPage = () => {
   const [modalShow, setModalShow] = useState<boolean>(false);
   setScrollTop();
   // const [show, setShow] = useState<boolean>(false);
   const content = getRestaurantData();
 
-  const giftsContent = content.eventsRes[1].reservation?.present.gifts.map(
+  const giftsContent = content.eventsRes[2].reservation?.present.gifts.map(
     (gift, i) => <li key={i}>{gift}</li>
   );
 
@@ -25,13 +25,13 @@ const ReservationBuffetPage = () => {
     <div className="reservation-restaurant-page reservation-restaurant-page_pd">
       <HeadingBlock
         data={{
-          title: content.eventsRes[5].reservation?.titleReserve,
-          photo: content.eventsRes[5].photos[0],
+          title: content.eventsRes[2].reservation?.titleReserve,
+          photo: content.eventsRes[2].photos[0],
         }}
       />
       <div className="container">
         <BlockTitle
-          data={{ title: content.eventsRes[5].reservation?.present.title }}
+          data={{ title: content.eventsRes[2].reservation?.present.title }}
         />
         <ul className="reservation-restaurant-page__gifts reservation-restaurant-page__gifts_md reservation-restaurant-page__gifts_pd ">
           {giftsContent}
@@ -68,4 +68,4 @@ const ReservationBuffetPage = () => {
   );
 };
 
-export default ReservationBuffetPage;
+export default ReservationOfficePartiesPage;

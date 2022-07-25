@@ -1,17 +1,17 @@
-import './reservationSeniorPage.scss';
+import './reservationChildrenPage.scss';
 
-import { BlockTitle } from '../../components/common/title/BlockTitle';
-import setScrollTop from '../../components/common/scrollUp/setScrollTop';
-import { HeadingBlock } from '../../components/common/heading-block/HeadingBlock';
-import { getRestaurantData } from '../../data/restaurantData';
-import FormReservation from '../../components/formReservation/FormReservation';
-import ModalWindow from '../../components/common/modalWindow/ModalWindow';
 import { useState } from 'react';
-import Border from '../../assets/icons/other/borderMenu.png';
+import Border from '../../../../assets/icons/other/borderMenu.png';
+import setScrollTop from '../../../../components/common/scrollUp/setScrollTop';
+import { getRestaurantData } from '../../../../data/restaurantData';
+import { HeadingBlock } from '../../../../components/common/heading-block/HeadingBlock';
+import { BlockTitle } from '../../../../components/common/title/BlockTitle';
+import ModalWindow from '../../../../components/common/modalWindow/ModalWindow';
+import FormReservation from '../../../../components/formReservation/FormReservation';
 // import GiftBox from '../../components/common/lotties/gift-box/GiftBox';
 // import AlertCustom from '../../components/common/alert/AlertCustom';
 
-const ReservationSeniorPage = () => {
+const ReservationChildrenPage = () => {
   const [modalShow, setModalShow] = useState<boolean>(false);
   setScrollTop();
   // const [show, setShow] = useState<boolean>(false);
@@ -25,13 +25,13 @@ const ReservationSeniorPage = () => {
     <div className="reservation-restaurant-page reservation-restaurant-page_pd">
       <HeadingBlock
         data={{
-          title: content.eventsRes[3].reservation?.titleReserve,
-          photo: content.eventsRes[3].photos[0],
+          title: content.eventsRes[4].reservation?.titleReserve,
+          photo: content.eventsRes[4].photos[0],
         }}
       />
       <div className="container">
         <BlockTitle
-          data={{ title: content.eventsRes[3].reservation?.present.title }}
+          data={{ title: content.eventsRes[4].reservation?.present.title }}
         />
         <ul className="reservation-restaurant-page__gifts reservation-restaurant-page__gifts_md reservation-restaurant-page__gifts_pd ">
           {giftsContent}
@@ -68,4 +68,4 @@ const ReservationSeniorPage = () => {
   );
 };
 
-export default ReservationSeniorPage;
+export default ReservationChildrenPage;

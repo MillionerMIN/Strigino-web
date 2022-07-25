@@ -6,15 +6,50 @@ import { Home } from '../pages/home/Home';
 import { socialsData } from '../data/socialData';
 
 import './routers.scss';
-import ReservationBirthdayPage from '../pages/reservation-birthday-page/ReservationBirthdayPage';
-import ReservationBuffetPage from '../pages/reservation-buffet-page/ReservationBuffetPage';
-import ReservationChildrenPage from '../pages/reservation-children-page/ReservationChildrenPage';
-import ReservationSeniorPage from '../pages/reservation-senior-page/ReservationSeniorPage';
 
 const About = React.lazy(() => import('../pages/about/About'));
 const Restaurant = React.lazy(() => import('../pages/restaurant/Restaurant'));
 const ReservationRestaurantPage = React.lazy(
-  () => import('../pages/reservation-restaurant-page/ReservationRestaurantPage')
+  () =>
+    import(
+      '../pages/restaurant/reservation-pages/reservation-restaurant-page/ReservationRestaurantPage'
+    )
+);
+const ReservationBirthdayPage = React.lazy(
+  () =>
+    import(
+      '../pages/restaurant/reservation-pages/reservation-birthday-page/ReservationBirthdayPage'
+    )
+);
+const ReservationBuffetPage = React.lazy(
+  () =>
+    import(
+      '../pages/restaurant/reservation-pages/reservation-buffet-page/ReservationBuffetPage'
+    )
+);
+const ReservationChildrenPage = React.lazy(
+  () =>
+    import(
+      '../pages/restaurant/reservation-pages/reservation-children-page/ReservationChildrenPage'
+    )
+);
+const ReservationSeniorPage = React.lazy(
+  () =>
+    import(
+      '../pages/restaurant/reservation-pages/reservation-senior-page/ReservationSeniorPage'
+    )
+);
+const ReservationConferencePage = React.lazy(
+  () =>
+    import(
+      '../pages/conference-facilities/reservationPage/ReservationConferencePage'
+    )
+);
+const ReservationOfficePartiesPage = React.lazy(
+  () =>
+    import(
+      '../pages/restaurant/reservation-pages/reservation-office-parties-page/ReservationOfficePartiesPage'
+    )
 );
 const HotelRoom = React.lazy(() => import('../pages/hotelRoom/HotelRoom'));
 const ConferenceFacilities = React.lazy(
@@ -39,11 +74,13 @@ export const PATH = {
   RESTAURANT: '/restaurant',
   RESTAURANT_RESERVATION: '/reservation-restaurant',
   RESTAURANT_BIRTHDAY: '/reservation-birthday',
+  RESTAURANT_OFFICE_PARTIES: '/reservation-office-parties',
   RESTAURANT_SENIOR: '/reservation-senior',
   RESTAURANT_CHILDREN: '/reservation-children',
   RESTAURANT_BUFFET: '/reservation-buffet',
   ROOMS: '/rooms',
   CONFERENCE: '/conference-facilities',
+  CONFERENCE_RESERVATION: '/conference-reservation',
   CONTACTS: '/contacts',
   RESERVATION: '/reservation',
   // ROOMS_STUDIO: '/rooms/studio',
@@ -70,6 +107,10 @@ export const Routers = () => {
             element={<ReservationBirthdayPage />}
           />
           <Route
+            path={PATH.RESTAURANT_OFFICE_PARTIES}
+            element={<ReservationOfficePartiesPage />}
+          />
+          <Route
             path={PATH.RESTAURANT_SENIOR}
             element={<ReservationSeniorPage />}
           />
@@ -86,10 +127,11 @@ export const Routers = () => {
             <Route path=":roomId" element={<RoomInfo />} />
           </Route>
 
-          <Route path={PATH.CONFERENCE} element={<ConferenceFacilities />}>
-            {/* <Route index element={<RoomsList />} />
-            <Route path=":roomId" element={<RoomInfo />} /> */}
-          </Route>
+          <Route path={PATH.CONFERENCE} element={<ConferenceFacilities />} />
+          <Route
+            path={PATH.CONFERENCE_RESERVATION}
+            element={<ReservationConferencePage />}
+          />
           <Route
             path={PATH.CONTACTS}
             element={<Contacts socials={socialsData} />}

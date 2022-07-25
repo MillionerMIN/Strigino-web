@@ -69,6 +69,17 @@ const restaurantData = {
       desc: '',
       photos: [OfficeParties],
       // cost_1: 2300,
+      reservation: {
+        route: '/reservation-office-parties',
+        titleReserve: '«Корпоративы»',
+        present: {
+          title: 'Наш предложение',
+          gifts: [
+            'Скидки на номера -10%',
+            'Возможна доставка на офис (заказывать зарание)',
+          ],
+        },
+      },
     },
     {
       id: '',

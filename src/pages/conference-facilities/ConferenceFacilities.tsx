@@ -10,7 +10,13 @@ const ConferenceFacilities = () => {
   setScrollTop();
   const roomSer = getConferenceData();
   const events = roomSer.roomsService.map((item, i) => (
-    <CardNumber key={i} data={item} index={i} hour />
+    <CardNumber
+      key={i}
+      data={item}
+      index={i}
+      hour
+      reservation={item.reservation?.route}
+    />
   ));
   return (
     <div className="conference-facilities conference-facilities_pd">
