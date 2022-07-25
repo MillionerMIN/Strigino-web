@@ -4,54 +4,71 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
   <url>   
 		<loc>https://strigino.ru/index.html</loc>
+		<priority>1.00</priority>
 	</url>
   <url>   
 		<loc>https://strigino.ru</loc>
+			<priority>1.00</priority>
 	</url>
   <url>   
 		<loc>https://strigino.ru/about</loc>
+			<priority>0.80</priority>
 	</url>
   <url>   
 		<loc>https://strigino.ru/special-offers</loc>
+		<priority>0.80</priority>
 	</url>
   <url>   
 		<loc>https://strigino.ru/restaurant</loc>
+		<priority>0.80</priority>
 	</url>
   <url>   
 		<loc>https://strigino.ru/rooms</loc>
+		<priority>0.80</priority>
 	</url>
   <url>   
 		<loc>https://strigino.ru/rooms/standard-mini</loc>
+		<priority>0.80</priority>
 	</url>
   <url>   
 		<loc>https://strigino.ru/rooms/standard</loc>
+		<priority>0.80</priority>
 	</url>
   <url>   
 		<loc>https://strigino.ru/rooms/studio_1</loc>
+		<priority>0.80</priority>
 	</url>
   <url>   
 		<loc>https://strigino.ru/rooms/studio_2</loc>
+		<priority>0.80</priority>
 	</url>
   <url>   
 		<loc>https://strigino.ru/rooms/studio_3</loc>
+		<priority>0.80</priority>
 	</url>
   <url>   
 		<loc>https://strigino.ru/rooms/family</loc>
+		<priority>0.80</priority>
 	</url>
   <url>   
 		<loc>https://strigino.ru/rooms/wedding</loc>
+		<priority>0.80</priority>
 	</url>
   <url>   
 		<loc>https://strigino.ru/rooms/twin</loc>
+		<priority>0.80</priority>
 	</url>
   <url>   
 		<loc>https://strigino.ru/conference-facilities</loc>
+		<priority>0.80</priority>
 	</url>
   <url>   
 		<loc>https://strigino.ru/contacts</loc>
+		<priority>0.80</priority>
 	</url>
   <url>   
 		<loc>https://strigino.ru/reservation</loc>
+		<priority>0.80</priority>
 	</url>
 
 </urlset>
