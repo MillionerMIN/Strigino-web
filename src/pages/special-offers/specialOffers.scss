@@ -207,7 +207,9 @@
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
   .special-offers {
-
+    &_pd {
+      padding: 0 0 30px 0;
+    }
 
     &__list {
       grid-template-columns: minmax(300px, 1fr);

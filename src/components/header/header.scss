@@ -297,9 +297,14 @@
 
     &__item {
       padding: 15px 18px 15px 30px;
+
+      &::before {
+        display: none;
+      }
     }
   }
 }
+
 
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {}

@@ -223,6 +223,13 @@
   }
 
   .contacts {
+    &__wrapper {
+      padding-bottom: 30px;
+    }
+
+    &__block div.container {
+      padding: 0;
+    }
 
     &__item {
       font-size: 0.94rem;

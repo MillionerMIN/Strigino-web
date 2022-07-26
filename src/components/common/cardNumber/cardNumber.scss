@@ -259,6 +259,10 @@
 @media (max-width: 575.98px) {
 
   .cardNumber {
+    &_pd10 {
+      padding: 0;
+    }
+
     &__image {
       width: 100%;
     }
