@@ -1,5 +1,8 @@
+import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { RoomHotelType } from '../../../data/hotelRoomsData';
+import GalleryPhotos from '../galleryPhotos/GalleryPhotos';
+import ModalWindow from '../modalWindow/ModalWindow';
 
 import './cardNumber.scss';
 
@@ -13,6 +16,7 @@ type CardNumberType = {
 export const CardNumber = (props: CardNumberType) => {
   const { hour, reservation = '/reservation' } = props;
   const { id, title, desc, photos, cost_1 } = props.data;
+  const [showModal, setShowModal] = useState<boolean>(false);
 
   const description = desc.slice(0, 100);
   // const classCardNumber =
@@ -36,12 +40,25 @@ export const CardNumber = (props: CardNumberType) => {
           <NavLink to={id} title={title}>
             <img className="cardNumber__photo" src={photos[0]} alt={title} />
             <div className="cardNumber__more">
-              <div className=" button button_center button_text-white button_border-white cardNumber__btn">
-                Читать больше
+              <div
+                className=" button button_center button_text-white button_border-white cardNumber__btn"
+                onClick={() => setShowModal(true)}
+              >
+                Фото
               </div>
             </div>
           </NavLink>
         </div>
+
+        <ModalWindow
+          children={
+            <GalleryPhotos
+              show={showModal}
+              onHide={() => setShowModal(false)}
+              photos={photos}
+            />
+          }
+        />
 
         {/* infirmation card */}
         <div className={'info-wrapper info-wrapper_pd20'}>

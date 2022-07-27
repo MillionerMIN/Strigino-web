@@ -1,0 +1,110 @@
+.gallery-photos {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, auto));
+  grid-template-rows: repeat(auto-fit, minmax(250px, auto));
+  gap: 5px;
+}
+
+
+.gallery-photos__item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.gallery-photos__item2 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.gallery-photos__item3 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.gallery-photos__item12 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 7;
+  grid-row-end: 8;
+}
+
+.gallery-photos__item15 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 8;
+  grid-row-end: 10;
+}
+
+.gallery-photos__item20 {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 5;
+  grid-row-end: 6;
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {
+  .gallery-photos {
+    grid-template-columns: repeat(2, minmax(220px, auto));
+    grid-template-rows: repeat(auto-fit, minmax(220px, 300px));
+  }
+
+  .gallery-photos__item2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .gallery-photos__item3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
+
+  .gallery-photos__item12 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .gallery-photos__item15 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  .gallery-photos__item20 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .gallery-photos {
+    grid-template-columns: repeat(1, minmax(220px, auto));
+  }
+
+  .gallery-photos__item2 {
+    grid-column-end: 2;
+  }
+
+  .gallery-photos__item3 {
+    grid-column-end: 2;
+  }
+
+  .gallery-photos__item12 {
+    grid-column-end: 2;
+  }
+
+  .gallery-photos__item15 {
+    grid-column-end: 2;
+  }
+
+  .gallery-photos__item20 {
+    grid-column-end: 2;
+  }
+}

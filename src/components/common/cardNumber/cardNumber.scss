@@ -238,11 +238,18 @@
     }
 
     &__more {
-      display: none;
+      &::before {
+        display: none;
+      }
+
+      &::after {
+        display: none;
+      }
     }
 
     &__btn {
-      display: none;
+      top: 150px;
+      left: 170px;
     }
   }
 
@@ -269,6 +276,11 @@
 
     &__photo {
       height: 200px;
+    }
+
+    &__btn {
+      top: 70px;
+      left: 58px;
     }
   }
 
