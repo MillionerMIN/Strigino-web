@@ -20,7 +20,7 @@ const ReservationBuffetPage = () => {
   // const [show, setShow] = useState<boolean>(false);
   const content = getRestaurantData();
 
-  const giftsContent = content.eventsRes[1].reservation?.present.gifts.map(
+  const giftsContent = content.eventsRes[5].reservation?.present.gifts.map(
     (gift, i) => <li key={i}>{gift}</li>
   );
 
