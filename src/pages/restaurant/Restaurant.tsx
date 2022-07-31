@@ -15,6 +15,7 @@ import {
   childrenMenu,
   mainMenu_2,
   buffetMenu,
+  snakeForBeer,
   banquetMenu,
   MenuPropsType,
   BuffetMenuType,
@@ -23,7 +24,10 @@ import {
 const Menu = React.lazy(() => import('../../components/common/menu/Menu'));
 
 const namesButton = [
-  { name: 'Наше меню', menu: { mainMenu, mainMenu_2, childrenMenu } },
+  {
+    name: 'Наше меню',
+    menu: { mainMenu, mainMenu_2, snakeForBeer, childrenMenu },
+  },
   { name: 'Банкетное меню', menu: { banquetMenu, buffetMenu } },
 ];
 
@@ -84,6 +88,7 @@ const ButtonMenu = (props: ButtonMenuType) => {
             onHide={() => setModalShow(false)}
             menuMain={menu.mainMenu}
             menuMain_2={menu.mainMenu_2}
+            menuSnake={menu.snakeForBeer}
             menuChildren={menu.childrenMenu}
             menuBanquet={menu.banquetMenu}
             menuBuffer={menu.buffetMenu}
@@ -99,6 +104,7 @@ type ButtonMenuType = {
   menu: {
     mainMenu?: MenuPropsType;
     mainMenu_2?: MenuPropsType;
+    snakeForBeer?: MenuPropsType;
     childrenMenu?: MenuPropsType;
     banquetMenu?: MenuPropsType;
     buffetMenu?: BuffetMenuType;

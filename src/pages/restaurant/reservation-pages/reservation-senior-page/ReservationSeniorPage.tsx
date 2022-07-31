@@ -72,7 +72,9 @@ const ReservationSeniorPage = () => {
           </div>
           <div>
             <h2 className="title title_fs28 title_align-start">Форма заказа</h2>
-            <FormReservation />
+            <FormReservation
+              event={content.eventsRes[3].reservation?.titleReserve}
+            />
           </div>
         </div>
       </div>

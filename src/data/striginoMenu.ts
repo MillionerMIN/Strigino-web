@@ -55,13 +55,13 @@ export const mainMenu: MenuPropsType = [
         dishName: 'Куриный шницель',
         desc: 'Куриное филе, картофель отварной, фасоль зеленая',
         weight: '100/100/50',
-        price: 565,
+        price: 480,
       },
       {
         dishName: 'Судак жареный',
-        desc: 'Филе судка, картофель фри, соус чесночный',
-        weight: '350 г.',
-        price: 250,
+        desc: 'Филе судака, картофель фри, соус чесночный',
+        weight: '100/100/50 г.',
+        price: 565,
       },
     ],
   },
@@ -98,6 +98,93 @@ export const mainMenu: MenuPropsType = [
       },
     ],
   },
+];
+
+export const mainMenu_2: MenuPropsType = [
+  {
+    title: 'Пицца',
+    content: [
+      {
+        dishName: 'Пицца "Маргарита"',
+        desc: 'Базилик, томаты, моцарелла',
+        weight: '450 г.',
+        price: 450,
+      },
+      {
+        dishName: 'Пицца "Неаполитано"',
+        desc: 'Ветчина, грибы, томаты, моцарелла, пряные травы',
+        weight: '450г.',
+        price: 500,
+      },
+      {
+        dishName: 'Пицца "Мясная"',
+        desc: 'Курица грибы, колбаса салями, огурцы маринованные, сыр',
+        weight: '450 г.',
+        price: 550,
+      },
+    ],
+  },
+  {
+    title: 'Паста',
+    content: [
+      {
+        dishName: 'Паста "Карбонара"',
+        desc: '',
+        weight: '250 г.',
+        price: 320,
+      },
+      {
+        dishName: 'Паста ветчина с грибами в белом соусе',
+        desc: '',
+        weight: '250 г.',
+        price: 325,
+      },
+      {
+        dishName: 'Паста "Болоньезе"',
+        desc: '',
+        weight: '250 г.',
+        price: 365,
+      },
+    ],
+  },
+  {
+    title: 'Сэндвичи',
+    content: [
+      {
+        dishName: 'Клаб-сэндвич с ветчиной',
+        desc: '',
+        weight: '160 г.',
+        price: 265,
+      },
+      {
+        dishName: 'Клаб-сэндвич яйцо с сыром',
+        desc: '',
+        weight: '160 г.',
+        price: 250,
+      },
+      {
+        dishName: 'Клаб-сэндвич с курицей',
+        desc: '',
+        weight: '160 г.',
+        price: 275,
+      },
+      {
+        dishName: 'Бургер с курицей',
+        desc: '',
+        weight: '180 г.',
+        price: 290,
+      },
+      {
+        dishName: 'Тортилья',
+        desc: 'Курица, грибы, перец сладкий, огурцы маринованные, сыр',
+        weight: '180 г.',
+        price: 420,
+      },
+    ],
+  },
+];
+
+export const snakeForBeer: MenuPropsType = [
   {
     title: 'Закуски к пиву',
     content: [
@@ -157,90 +244,6 @@ export const mainMenu: MenuPropsType = [
         desc: 'Буженина, сосиски гриль, колбаски варено- копченые, бекон, луковые кольца, гренки, соус чесночный, соус кетчуп 30/60/60/30/20/20/30/30',
         weight: '250/100 г.',
         price: 850,
-      },
-    ],
-  },
-];
-
-export const mainMenu_2: MenuPropsType = [
-  {
-    title: 'Пицца',
-    content: [
-      {
-        dishName: 'Пицца "Маргарита"',
-        desc: 'Базилик, томаты, моцарелла',
-        weight: '450 г.',
-        price: 450,
-      },
-      {
-        dishName: 'Пицца "Неаполитано"',
-        desc: 'Ветчина, грибы, томаты, моцарелла, пряные травы',
-        weight: '450г.',
-        price: 500,
-      },
-      {
-        dishName: 'Пицца "Мясная"',
-        desc: 'Курица грибы, колбаса салями, огурцы маринованные, сыр',
-        weight: '450 г.',
-        price: 550,
-      },
-    ],
-  },
-  {
-    title: 'Паста',
-    content: [
-      {
-        dishName: 'Паста "Карбонара"',
-        desc: '',
-        weight: '250 г.',
-        price: 320,
-      },
-      {
-        dishName: 'Паста ветчина с грибами в белом соусе',
-        desc: '',
-        weight: '325г.',
-        price: 500,
-      },
-      {
-        dishName: 'Паста "Болоньезе"',
-        desc: '',
-        weight: '250 г.',
-        price: 365,
-      },
-    ],
-  },
-  {
-    title: 'Сэндвичи',
-    content: [
-      {
-        dishName: 'Клаб-сэндвич с ветчиной',
-        desc: '',
-        weight: '160 г.',
-        price: 265,
-      },
-      {
-        dishName: 'Клаб-сэндвич яйцо с сыром',
-        desc: '',
-        weight: '160 г.',
-        price: 250,
-      },
-      {
-        dishName: 'Клаб-сэндвич с курицей',
-        desc: '',
-        weight: '160 г.',
-        price: 275,
-      },
-      {
-        dishName: 'Бургер с курицей',
-        desc: '',
-        weight: '180 г.',
-        price: 290,
-      },
-      {
-        dishName: 'Тортилья',
-        desc: 'Курица, грибы, перец сладкий, огурцы маринованные, сыр',
-        weight: '180 г.',
-        price: 420,
       },
     ],
   },
@@ -395,7 +398,7 @@ export const banquetMenu: MenuPropsType = [
         dishName: 'Тарталетка с салатом',
         desc: '',
         weight: '1 шт.',
-        price: 150,
+        price: 120,
       },
       {
         dishName: 'Галантин из курицы',
@@ -532,7 +535,7 @@ export const banquetMenu: MenuPropsType = [
         dishName: 'Овощной',
         desc: 'Капуста белокочанная, огурец свежий ,перец болгарский сладкий, лук маринованный ,зелень, масло растительное',
         weight: '220 г.',
-        price: 275,
+        price: 295,
       },
     ],
   },

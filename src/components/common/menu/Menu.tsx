@@ -11,6 +11,7 @@ import {
 type MyVerticallyCenteredModalType = {
   menuMain?: MenuPropsType;
   menuMain_2?: MenuPropsType;
+  menuSnake?: MenuPropsType;
   menuBanquet?: MenuPropsType;
   menuBuffer?: BuffetMenuType;
   menuChildren?: MenuPropsType;
@@ -23,6 +24,7 @@ function MyVerticallyCenteredModal(props: MyVerticallyCenteredModalType) {
     menuMain,
     menuMain_2,
     menuBanquet,
+    menuSnake,
     menuBuffer,
     menuChildren,
     onHide,
@@ -119,6 +121,20 @@ function MyVerticallyCenteredModal(props: MyVerticallyCenteredModalType) {
           )}
           {menuMain_2 &&
             menuMain_2.map((item, i) => {
+              return (
+                <div key={i} className="menu-content menu-content_md">
+                  <div className="menu-header">
+                    <h4 className="menu-header__title">{item.title}</h4>
+                    <div className="delimiter delimiter_mr10"></div>
+                  </div>
+                  <ul style={{ paddingLeft: 0 }}>
+                    <MenuItems content={item.content} />
+                  </ul>
+                </div>
+              );
+            })}
+          {menuSnake &&
+            menuSnake.map((item, i) => {
               return (
                 <div key={i} className="menu-content menu-content_md">
                   <div className="menu-header">

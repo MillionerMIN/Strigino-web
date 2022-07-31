@@ -6,7 +6,8 @@ import { Alert } from 'react-bootstrap';
 import { useEffect, useState } from 'react';
 import Loader from '../common/lotties/Loader';
 
-const FormReservation = () => {
+const FormReservation = (props: FormReservationType) => {
+  const { event } = props;
   const date = useInput('', { isEmpty: true });
   const numberPeople = useInput('', { maxNumberError: true });
   const name = useInput('', { isEmpty: true, minLength: 3 });
@@ -16,6 +17,7 @@ const FormReservation = () => {
   const [errorSend, setErrorSend] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(false);
 
+  console.log(event);
   useEffect(() => {
     setTimeout(() => {
       setSend(false);
@@ -29,7 +31,7 @@ const FormReservation = () => {
     emailjs
       .sendForm(
         'service_90v1c3w',
-        'template_etqol4b',
+        'template_zaquk8g',
         e.currentTarget,
         'nlC2xucQM9WVhNYSl'
       )
@@ -58,6 +60,12 @@ const FormReservation = () => {
           Поля со звездочкой * обязательны для заполнения
         </div>
         <form onSubmit={handlerSubmit}>
+          <textarea
+            className="form__name"
+            name="to_name"
+            defaultValue={event}
+          />
+
           <div className="formInput">
             <label htmlFor="date">Дата *</label>
             <input
@@ -161,6 +169,10 @@ const FormReservation = () => {
       )}
     </div>
   );
+};
+
+type FormReservationType = {
+  event?: string;
 };
 
 export default FormReservation;

@@ -59,7 +59,9 @@ const ReservationConferencePage = () => {
         <h2 className="title title_fs28 title_align-start">
           Форма для бронирования
         </h2>
-        <FormReservation />
+        <FormReservation
+          event={content.roomsService[0].reservation?.titleReserve}
+        />
         {/* </div> */}
         {/* </div> */}
       </div>
